@@ -1,0 +1,30 @@
+
+Log Entry : 
+01/10/2020 15:07:07
+Error in: http://localhost:54726/Saitex/Module/Production/Pages/DyedIssueFrom.aspx. Error Message:Response.Redirect cannot be called in a Page callback.
+__________________________
+
+Log Entry : 
+01/10/2020 15:07:19
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+01/10/2020 17:23:49
+Error in: http://localhost:54726/Saitex/Module/Production/Pages/Yrn_Production_Adjustment.aspx?ItemCodeId=PO0067&SHADE_FAMILY=20100061&SHADE_CODE=20100061&TextBoxId=ctl00_cphBody_DyedIssueFrom_txtQTY&txtBasicRate=ctl00_cphBody_DyedIssueFrom_txtBasicRate&AmountId=ctl00_cphBody_DyedIssueFrom_txtAmount&TRN_TYPE=IYS12&ChallanNo=14&txtQtyUnit=ctl00_cphBody_DyedIssueFrom_txtnoofunit&txtQtyUom=ctl00_cphBody_DyedIssueFrom_txtUNIT&txtQtyWeight=ctl00_cphBody_DyedIssueFrom_txtunitweight&UOM_OF_UNIT=KGS&MAX_QTY=19.89&LOCATION=GODOWN&STORE=DYEING&PI_NO=YDSWPR00004002&PARTY_CODE=SELF&PO_NUMB=21. Error Message:Input string was not in a correct format.
+__________________________
+
+Log Entry : 
+01/10/2020 17:23:55
+Error in: http://localhost:54726/Saitex/Module/Production/Pages/Yrn_Production_Adjustment.aspx?ItemCodeId=PO0067&SHADE_FAMILY=20100061&SHADE_CODE=20100061&TextBoxId=ctl00_cphBody_DyedIssueFrom_txtQTY&txtBasicRate=ctl00_cphBody_DyedIssueFrom_txtBasicRate&AmountId=ctl00_cphBody_DyedIssueFrom_txtAmount&TRN_TYPE=IYS12&ChallanNo=14&txtQtyUnit=ctl00_cphBody_DyedIssueFrom_txtnoofunit&txtQtyUom=ctl00_cphBody_DyedIssueFrom_txtUNIT&txtQtyWeight=ctl00_cphBody_DyedIssueFrom_txtunitweight&UOM_OF_UNIT=KGS&MAX_QTY=19.89&LOCATION=GODOWN&STORE=DYEING&PI_NO=YDSWPR00004002&PARTY_CODE=SELF&PO_NUMB=21. Error Message:Input string was not in a correct format.
+__________________________
+
+Log Entry : 
+01/10/2020 17:39:24
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+01/10/2020 17:44:50
+Error in: http://localhost:54726/Saitex/Module/Production/Pages/Yrn_Production_Adjustment.aspx?ItemCodeId=PO0067&SHADE_FAMILY=20100061&SHADE_CODE=20100061&TextBoxId=ctl00_cphBody_DyedIssueFrom_txtQTY&txtBasicRate=ctl00_cphBody_DyedIssueFrom_txtBasicRate&AmountId=ctl00_cphBody_DyedIssueFrom_txtAmount&TRN_TYPE=IYS12&ChallanNo=14&txtQtyUnit=ctl00_cphBody_DyedIssueFrom_txtnoofunit&txtQtyUom=ctl00_cphBody_DyedIssueFrom_txtUNIT&txtQtyWeight=ctl00_cphBody_DyedIssueFrom_txtunitweight&UOM_OF_UNIT=KGS&MAX_QTY=19.89&LOCATION=GODOWN&STORE=DYEING&PI_NO=YDSWPR00004002&PARTY_CODE=SELF&PO_NUMB=21. Error Message:Input string was not in a correct format.
+__________________________

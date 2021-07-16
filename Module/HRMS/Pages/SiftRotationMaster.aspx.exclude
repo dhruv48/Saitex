@@ -1,0 +1,10 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/CommonMaster/admin.master" AutoEventWireup="true" CodeFile="SiftRotationMaster.aspx.cs" Inherits="Module_HRMS_Pages_SiftRotationMaster" %>
+
+<%@ Register src="../Controls/SiftRotationMaster.ascx" tagname="SiftRotationMaster" tagprefix="uc1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="Head1" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphBody" Runat="Server">
+    <uc1:SiftRotationMaster ID="SiftRotationMaster1" runat="server" />
+</asp:Content>
+

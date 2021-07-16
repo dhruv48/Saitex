@@ -1,0 +1,36 @@
+
+Log Entry : 
+12/28/2020 17:15:42
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/ReceiptAdjustmentForStockTransfer.aspx?ItemCodeId=CHE01034&TextBoxId=ctl00_cphBody_Material_Issue_For_Dept_txtQTY&txtBasicRate=ctl00_cphBody_Material_Issue_For_Dept_txtBasicRate&AmountId=ctl00_cphBody_Material_Issue_For_Dept_txtAmount0&ChallanNo=408&TRN_TYPE=IMS06&txtQtyUnit=ctl00_cphBody_Material_Issue_For_Dept_txtQTY&txtQtyUom=ctl00_cphBody_Material_Issue_For_Dept_txtUNIT&txtQtyWeight=ctl00_cphBody_Material_Issue_For_Dept_txtQtyWeight&UOM_OF_UNIT=NOS&MAX_QTY=&PI_NO=&LOCATION=GODOWN&STORE=GENERAL. Error Message:ORA-00942: table or view does not exist
+
+__________________________
+
+Log Entry : 
+12/28/2020 17:16:28
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/ReceiptAdjustmentForStockTransfer.aspx?ItemCodeId=CHE01034&TextBoxId=ctl00_cphBody_Material_Issue_For_Dept_txtQTY&txtBasicRate=ctl00_cphBody_Material_Issue_For_Dept_txtBasicRate&AmountId=ctl00_cphBody_Material_Issue_For_Dept_txtAmount0&ChallanNo=408&TRN_TYPE=IMS06&txtQtyUnit=ctl00_cphBody_Material_Issue_For_Dept_txtQTY&txtQtyUom=ctl00_cphBody_Material_Issue_For_Dept_txtUNIT&txtQtyWeight=ctl00_cphBody_Material_Issue_For_Dept_txtQtyWeight&UOM_OF_UNIT=NOS&MAX_QTY=&PI_NO=&LOCATION=GODOWN&STORE=GENERAL. Error Message:ORA-00942: table or view does not exist
+
+__________________________
+
+Log Entry : 
+12/28/2020 17:16:51
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/ReceiptAdjustmentForStockTransfer.aspx?ItemCodeId=CHE01034&TextBoxId=ctl00_cphBody_Material_Issue_For_Dept_txtQTY&txtBasicRate=ctl00_cphBody_Material_Issue_For_Dept_txtBasicRate&AmountId=ctl00_cphBody_Material_Issue_For_Dept_txtAmount0&ChallanNo=408&TRN_TYPE=IMS06&txtQtyUnit=ctl00_cphBody_Material_Issue_For_Dept_txtQTY&txtQtyUom=ctl00_cphBody_Material_Issue_For_Dept_txtUNIT&txtQtyWeight=ctl00_cphBody_Material_Issue_For_Dept_txtQtyWeight&UOM_OF_UNIT=NOS&MAX_QTY=&PI_NO=&LOCATION=GODOWN&STORE=GENERAL. Error Message:ORA-00942: table or view does not exist
+
+__________________________
+
+Log Entry : 
+12/28/2020 17:19:27
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/ReceiptAdjustmentForStockTransfer.aspx?ItemCodeId=DYE01007&TextBoxId=ctl00_cphBody_Material_Issue_For_Dept_txtQTY&txtBasicRate=ctl00_cphBody_Material_Issue_For_Dept_txtBasicRate&AmountId=ctl00_cphBody_Material_Issue_For_Dept_txtAmount0&ChallanNo=408&TRN_TYPE=IMS06&txtQtyUnit=ctl00_cphBody_Material_Issue_For_Dept_txtQTY&txtQtyUom=ctl00_cphBody_Material_Issue_For_Dept_txtUNIT&txtQtyWeight=ctl00_cphBody_Material_Issue_For_Dept_txtQtyWeight&UOM_OF_UNIT=KGS&MAX_QTY=&PI_NO=&LOCATION=GODOWN&STORE=GENERAL. Error Message:ORA-00942: table or view does not exist
+
+__________________________
+
+Log Entry : 
+12/28/2020 17:20:32
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/ReceiptAdjustmentForStockTransfer.aspx?ItemCodeId=DYE01007&TextBoxId=ctl00_cphBody_Material_Issue_For_Dept_txtQTY&txtBasicRate=ctl00_cphBody_Material_Issue_For_Dept_txtBasicRate&AmountId=ctl00_cphBody_Material_Issue_For_Dept_txtAmount0&ChallanNo=408&TRN_TYPE=IMS06&txtQtyUnit=ctl00_cphBody_Material_Issue_For_Dept_txtQTY&txtQtyUom=ctl00_cphBody_Material_Issue_For_Dept_txtUNIT&txtQtyWeight=ctl00_cphBody_Material_Issue_For_Dept_txtQtyWeight&UOM_OF_UNIT=KGS&MAX_QTY=&PI_NO=&LOCATION=GODOWN&STORE=GENERAL. Error Message:ORA-00942: table or view does not exist
+
+__________________________
+
+Log Entry : 
+12/28/2020 17:21:57
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/ReceiptAdjustmentForStockTransfer.aspx?ItemCodeId=DYE01007&TextBoxId=ctl00_cphBody_Material_Issue_For_Dept_txtQTY&txtBasicRate=ctl00_cphBody_Material_Issue_For_Dept_txtBasicRate&AmountId=ctl00_cphBody_Material_Issue_For_Dept_txtAmount0&ChallanNo=408&TRN_TYPE=IMS06&txtQtyUnit=ctl00_cphBody_Material_Issue_For_Dept_txtQTY&txtQtyUom=ctl00_cphBody_Material_Issue_For_Dept_txtUNIT&txtQtyWeight=ctl00_cphBody_Material_Issue_For_Dept_txtQtyWeight&UOM_OF_UNIT=KGS&MAX_QTY=&PI_NO=&LOCATION=GODOWN&STORE=GENERAL. Error Message:ORA-00942: table or view does not exist
+
+__________________________

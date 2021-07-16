@@ -1,0 +1,6 @@
+
+Log Entry : 
+11/04/2020 14:44:58
+Error in: http://localhost:54726/Saitex/Module/Inventory/Reports/Pending_PO.aspx?year=2020&branch=SL0001&StDate=01/04/2020&EnDate=31/03/2021&vendor=&ITEM_CODE=&fromPO=&topo=&status=All. Error Message:ORA-00933: SQL command not properly ended
+
+__________________________

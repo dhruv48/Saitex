@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+
+public partial class Module_Inventory_Reports_POPermRPT : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (Request.QueryString["PO_TYPE"] != null && Request.QueryString["PO_TYPE"] != "")
+        {
+            POPermrpt1.POTYPE = Request.QueryString["PO_TYPE"].ToString();
+        }
+        else
+        {
+            POPermrpt1.POTYPE = "PUM";
+        }
+    }
+}

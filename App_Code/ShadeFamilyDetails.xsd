@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ShadeFamilyDetails" targetNamespace="http://tempuri.org/ShadeFamilyDetails.xsd" xmlns:mstns="http://tempuri.org/ShadeFamilyDetails.xsd" xmlns="http://tempuri.org/ShadeFamilyDetails.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ShadeFamilyDetails" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ShadeFamilyDetails" msprop:Generator_DataSetName="ShadeFamilyDetails">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ShadeFamilyDetails1" msprop:Generator_UserTableName="ShadeFamilyDetails1" msprop:Generator_RowDeletedName="ShadeFamilyDetails1RowDeleted" msprop:Generator_RowChangedName="ShadeFamilyDetails1RowChanged" msprop:Generator_RowClassName="ShadeFamilyDetails1Row" msprop:Generator_RowChangingName="ShadeFamilyDetails1RowChanging" msprop:Generator_RowEvArgName="ShadeFamilyDetails1RowChangeEvent" msprop:Generator_RowEvHandlerName="ShadeFamilyDetails1RowChangeEventHandler" msprop:Generator_TableClassName="ShadeFamilyDetails1DataTable" msprop:Generator_TableVarName="tableShadeFamilyDetails1" msprop:Generator_RowDeletingName="ShadeFamilyDetails1RowDeleting" msprop:Generator_TablePropName="ShadeFamilyDetails1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COMP_CODE" msprop:Generator_UserColumnName="COMP_CODE" msprop:Generator_ColumnVarNameInTable="columnCOMP_CODE" msprop:Generator_ColumnPropNameInRow="COMP_CODE" msprop:Generator_ColumnPropNameInTable="COMP_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PRODUCT_TYPE" msprop:Generator_UserColumnName="PRODUCT_TYPE" msprop:Generator_ColumnVarNameInTable="columnPRODUCT_TYPE" msprop:Generator_ColumnPropNameInRow="PRODUCT_TYPE" msprop:Generator_ColumnPropNameInTable="PRODUCT_TYPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SHADE_FAMILY_CODE" msprop:Generator_UserColumnName="SHADE_FAMILY_CODE" msprop:Generator_ColumnVarNameInTable="columnSHADE_FAMILY_CODE" msprop:Generator_ColumnPropNameInRow="SHADE_FAMILY_CODE" msprop:Generator_ColumnPropNameInTable="SHADE_FAMILY_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SHADE_CODE" msprop:Generator_UserColumnName="SHADE_CODE" msprop:Generator_ColumnVarNameInTable="columnSHADE_CODE" msprop:Generator_ColumnPropNameInRow="SHADE_CODE" msprop:Generator_ColumnPropNameInTable="SHADE_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SHADE_NAME" msprop:Generator_UserColumnName="SHADE_NAME" msprop:Generator_ColumnVarNameInTable="columnSHADE_NAME" msprop:Generator_ColumnPropNameInRow="SHADE_NAME" msprop:Generator_ColumnPropNameInTable="SHADE_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="REMARKS" msprop:Generator_UserColumnName="REMARKS" msprop:Generator_ColumnVarNameInTable="columnREMARKS" msprop:Generator_ColumnPropNameInRow="REMARKS" msprop:Generator_ColumnPropNameInTable="REMARKSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="STATUS" msprop:Generator_UserColumnName="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TUSER" msprop:Generator_UserColumnName="TUSER" msprop:Generator_ColumnVarNameInTable="columnTUSER" msprop:Generator_ColumnPropNameInRow="TUSER" msprop:Generator_ColumnPropNameInTable="TUSERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TDATE" msprop:Generator_UserColumnName="TDATE" msprop:Generator_ColumnVarNameInTable="columnTDATE" msprop:Generator_ColumnPropNameInRow="TDATE" msprop:Generator_ColumnPropNameInTable="TDATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SHADE_FAMILY_CODE_OLD" msprop:Generator_UserColumnName="SHADE_FAMILY_CODE_OLD" msprop:Generator_ColumnVarNameInTable="columnSHADE_FAMILY_CODE_OLD" msprop:Generator_ColumnPropNameInRow="SHADE_FAMILY_CODE_OLD" msprop:Generator_ColumnPropNameInTable="SHADE_FAMILY_CODE_OLDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SHADE_CODE_OLD" msprop:Generator_UserColumnName="SHADE_CODE_OLD" msprop:Generator_ColumnVarNameInTable="columnSHADE_CODE_OLD" msprop:Generator_ColumnPropNameInRow="SHADE_CODE_OLD" msprop:Generator_ColumnPropNameInTable="SHADE_CODE_OLDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RGB" msprop:Generator_UserColumnName="RGB" msprop:Generator_ColumnVarNameInTable="columnRGB" msprop:Generator_ColumnPropNameInRow="RGB" msprop:Generator_ColumnPropNameInTable="RGBColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_NAME" msprop:Generator_UserColumnName="BRANCH_NAME" msprop:Generator_ColumnPropNameInRow="BRANCH_NAME" msprop:Generator_ColumnVarNameInTable="columnBRANCH_NAME" msprop:Generator_ColumnPropNameInTable="BRANCH_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_ADD" msprop:Generator_UserColumnName="BRANCH_ADD" msprop:Generator_ColumnPropNameInRow="BRANCH_ADD" msprop:Generator_ColumnVarNameInTable="columnBRANCH_ADD" msprop:Generator_ColumnPropNameInTable="BRANCH_ADDColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

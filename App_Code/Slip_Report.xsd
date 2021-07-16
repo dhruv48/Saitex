@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Slip_Report" targetNamespace="http://tempuri.org/Slip_Report.xsd" xmlns:mstns="http://tempuri.org/Slip_Report.xsd" xmlns="http://tempuri.org/Slip_Report.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Slip_Report" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Slip_Report" msprop:Generator_DataSetName="Slip_Report">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SLIP_REPORT" msprop:Generator_UserTableName="SLIP_REPORT" msprop:Generator_RowDeletedName="SLIP_REPORTRowDeleted" msprop:Generator_TableClassName="SLIP_REPORTDataTable" msprop:Generator_RowChangedName="SLIP_REPORTRowChanged" msprop:Generator_RowClassName="SLIP_REPORTRow" msprop:Generator_RowChangingName="SLIP_REPORTRowChanging" msprop:Generator_RowEvArgName="SLIP_REPORTRowChangeEvent" msprop:Generator_RowEvHandlerName="SLIP_REPORTRowChangeEventHandler" msprop:Generator_TablePropName="SLIP_REPORT" msprop:Generator_TableVarName="tableSLIP_REPORT" msprop:Generator_RowDeletingName="SLIP_REPORTRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JOB_CARD" msprop:Generator_UserColumnName="JOB_CARD" msprop:Generator_ColumnPropNameInRow="JOB_CARD" msprop:Generator_ColumnVarNameInTable="columnJOB_CARD" msprop:Generator_ColumnPropNameInTable="JOB_CARDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PRTY_NAME" msprop:Generator_UserColumnName="PRTY_NAME" msprop:Generator_ColumnPropNameInRow="PRTY_NAME" msprop:Generator_ColumnVarNameInTable="columnPRTY_NAME" msprop:Generator_ColumnPropNameInTable="PRTY_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="QUALITY" msprop:Generator_UserColumnName="QUALITY" msprop:Generator_ColumnPropNameInRow="QUALITY" msprop:Generator_ColumnVarNameInTable="columnQUALITY" msprop:Generator_ColumnPropNameInTable="QUALITYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SHADE" msprop:Generator_UserColumnName="SHADE" msprop:Generator_ColumnPropNameInRow="SHADE" msprop:Generator_ColumnVarNameInTable="columnSHADE" msprop:Generator_ColumnPropNameInTable="SHADEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="REF_NO" msprop:Generator_UserColumnName="REF_NO" msprop:Generator_ColumnPropNameInRow="REF_NO" msprop:Generator_ColumnVarNameInTable="columnREF_NO" msprop:Generator_ColumnPropNameInTable="REF_NOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NO_OF_SLIP" msprop:Generator_UserColumnName="NO_OF_SLIP" msprop:Generator_ColumnPropNameInRow="NO_OF_SLIP" msprop:Generator_ColumnVarNameInTable="columnNO_OF_SLIP" msprop:Generator_ColumnPropNameInTable="NO_OF_SLIPColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

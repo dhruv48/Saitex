@@ -1,0 +1,17 @@
+
+Log Entry : 
+05/27/2021 18:23:55
+Error in: http://localhost:54726/Saitex/Module/NewFiber/Pages/FIBER_PO_CREDIT.aspx. Error Message:Response.Redirect cannot be called in a Page callback.
+__________________________
+
+Log Entry : 
+05/27/2021 19:12:42
+Error in: http://localhost:54726/Saitex/Module/NewFiber/Pages/Fiber_Receiving.aspx. Error Message:ORA-00942: table or view does not exist
+
+__________________________
+
+Log Entry : 
+05/27/2021 19:12:51
+Error in: http://localhost:54726/Saitex/Module/NewFiber/Pages/Fiber_Receiving.aspx. Error Message:ORA-00942: table or view does not exist
+
+__________________________

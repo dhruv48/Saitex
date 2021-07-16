@@ -1,0 +1,6 @@
+
+Log Entry : 
+05/24/2021 17:43:44
+Error in: http://localhost:54726/Saitex/Module/NewFiber/Pages/Fiber_Receiving.aspx. Error Message:ORA-00942: table or view does not exist
+
+__________________________

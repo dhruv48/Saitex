@@ -1,0 +1,452 @@
+html
+{
+	scrollbar-base-color: #D6D3CE;
+}
+
+body
+{
+	padding-top: 0px;
+	top: 0px;
+	background-color: #FFFFFF;
+}
+.tContentArial
+{
+	font-family: Arial;
+	font-size: 11px;
+}
+.TableBox
+{
+	
+	border-style:hidden;
+	font-size: 12px;
+	font-style:normal;
+	font-family: "Times New Roman";   
+	border-width: .01em; 
+}
+.Imgdiv
+{	
+	padding: 10px;
+	background: #f0f0f0;
+	overflow:auto;
+	
+	border: 1px solid #cccccc;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;		
+	-moz-box-shadow: 2px 2px 2px #cccccc;
+	-webkit-box-shadow: 2px 2px 2px #cccccc;
+	box-shadow: 2px 2px 2px #cccccc;
+
+}
+.UpperCase
+{
+	text-transform:uppercase;
+}
+.TitleCase
+{
+	text-transform:capitalize;
+}
+.titleheading
+{
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #ffffff;
+}
+.titleheadingGrid
+{
+	font-family: arial;
+	font-size: 12px;
+	color: #ffffff;
+}
+.tablebox
+{
+	border: 1px solid #336799;
+}
+.tContentArialRight
+{
+	font-family: Arial;
+	font-size: 12px;
+	text-align: right;
+	border-style: solid;
+	border-color: #C1D3FB;
+}
+.tRowColorAdmin
+{
+	background-color: #0B65A4;
+	line-height: 21px;
+	color: #ffffff;
+}
+.tContentColor
+{
+	font-family: Arial;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	color: Black;
+	border: 1px solid #01A451;
+}
+.lnkButton
+{
+	font-weight: normal;
+	border: 1px;
+	border-color: #AFCAE4;
+	border-style: solid;
+	color: #E81600;
+	cursor: pointer;
+}
+/*
+		viresh rajput changed
+*/
+/* Progress Panel*/
+ .modalBackground
+        {
+            background-color: Gray;
+            filter: alpha(opacity=70);
+            opacity: 0.7;
+        }
+        .modalPopup
+        {
+            background-color: #ffffff;
+            font-size:10px;
+            font-family: Georgia, "Times New Roman", Times, serif;              
+            padding: 3px;
+            width: 350px;
+            height: auto;
+        }
+
+/* Progress Panel*/
+.TdBackVir 
+{
+	border-style: ridge;
+	border-width:.05em;
+	border-color: #C1D3FB;
+	font-family: Georgia, "Times New Roman", Times, serif;  
+	font-size:15px;    
+	margin-top: 5px; margin-bottom: 0px;
+   
+    color: #222;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+} 
+
+/*  ------------------------------------------*/
+.gCtrTxt
+{
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border-style: solid;
+	border-color: #C1D3FB;
+}
+.TextBox
+{
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border-style: solid;
+	border-color: #C1D3FB;
+	text-align: left;
+	vertical-align: top;
+}
+.gCtrTxtNo
+{
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	border-style: solid;
+	border-color: #C1D3FB;
+	vertical-align: top;
+}
+.LastFocus
+{	
+	text-align:justify;
+}
+.TextBoxNo
+{
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	border-style: solid;
+	border-color: #C1D3FB;
+	vertical-align: top;
+}
+.gCtrLbl
+{
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border-style: solid;
+	border-color: #C1D3FB;
+	font-weight: normal;
+	vertical-align: top;
+}
+.Label
+{
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	vertical-align: top;
+	text-align: left;
+}
+.LabelNo
+{
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	vertical-align: top;
+}
+.gCtrGrid
+{
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border-style: solid;
+	border-color: #C1D3FB;
+}
+.GridView
+{
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border-style: solid;
+	border-color: #C1D3FB;
+}
+.gCtrTxtNb
+{
+	border-color: #4a708b;
+	border-style: solid;
+	font-size: 12px;
+	border: 1px;
+}
+
+.H3Heading
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.AButton
+{
+    font-family:font-family: Verdana,arial;
+	border-style: solid;
+	cursor: pointer;
+	border-color:#F4F4F0;
+	background-color:#336799;
+	color:#ffffff;
+	font-size:14px;
+    height: 26px;
+}
+
+.EButtonBack
+{
+	border-color: #ffffff;
+	border-style: solid;
+	background-color: #A1B7E1;
+	font-family: Arial;
+	color: #062C61;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.link
+{
+	color: #FFFFFF;
+}
+
+.reportHeading
+{
+	font-family:Times New Roman;
+	font-weight:bold;
+	font-size:14px;	
+}
+
+.tContentArial10
+{
+	font-family:Times New Roman;
+	font-size: 10px;
+}
+
+.TableHeader
+{
+	color: #000000;
+	font-weight: bold;
+	background-color: #336799;
+	font-family: Verdana,arial;
+	text-decoration: none;
+	font-size: 13px;
+	text-align: center;
+	height: 19px;
+}
+
+.UserError
+{
+	font-family: Arial;
+	font-size: 12px;
+	color: black;
+	background-color: yellow;
+	border-color: White;
+}
+.csslblMessage
+{
+	color: #336799;
+	font-weight: bold;
+	font-size: 12px;
+}
+.csslblMessageLogin
+{
+	color: #000000;
+	font-size: 12px;
+}
+
+.ImageBorder
+{
+	border-color: #f0f0f0;
+	color: #f0f0f0;
+	background-color: #f0f0f0;
+}
+.ContolStyle
+{
+	height: 41;
+	width: 48px;
+	vertical-align: middle;
+}
+.GridTextD6D3CE
+{
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #D6D3CE;
+}
+
+A:link
+{
+	text-decoration: none;
+	font-family: Arial;
+}
+A:visited
+{
+	text-decoration: none;
+}
+A:active
+{
+	text-decoration: none;
+}
+A:hover
+{
+	text-decoration: none;
+}
+A
+{
+	text-decoration: none;
+	text-align: left;
+	color: #330000;
+}
+img
+{
+	border-width: 0px;
+}
+.link_row_poll
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+.link_row_poll:hover
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #1D2452;
+}
+.link_textcolor
+{
+	font-family: Arial;
+	font-size: 12px;
+	color: #000000;
+}
+.link_textcolorBlck
+{
+	font-family: Arial;
+	font-size: 12px;
+	color: #000000;
+	font-weight: bold;
+}
+
+
+.link_textcolorBlue
+{
+	font-family: Arial;
+	font-size: 12px;
+	color: #0000FF;
+}
+
+.link_textcolor:hover
+{
+	font-family: Arial;
+	font-size: 12px;
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.Navigation_Link
+{
+	font-family: Arial;
+	font-size: smaller;
+	color: #000000;
+}
+.Navigation_Link:hover
+{
+	font-family: Arial;
+	font-size: smaller;
+	color: #000000;
+	text-decoration: underline;
+}
+
+.tdinset
+{
+	border-style: inset;
+	border-color: #C1D3FB;
+}
+.td
+{
+	border-style: ridge;
+	border-width:.05em;
+	border-color: #C1D3FB;
+}
+.SmallFont
+{
+	font-size:8pt;
+	margin-left: 1px;
+    width: 39px;
+}
+
+.tdRight
+{
+	text-align:right;
+	vertical-align:top;
+}
+.tdLeft
+{
+	text-align:left;
+	vertical-align:top;
+}
+.tdCenter
+{
+	text-align:center;
+	vertical-align:top;
+}
+
+.GrdHeader
+{
+	font-size:8pt;
+	color: #ffffff;
+	background-color:#336799;
+}
+
+.TextBoxDisplay
+{
+	background-color:#aabbcc;
+}
+
+.FixGridHeader
+{
+	position:absolute;
+}

@@ -1,0 +1,153 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="EarnLeave.ascx.cs" Inherits="CommonControls_EarnLeave" %>
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <asp:ImageButton ID="imgbtnSave" runat="server" ToolTip="Save" ImageUrl="~/CommonImages/save.jpg"
+                            Width="61px" Height="40px" ValidationGroup="Earn" OnClick="imgbtnSave_Click1"></asp:ImageButton>
+                    </td>
+                    <td>
+                        <asp:ImageButton ID="imgbtnUpdate" runat="server" ToolTip="Update" ImageUrl="~/CommonImages/edit1.jpg"
+                            Width="48" Height="41" ValidationGroup="Earn" OnClick="imgbtnUpdate_Click"></asp:ImageButton>
+                    </td>
+                    <td>
+                        <asp:ImageButton ID="imgbtnClear" runat="server" ToolTip="Clear" ImageUrl="~/CommonImages/clear.jpg"
+                            Width="48" Height="41" OnClientClick="javascript:return window.confirm('Are you sure you want to clear this record')"
+                            OnClick="imgbtnClear_Click"></asp:ImageButton>
+                    </td>
+                    <td>
+                        <asp:ImageButton ID="imgbtnPrint" runat="server" ToolTip="Print" ImageUrl="~/CommonImages/link_print.png"
+                            Width="48" Height="41" OnClick="imgbtnPrint_Click"></asp:ImageButton>
+                    </td>
+                    <td>
+                        <asp:ImageButton ID="imgbtnExit" runat="server" ToolTip="Exit" ImageUrl="~/CommonImages/link_exit.png"
+                            Width="48" Height="41" OnClick="imgbtnExit_Click1"></asp:ImageButton>
+                    </td>
+                    <td>
+                        <asp:ImageButton ID="imgbtnHelp" runat="server" ToolTip="Help" ImageUrl="~/CommonImages/link_help.png"
+                            Width="48" Height="41"></asp:ImageButton>
+                    </td>
+                </tr>
+            </table>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <table border="0" cellpadding="3" cellspacing="0" width="400" class="tContentArial tablebox">
+                        <tr>
+                            <td align="center" colspan="8" valign="top" class="tRowColorAdmin">
+                                <span class="H3Heading">Earn Leave Master</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="6">
+                                <asp:Label ID="lblMessage" runat="server" CssClass="csslblMessage"></asp:Label>
+                                <asp:Label ID="lblErrorMessage" runat="server" CssClass="UserError"></asp:Label></td>
+                        </tr>
+                        <tr>
+                            <td align="left" colspan="3" valign="top">
+                                <span class="Mode">You are in &nbsp;<asp:Label ID="lblMode" runat="server"></asp:Label>&nbsp;Mode
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" width="200" valign="top">
+                                Year</td>
+                            <td align="center" width="2%" valign="top">
+                                <b>:</b>
+                            </td>
+                            <td align="left" valign="top">
+                                <asp:TextBox ID="txtYear" runat="server" CssClass="gCtrTxt" Width="80" MaxLength="4" ValidationGroup="Earn"></asp:TextBox>&nbsp;
+                                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtYear"
+                                    Display="Dynamic" ErrorMessage="Enter Digit Only" Font-Bold="False" ValidationExpression="^[0-9]{4}$"
+                                    ValidationGroup="Earn"></asp:RegularExpressionValidator>
+                                <asp:RangeValidator ID="RangeValidator2" runat="server" ControlToValidate="txtYear"
+                                    ErrorMessage="Year Can't be Previous Year" MaximumValue="2100" MinimumValue="2010"
+                                    Type="Integer" ValidationGroup="Earn"></asp:RangeValidator></td>
+                        </tr>
+                        <tr>
+                            <td align="right" width="200">
+                                No of days</td>
+                            <td align="center" width="2%">
+                                <b>:</b>
+                            </td>
+                            <td align="left" style="width: 195px">
+                                <asp:TextBox ID="txtLeaveDays" runat="server" CssClass="gCtrTxt" MaxLength="3" Width="50px" ValidationGroup="Earn"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtLeaveDays"
+                                    Display="Dynamic" ErrorMessage="Field can't be empty !" ValidationGroup="Earn"></asp:RequiredFieldValidator>
+                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtLeaveDays"
+                                    Display="Dynamic" ErrorMessage="Pls enter digit only !" Font-Bold="False" ValidationExpression="^\s*[0-9]+\s*$"
+                                    ValidationGroup="Earn"></asp:RegularExpressionValidator>
+                                <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txtLeaveDays"
+                                    Display="Dynamic" ErrorMessage="Value Must be between  0-365" MaximumValue="365"
+                                    MinimumValue="0" Type="Integer" ValidationGroup="Earn"></asp:RangeValidator></td>
+                        </tr>
+                       
+                        <tr>
+                            <td align="right" valign="top" width="200">
+                                <span class="mw-headline">Carrying forward leave</span></td>
+                            <td align="center" valign="top" width="2%">
+                                <b>:</b>
+                            </td>
+                            <td align="left" valign="top" style="width: 195px">
+                                <asp:RadioButtonList ID="radCarrying_forward_leave" RepeatColumns="2" RepeatDirection="Horizontal"
+                                    RepeatLayout="Flow" runat="server">
+                                    <asp:ListItem Text="Yes" Value="Yes"></asp:ListItem>
+                                    <asp:ListItem Text="No" Value="No" Selected="True"></asp:ListItem>
+                                </asp:RadioButtonList>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="200" align="right" valign="top">
+                                Status</td>
+                            <td width="2%" align="center" valign="top">
+                                <b>:</b></td>
+                            <td align="left" valign="top" style="width: 195px">
+                                <asp:CheckBox ID="chkActive" runat="server" TabIndex="2" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                    <td colspan="6" align="left" width="100%">
+                        <br />
+                        <b>Total Record&nbsp;&nbsp;:&nbsp;&nbsp;<asp:Label ID="lblTotalRecord" runat="server"></asp:Label>
+                        </b>
+                    </td>
+                </tr>
+            <tr>
+                <td align="left" width="100%" colspan="3">
+                <br />
+                    <asp:GridView ID="gvEarnLeavemaster" runat="server" PagerSettings-Mode="Numeric" PageSize="10"
+                        PagerSettings-Position="Bottom" PagerStyle-HorizontalAlign="Left" AutoGenerateColumns="False"
+                        AllowPaging="True" Width="100%" CssClass="tContentArial" OnPageIndexChanging="gvEarnLeavemaster_PageIndexChanging" OnRowCommand="gvEarnLeavemaster_RowCommand1">
+                         <HeaderStyle HorizontalAlign="center"/>
+                        <Columns>
+                            <asp:BoundField HeaderText="IN_EARNLEAVEMASTERID" DataField="IN_EARNLEAVEMASTERID"
+                                Visible="false">
+                                <ItemStyle HorizontalAlign="center" />
+                            </asp:BoundField>
+                            <asp:BoundField HeaderText="YEAR" DataField="CH_YEAR">
+                                    <ItemStyle HorizontalAlign="center" />
+                                </asp:BoundField>
+                                <asp:BoundField HeaderText="NO OF DAYS" DataField="CH_LEAVEDAY">
+                                <ItemStyle HorizontalAlign="center" />
+                                   </asp:BoundField>
+                                <asp:BoundField HeaderText="CARRING FORWARDED" DataField="CH_FORWARDED">
+                                    <ItemStyle HorizontalAlign="center" />
+                                </asp:BoundField>
+                            <asp:TemplateField HeaderText="Edit">
+                                <ItemTemplate>
+                                    <asp:LinkButton ID="lnkEdit" runat="server" CausesValidation="false" CommandArgument='<%# Eval("IN_EARNLEAVEMASTERID") %>'
+                                        Text="Edit"></asp:LinkButton>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                        </Columns>
+                        <PagerStyle HorizontalAlign="Left" />
+                    </asp:GridView>
+                </td>
+            </tr>
+</table>

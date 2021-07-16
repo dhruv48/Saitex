@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MakeYarnTaxation" targetNamespace="http://tempuri.org/MakeYarnTaxation.xsd" xmlns:mstns="http://tempuri.org/MakeYarnTaxation.xsd" xmlns="http://tempuri.org/MakeYarnTaxation.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MakeYarnTaxation" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="MakeYarnTaxation" msprop:Generator_DataSetName="MakeYarnTaxation">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MakeYarnTaxation1" msprop:Generator_UserTableName="MakeYarnTaxation1" msprop:Generator_RowDeletedName="MakeYarnTaxation1RowDeleted" msprop:Generator_RowChangedName="MakeYarnTaxation1RowChanged" msprop:Generator_RowClassName="MakeYarnTaxation1Row" msprop:Generator_RowChangingName="MakeYarnTaxation1RowChanging" msprop:Generator_RowEvArgName="MakeYarnTaxation1RowChangeEvent" msprop:Generator_RowEvHandlerName="MakeYarnTaxation1RowChangeEventHandler" msprop:Generator_TableClassName="MakeYarnTaxation1DataTable" msprop:Generator_TableVarName="tableMakeYarnTaxation1" msprop:Generator_RowDeletingName="MakeYarnTaxation1RowDeleting" msprop:Generator_TablePropName="MakeYarnTaxation1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="YEAR" msprop:Generator_UserColumnName="YEAR" msprop:Generator_ColumnVarNameInTable="columnYEAR" msprop:Generator_ColumnPropNameInRow="YEAR" msprop:Generator_ColumnPropNameInTable="YEARColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="COMP_CODE" msprop:Generator_UserColumnName="COMP_CODE" msprop:Generator_ColumnPropNameInRow="COMP_CODE" msprop:Generator_ColumnVarNameInTable="columnCOMP_CODE" msprop:Generator_ColumnPropNameInTable="COMP_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_CODE" msprop:Generator_UserColumnName="BRANCH_CODE" msprop:Generator_ColumnPropNameInRow="BRANCH_CODE" msprop:Generator_ColumnVarNameInTable="columnBRANCH_CODE" msprop:Generator_ColumnPropNameInTable="BRANCH_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TRN_NUMB" msprop:Generator_UserColumnName="TRN_NUMB" msprop:Generator_ColumnPropNameInRow="TRN_NUMB" msprop:Generator_ColumnVarNameInTable="columnTRN_NUMB" msprop:Generator_ColumnPropNameInTable="TRN_NUMBColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TAXATION_TYPE" msprop:Generator_UserColumnName="TAXATION_TYPE" msprop:Generator_ColumnPropNameInRow="TAXATION_TYPE" msprop:Generator_ColumnVarNameInTable="columnTAXATION_TYPE" msprop:Generator_ColumnPropNameInTable="TAXATION_TYPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_NAME" msprop:Generator_UserColumnName="COMP_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMP_NAME" msprop:Generator_ColumnPropNameInRow="COMP_NAME" msprop:Generator_ColumnPropNameInTable="COMP_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_NAME" msprop:Generator_UserColumnName="USER_NAME" msprop:Generator_ColumnVarNameInTable="columnUSER_NAME" msprop:Generator_ColumnPropNameInRow="USER_NAME" msprop:Generator_ColumnPropNameInTable="USER_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_NAME" msprop:Generator_UserColumnName="BRANCH_NAME" msprop:Generator_ColumnVarNameInTable="columnBRANCH_NAME" msprop:Generator_ColumnPropNameInRow="BRANCH_NAME" msprop:Generator_ColumnPropNameInTable="BRANCH_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="YARN_DESC" msprop:Generator_UserColumnName="YARN_DESC" msprop:Generator_ColumnPropNameInRow="YARN_DESC" msprop:Generator_ColumnVarNameInTable="columnYARN_DESC" msprop:Generator_ColumnPropNameInTable="YARN_DESCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PRTY_NAME" msprop:Generator_UserColumnName="PRTY_NAME" msprop:Generator_ColumnPropNameInRow="PRTY_NAME" msprop:Generator_ColumnVarNameInTable="columnPRTY_NAME" msprop:Generator_ColumnPropNameInTable="PRTY_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TRN_QTY" msprop:Generator_UserColumnName="TRN_QTY" msprop:Generator_ColumnPropNameInRow="TRN_QTY" msprop:Generator_ColumnVarNameInTable="columnTRN_QTY" msprop:Generator_ColumnPropNameInTable="TRN_QTYColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

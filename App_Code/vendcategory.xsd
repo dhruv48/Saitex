@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="vendcategory" targetNamespace="http://tempuri.org/vendcategory.xsd" xmlns:mstns="http://tempuri.org/vendcategory.xsd" xmlns="http://tempuri.org/vendcategory.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>        
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="vendcategory" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="vendcategory" msprop:Generator_DataSetName="vendcategory">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TX_VENDCATEGORY_MST" msprop:Generator_UserTableName="TX_VENDCATEGORY_MST" msprop:Generator_RowDeletedName="TX_VENDCATEGORY_MSTRowDeleted" msprop:Generator_TableClassName="TX_VENDCATEGORY_MSTDataTable" msprop:Generator_RowChangedName="TX_VENDCATEGORY_MSTRowChanged" msprop:Generator_RowClassName="TX_VENDCATEGORY_MSTRow" msprop:Generator_RowChangingName="TX_VENDCATEGORY_MSTRowChanging" msprop:Generator_RowEvArgName="TX_VENDCATEGORY_MSTRowChangeEvent" msprop:Generator_RowEvHandlerName="TX_VENDCATEGORY_MSTRowChangeEventHandler" msprop:Generator_TablePropName="TX_VENDCATEGORY_MST" msprop:Generator_TableVarName="tableTX_VENDCATEGORY_MST" msprop:Generator_RowDeletingName="TX_VENDCATEGORY_MSTRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VC_VENDORCATEGORYCODE" msprop:Generator_UserColumnName="VC_VENDORCATEGORYCODE" msprop:Generator_ColumnPropNameInRow="VC_VENDORCATEGORYCODE" msprop:Generator_ColumnVarNameInTable="columnVC_VENDORCATEGORYCODE" msprop:Generator_ColumnPropNameInTable="VC_VENDORCATEGORYCODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VC_VENDORCATEGORYNAME" msprop:Generator_UserColumnName="VC_VENDORCATEGORYNAME" msprop:Generator_ColumnPropNameInRow="VC_VENDORCATEGORYNAME" msprop:Generator_ColumnVarNameInTable="columnVC_VENDORCATEGORYNAME" msprop:Generator_ColumnPropNameInTable="VC_VENDORCATEGORYNAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CH_STATUS" msprop:Generator_UserColumnName="CH_STATUS" msprop:Generator_ColumnPropNameInRow="CH_STATUS" msprop:Generator_ColumnVarNameInTable="columnCH_STATUS" msprop:Generator_ColumnPropNameInTable="CH_STATUSColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CH_DELETESTATUS" msprop:Generator_UserColumnName="CH_DELETESTATUS" msprop:Generator_ColumnPropNameInRow="CH_DELETESTATUS" msprop:Generator_ColumnVarNameInTable="columnCH_DELETESTATUS" msprop:Generator_ColumnPropNameInTable="CH_DELETESTATUSColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

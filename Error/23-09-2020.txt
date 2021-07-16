@@ -1,0 +1,80 @@
+
+Log Entry : 
+09/23/2020 15:04:16
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+09/23/2020 15:42:58
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=10&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01002. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+09/23/2020 15:43:01
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=10&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01002. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+09/23/2020 17:27:49
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=10&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01005. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+09/23/2020 17:27:52
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=10&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01005. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+09/23/2020 17:27:53
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=10&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01005. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+09/23/2020 17:30:10
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=10&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01005. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+09/23/2020 17:30:13
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=10&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01005. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+09/23/2020 17:30:15
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=10&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01005. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+09/23/2020 17:36:38
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=10&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01006. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+09/23/2020 17:36:39
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=10&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01006. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+09/23/2020 17:46:22
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=10&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01006. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+09/23/2020 17:48:05
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=10&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01008. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+09/23/2020 17:57:32
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=10&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01008. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+09/23/2020 17:57:33
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=10&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01008. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+09/23/2020 17:57:35
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=10&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01008. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________

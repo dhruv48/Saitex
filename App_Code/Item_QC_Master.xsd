@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Item_QC_Master" targetNamespace="http://tempuri.org/Item_QC_Master.xsd" xmlns:mstns="http://tempuri.org/Item_QC_Master.xsd" xmlns="http://tempuri.org/Item_QC_Master.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Item_QC_Master" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Item_QC_Master" msprop:Generator_DataSetName="Item_QC_Master">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Item_QC_Master" msprop:Generator_UserTableName="Item_QC_Master" msprop:Generator_RowDeletedName="Item_QC_MasterRowDeleted" msprop:Generator_RowChangedName="Item_QC_MasterRowChanged" msprop:Generator_RowClassName="Item_QC_MasterRow" msprop:Generator_RowChangingName="Item_QC_MasterRowChanging" msprop:Generator_RowEvArgName="Item_QC_MasterRowChangeEvent" msprop:Generator_RowEvHandlerName="Item_QC_MasterRowChangeEventHandler" msprop:Generator_TableClassName="Item_QC_MasterDataTable" msprop:Generator_TableVarName="tableItem_QC_Master" msprop:Generator_RowDeletingName="Item_QC_MasterRowDeleting" msprop:Generator_TablePropName="_Item_QC_Master">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ITEM_CODE" msprop:Generator_UserColumnName="ITEM_CODE" msprop:Generator_ColumnVarNameInTable="columnITEM_CODE" msprop:Generator_ColumnPropNameInRow="ITEM_CODE" msprop:Generator_ColumnPropNameInTable="ITEM_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_CATEGORY" msprop:Generator_UserColumnName="ITEM_CATEGORY" msprop:Generator_ColumnVarNameInTable="columnITEM_CATEGORY" msprop:Generator_ColumnPropNameInRow="ITEM_CATEGORY" msprop:Generator_ColumnPropNameInTable="ITEM_CATEGORYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_DESC" msprop:Generator_UserColumnName="ITEM_DESC" msprop:Generator_ColumnVarNameInTable="columnITEM_DESC" msprop:Generator_ColumnPropNameInRow="ITEM_DESC" msprop:Generator_ColumnPropNameInTable="ITEM_DESCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="STD_VALUE" msprop:Generator_UserColumnName="STD_VALUE" msprop:Generator_ColumnVarNameInTable="columnSTD_VALUE" msprop:Generator_ColumnPropNameInRow="STD_VALUE" msprop:Generator_ColumnPropNameInTable="STD_VALUEColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="STD_TYPE" msprop:Generator_UserColumnName="STD_TYPE" msprop:Generator_ColumnVarNameInTable="columnSTD_TYPE" msprop:Generator_ColumnPropNameInRow="STD_TYPE" msprop:Generator_ColumnPropNameInTable="STD_TYPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TOLERANCE" msprop:Generator_UserColumnName="TOLERANCE" msprop:Generator_ColumnVarNameInTable="columnTOLERANCE" msprop:Generator_ColumnPropNameInRow="TOLERANCE" msprop:Generator_ColumnPropNameInTable="TOLERANCEColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TOLERANCE_TYPE" msprop:Generator_UserColumnName="TOLERANCE_TYPE" msprop:Generator_ColumnVarNameInTable="columnTOLERANCE_TYPE" msprop:Generator_ColumnPropNameInRow="TOLERANCE_TYPE" msprop:Generator_ColumnPropNameInTable="TOLERANCE_TYPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TOLERANCE_RANGE" msprop:Generator_UserColumnName="TOLERANCE_RANGE" msprop:Generator_ColumnVarNameInTable="columnTOLERANCE_RANGE" msprop:Generator_ColumnPropNameInRow="TOLERANCE_RANGE" msprop:Generator_ColumnPropNameInTable="TOLERANCE_RANGEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UOM" msprop:Generator_UserColumnName="UOM" msprop:Generator_ColumnVarNameInTable="columnUOM" msprop:Generator_ColumnPropNameInRow="UOM" msprop:Generator_ColumnPropNameInTable="UOMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_NAME" msprop:Generator_UserColumnName="BRANCH_NAME" msprop:Generator_ColumnVarNameInTable="columnBRANCH_NAME" msprop:Generator_ColumnPropNameInRow="BRANCH_NAME" msprop:Generator_ColumnPropNameInTable="BRANCH_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_NAME" msprop:Generator_UserColumnName="COMP_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMP_NAME" msprop:Generator_ColumnPropNameInRow="COMP_NAME" msprop:Generator_ColumnPropNameInTable="COMP_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_NAME" msprop:Generator_UserColumnName="USER_NAME" msprop:Generator_ColumnVarNameInTable="columnUSER_NAME" msprop:Generator_ColumnPropNameInRow="USER_NAME" msprop:Generator_ColumnPropNameInTable="USER_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_ADD" msprop:Generator_UserColumnName="COMP_ADD" msprop:Generator_ColumnVarNameInTable="columnCOMP_ADD" msprop:Generator_ColumnPropNameInRow="COMP_ADD" msprop:Generator_ColumnPropNameInTable="COMP_ADDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="STATUS" msprop:Generator_UserColumnName="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="REMARKS" msprop:Generator_UserColumnName="REMARKS" msprop:Generator_ColumnVarNameInTable="columnREMARKS" msprop:Generator_ColumnPropNameInRow="REMARKS" msprop:Generator_ColumnPropNameInTable="REMARKSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DEVELOPER_COMP" msprop:Generator_UserColumnName="DEVELOPER_COMP" msprop:Generator_ColumnVarNameInTable="columnDEVELOPER_COMP" msprop:Generator_ColumnPropNameInRow="DEVELOPER_COMP" msprop:Generator_ColumnPropNameInTable="DEVELOPER_COMPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DEVELOPER_WEB" msprop:Generator_UserColumnName="DEVELOPER_WEB" msprop:Generator_ColumnVarNameInTable="columnDEVELOPER_WEB" msprop:Generator_ColumnPropNameInRow="DEVELOPER_WEB" msprop:Generator_ColumnPropNameInTable="DEVELOPER_WEBColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PreparedBy" msprop:Generator_UserColumnName="PreparedBy" msprop:Generator_ColumnPropNameInRow="PreparedBy" msprop:Generator_ColumnVarNameInTable="columnPreparedBy" msprop:Generator_ColumnPropNameInTable="PreparedByColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CheckedBy" msprop:Generator_UserColumnName="CheckedBy" msprop:Generator_ColumnPropNameInRow="CheckedBy" msprop:Generator_ColumnVarNameInTable="columnCheckedBy" msprop:Generator_ColumnPropNameInTable="CheckedByColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MAX_VALUE" msprop:Generator_UserColumnName="MAX_VALUE" msprop:Generator_ColumnVarNameInTable="columnMAX_VALUE" msprop:Generator_ColumnPropNameInRow="MAX_VALUE" msprop:Generator_ColumnPropNameInTable="MAX_VALUEColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="MIN_VALUE" msprop:Generator_UserColumnName="MIN_VALUE" msprop:Generator_ColumnVarNameInTable="columnMIN_VALUE" msprop:Generator_ColumnPropNameInRow="MIN_VALUE" msprop:Generator_ColumnPropNameInTable="MIN_VALUEColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,27 @@
+
+Log Entry : 
+06/02/2021 13:06:22
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+06/02/2021 13:06:22
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+06/02/2021 17:34:30
+Error in: http://localhost:54726/Saitex/Module/NewFiber/Pages/Fiber_Qc_Standard_Parameter.aspx. Error Message:ORA-00904: "C"."FIBER_CODE": invalid identifier
+
+__________________________
+
+Log Entry : 
+06/02/2021 17:37:50
+Error in: http://localhost:54726/Saitex/Module/NewFiber/Pages/Fiber_Qc_Standard_Parameter.aspx. Error Message:ORA-00904: "C"."FIBER_CODE": invalid identifier
+
+__________________________
+
+Log Entry : 
+06/02/2021 18:34:22
+Error in: http://localhost:54726/Saitex/Module/NewFiber/Pages/Fiber_Qc_Standard_Parameter.aspx. Error Message:Object reference not set to an instance of an object.
+__________________________

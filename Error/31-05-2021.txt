@@ -1,0 +1,10 @@
+
+Log Entry : 
+05/31/2021 17:40:49
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+05/31/2021 18:44:14
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________

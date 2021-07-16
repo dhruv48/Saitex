@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Dept_Mst" targetNamespace="http://tempuri.org/Dept_Mst.xsd" xmlns:mstns="http://tempuri.org/Dept_Mst.xsd" xmlns="http://tempuri.org/Dept_Mst.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Dept_Mst" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Dept_Mst" msprop:Generator_DataSetName="Dept_Mst">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_TablePropName="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IN_DEPARTMENTID" msprop:Generator_UserColumnName="IN_DEPARTMENTID" msprop:Generator_ColumnVarNameInTable="columnIN_DEPARTMENTID" msprop:Generator_ColumnPropNameInRow="IN_DEPARTMENTID" msprop:Generator_ColumnPropNameInTable="IN_DEPARTMENTIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_DEPARTMENTCODE" msprop:Generator_UserColumnName="VC_DEPARTMENTCODE" msprop:Generator_ColumnVarNameInTable="columnVC_DEPARTMENTCODE" msprop:Generator_ColumnPropNameInRow="VC_DEPARTMENTCODE" msprop:Generator_ColumnPropNameInTable="VC_DEPARTMENTCODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_DEPARTMENTNAME" msprop:Generator_UserColumnName="VC_DEPARTMENTNAME" msprop:Generator_ColumnVarNameInTable="columnVC_DEPARTMENTNAME" msprop:Generator_ColumnPropNameInRow="VC_DEPARTMENTNAME" msprop:Generator_ColumnPropNameInTable="VC_DEPARTMENTNAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_REMARKS" msprop:Generator_UserColumnName="VC_REMARKS" msprop:Generator_ColumnVarNameInTable="columnVC_REMARKS" msprop:Generator_ColumnPropNameInRow="VC_REMARKS" msprop:Generator_ColumnPropNameInTable="VC_REMARKSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CH_STATUS" msprop:Generator_UserColumnName="CH_STATUS" msprop:Generator_ColumnVarNameInTable="columnCH_STATUS" msprop:Generator_ColumnPropNameInRow="CH_STATUS" msprop:Generator_ColumnPropNameInTable="CH_STATUSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CH_DELETESTATUS" msprop:Generator_UserColumnName="CH_DELETESTATUS" msprop:Generator_ColumnVarNameInTable="columnCH_DELETESTATUS" msprop:Generator_ColumnPropNameInRow="CH_DELETESTATUS" msprop:Generator_ColumnPropNameInTable="CH_DELETESTATUSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DT_CREATED" msprop:Generator_UserColumnName="DT_CREATED" msprop:Generator_ColumnVarNameInTable="columnDT_CREATED" msprop:Generator_ColumnPropNameInRow="DT_CREATED" msprop:Generator_ColumnPropNameInTable="DT_CREATEDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DT_UPDATED" msprop:Generator_UserColumnName="DT_UPDATED" msprop:Generator_ColumnVarNameInTable="columnDT_UPDATED" msprop:Generator_ColumnPropNameInRow="DT_UPDATED" msprop:Generator_ColumnPropNameInTable="DT_UPDATEDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DEVELOPER_COMP" msprop:Generator_UserColumnName="DEVELOPER_COMP" msprop:Generator_ColumnPropNameInRow="DEVELOPER_COMP" msprop:Generator_ColumnVarNameInTable="columnDEVELOPER_COMP" msprop:Generator_ColumnPropNameInTable="DEVELOPER_COMPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DEVELOPER_WEB" msprop:Generator_UserColumnName="DEVELOPER_WEB" msprop:Generator_ColumnPropNameInRow="DEVELOPER_WEB" msprop:Generator_ColumnVarNameInTable="columnDEVELOPER_WEB" msprop:Generator_ColumnPropNameInTable="DEVELOPER_WEBColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OutSide_Issue_JobWork" targetNamespace="http://tempuri.org/OutSide_Issue_JobWork.xsd" xmlns:mstns="http://tempuri.org/OutSide_Issue_JobWork.xsd" xmlns="http://tempuri.org/OutSide_Issue_JobWork.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OutSide_Issue_JobWork" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="OutSide_Issue_JobWork" msprop:Generator_DataSetName="OutSide_Issue_JobWork">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OutSide_JobWork" msprop:Generator_TableClassName="OutSide_JobWorkDataTable" msprop:Generator_TableVarName="tableOutSide_JobWork" msprop:Generator_TablePropName="OutSide_JobWork" msprop:Generator_RowDeletingName="OutSide_JobWorkRowDeleting" msprop:Generator_RowChangingName="OutSide_JobWorkRowChanging" msprop:Generator_RowEvHandlerName="OutSide_JobWorkRowChangeEventHandler" msprop:Generator_RowDeletedName="OutSide_JobWorkRowDeleted" msprop:Generator_UserTableName="OutSide_JobWork" msprop:Generator_RowChangedName="OutSide_JobWorkRowChanged" msprop:Generator_RowEvArgName="OutSide_JobWorkRowChangeEvent" msprop:Generator_RowClassName="OutSide_JobWorkRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BRANCH_CODE" msprop:Generator_ColumnVarNameInTable="columnBRANCH_CODE" msprop:Generator_ColumnPropNameInRow="BRANCH_CODE" msprop:Generator_ColumnPropNameInTable="BRANCH_CODEColumn" msprop:Generator_UserColumnName="BRANCH_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="TRN_NUMB" msprop:Generator_ColumnVarNameInTable="columnTRN_NUMB" msprop:Generator_ColumnPropNameInRow="TRN_NUMB" msprop:Generator_ColumnPropNameInTable="TRN_NUMBColumn" msprop:Generator_UserColumnName="TRN_NUMB" type="xs:int" minOccurs="0" />
+              <xs:element name="UOM" msprop:Generator_ColumnVarNameInTable="columnUOM" msprop:Generator_ColumnPropNameInRow="UOM" msprop:Generator_ColumnPropNameInTable="UOMColumn" msprop:Generator_UserColumnName="UOM" type="xs:string" minOccurs="0" />
+              <xs:element name="CARTONS" msprop:Generator_ColumnVarNameInTable="columnCARTONS" msprop:Generator_ColumnPropNameInRow="CARTONS" msprop:Generator_ColumnPropNameInTable="CARTONSColumn" msprop:Generator_UserColumnName="CARTONS" type="xs:string" minOccurs="0" />
+              <xs:element name="LOT_NO" msprop:Generator_ColumnVarNameInTable="columnLOT_NO" msprop:Generator_ColumnPropNameInRow="LOT_NO" msprop:Generator_ColumnPropNameInTable="LOT_NOColumn" msprop:Generator_UserColumnName="LOT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="LOCATION" msprop:Generator_ColumnVarNameInTable="columnLOCATION" msprop:Generator_ColumnPropNameInRow="LOCATION" msprop:Generator_ColumnPropNameInTable="LOCATIONColumn" msprop:Generator_UserColumnName="LOCATION" type="xs:string" minOccurs="0" />
+              <xs:element name="TRN_QTY" msprop:Generator_ColumnVarNameInTable="columnTRN_QTY" msprop:Generator_ColumnPropNameInRow="TRN_QTY" msprop:Generator_ColumnPropNameInTable="TRN_QTYColumn" msprop:Generator_UserColumnName="TRN_QTY" type="xs:int" minOccurs="0" />
+              <xs:element name="TRN_TYPE" msprop:Generator_ColumnVarNameInTable="columnTRN_TYPE" msprop:Generator_ColumnPropNameInRow="TRN_TYPE" msprop:Generator_ColumnPropNameInTable="TRN_TYPEColumn" msprop:Generator_UserColumnName="TRN_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="SHADE_CODE" msprop:Generator_ColumnVarNameInTable="columnSHADE_CODE" msprop:Generator_ColumnPropNameInRow="SHADE_CODE" msprop:Generator_ColumnPropNameInTable="SHADE_CODEColumn" msprop:Generator_UserColumnName="SHADE_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="SHADE_FAMILY" msprop:Generator_ColumnVarNameInTable="columnSHADE_FAMILY" msprop:Generator_ColumnPropNameInRow="SHADE_FAMILY" msprop:Generator_ColumnPropNameInTable="SHADE_FAMILYColumn" msprop:Generator_UserColumnName="SHADE_FAMILY" type="xs:string" minOccurs="0" />
+              <xs:element name="JOBER_PARTY" msprop:Generator_ColumnVarNameInTable="columnJOBER_PARTY" msprop:Generator_ColumnPropNameInRow="JOBER_PARTY" msprop:Generator_ColumnPropNameInTable="JOBER_PARTYColumn" msprop:Generator_UserColumnName="JOBER_PARTY" type="xs:string" minOccurs="0" />
+              <xs:element name="PRTY_CODE" msprop:Generator_ColumnVarNameInTable="columnPRTY_CODE" msprop:Generator_ColumnPropNameInRow="PRTY_CODE" msprop:Generator_ColumnPropNameInTable="PRTY_CODEColumn" msprop:Generator_UserColumnName="PRTY_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="WO_NUMB" msprop:Generator_ColumnVarNameInTable="columnWO_NUMB" msprop:Generator_ColumnPropNameInRow="WO_NUMB" msprop:Generator_ColumnPropNameInTable="WO_NUMBColumn" msprop:Generator_UserColumnName="WO_NUMB" type="xs:int" minOccurs="0" />
+              <xs:element name="QUALITY" msprop:Generator_ColumnVarNameInTable="columnQUALITY" msprop:Generator_ColumnPropNameInRow="QUALITY" msprop:Generator_ColumnPropNameInTable="QUALITYColumn" msprop:Generator_UserColumnName="QUALITY" type="xs:string" minOccurs="0" />
+              <xs:element name="TRN_DATE" msprop:Generator_ColumnVarNameInTable="columnTRN_DATE" msprop:Generator_ColumnPropNameInRow="TRN_DATE" msprop:Generator_ColumnPropNameInTable="TRN_DATEColumn" msprop:Generator_UserColumnName="TRN_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="GRADE" msprop:Generator_ColumnVarNameInTable="columnGRADE" msprop:Generator_ColumnPropNameInRow="GRADE" msprop:Generator_ColumnPropNameInTable="GRADEColumn" msprop:Generator_UserColumnName="GRADE" type="xs:string" minOccurs="0" />
+              <xs:element name="FORM_TYPE" msprop:Generator_ColumnVarNameInTable="columnFORM_TYPE" msprop:Generator_ColumnPropNameInRow="FORM_TYPE" msprop:Generator_ColumnPropNameInTable="FORM_TYPEColumn" msprop:Generator_UserColumnName="FORM_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="FROMDATE" msprop:Generator_ColumnVarNameInTable="columnFROMDATE" msprop:Generator_ColumnPropNameInRow="FROMDATE" msprop:Generator_ColumnPropNameInTable="FROMDATEColumn" msprop:Generator_UserColumnName="FROMDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TODATE" msprop:Generator_ColumnVarNameInTable="columnTODATE" msprop:Generator_ColumnPropNameInRow="TODATE" msprop:Generator_ColumnPropNameInTable="TODATEColumn" msprop:Generator_UserColumnName="TODATE" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

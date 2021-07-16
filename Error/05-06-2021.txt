@@ -1,0 +1,15 @@
+
+Log Entry : 
+06/05/2021 08:40:34
+Error in: http://localhost:54726/Saitex/Module/NewFiber/Pages/Fiber_Qc_Chacking.aspx. Error Message:Response.Redirect cannot be called in a Page callback.
+__________________________
+
+Log Entry : 
+06/05/2021 08:41:31
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+06/05/2021 09:43:42
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________

@@ -1,0 +1,20 @@
+
+Log Entry : 
+11/25/2019 12:32:45
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+11/25/2019 14:40:32
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+11/25/2019 14:48:37
+Error in: http://localhost:54726/Saitex/Module/Yarn/SalesWork/Pages/CR_Receipt_Adjustment.aspx?ItemCodeId=PO0062&TextBoxId=ctl00_cphBody_InvoiceToParty1_txtQTY&txtQtyUnit=ctl00_cphBody_InvoiceToParty1_txtQtyUnit&txtQtyUom=ctl00_cphBody_InvoiceToParty1_txtQtyUom&txtQtyWeight=ctl00_cphBody_InvoiceToParty1_txtQtyWeight&txtBasicRate=ctl00_cphBody_InvoiceToParty1_txtBasicRate&AmountId=ctl00_cphBody_InvoiceToParty1_txtAmount&MAX_QTY=100&SHADE_CODE=21412745&SHADE_FAMILY=21412745&TRN_TYPE=IYS26&ChallanNo=5&UOM_OF_UNIT=KGS&PI_NO=YDSWPR000232&STORE=FINISH+GOOD&LOCATION=GODOWN&GROSS_WT=ctl00_cphBody_InvoiceToParty1_txtGrossWt&TARE_WT=ctl00_cphBody_InvoiceToParty1_txtTareWt&CARTONS=ctl00_cphBody_InvoiceToParty1_txtCartons&hdnLOT_NO=ctl00_cphBody_InvoiceToParty1_hdnLotNo&hdnGRADE=ctl00_cphBody_InvoiceToParty1_hdnGrade&PARTY_CODE=SELF. Error Message:There is no row at position 0.
+__________________________
+
+Log Entry : 
+11/25/2019 16:19:35
+Error in: http://localhost:54726/Saitex/Module/Production/Pages/Yrn_Production_Adjustment.aspx?ItemCodeId=PO0062&SHADE_FAMILY=21412745&SHADE_CODE=21412745&TextBoxId=ctl00_cphBody_DyedIssueFrom_txtQTY&txtBasicRate=ctl00_cphBody_DyedIssueFrom_txtBasicRate&AmountId=ctl00_cphBody_DyedIssueFrom_txtAmount&TRN_TYPE=IYS12&ChallanNo=153&txtQtyUnit=ctl00_cphBody_DyedIssueFrom_txtnoofunit&txtQtyUom=ctl00_cphBody_DyedIssueFrom_txtUNIT&txtQtyWeight=ctl00_cphBody_DyedIssueFrom_txtunitweight&UOM_OF_UNIT=KGS&MAX_QTY=100&LOCATION=GODOWN&STORE=DYEING&PI_NO=YDSWPR00064701&PARTY_CODE=SELF&PO_NUMB=460. Error Message:Input string was not in a correct format.
+__________________________

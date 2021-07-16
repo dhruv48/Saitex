@@ -1,0 +1,10 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/CommonMaster/admin.master" AutoEventWireup="true" CodeFile="ReceiptPermRPT.aspx.cs" Inherits="Module_Inventory_Reports_ReceiptPermRPT" Title="Untitled Page" %>
+
+<%@ Register src="../Controls/ReceiptPermRPT.ascx" tagname="ReceiptPermRPT" tagprefix="uc1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="Head1" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphBody" Runat="Server">
+    <uc1:ReceiptPermRPT ID="ReceiptPermRPT1" runat="server" />
+</asp:Content>
+

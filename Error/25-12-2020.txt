@@ -1,0 +1,15 @@
+
+Log Entry : 
+12/25/2020 11:24:55
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+12/25/2020 16:15:35
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/ReceiptAdjustmentForStockTransfer.aspx?ItemCodeId=CHE01002&TextBoxId=ctl00_cphBody_Material_Issue_For_Dept_txtQTY&txtBasicRate=ctl00_cphBody_Material_Issue_For_Dept_txtBasicRate&AmountId=ctl00_cphBody_Material_Issue_For_Dept_txtAmount0&ChallanNo=402&TRN_TYPE=IMS06&txtQtyUnit=ctl00_cphBody_Material_Issue_For_Dept_txtQTY&txtQtyUom=ctl00_cphBody_Material_Issue_For_Dept_txtUNIT&txtQtyWeight=ctl00_cphBody_Material_Issue_For_Dept_txtQtyWeight&UOM_OF_UNIT=KGS&MAX_QTY=&PI_NO=&LOCATION=GODOWN&STORE=GENERAL. Error Message:Column 'PO_YEAR' does not belong to table .
+__________________________
+
+Log Entry : 
+12/25/2020 22:47:27
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________

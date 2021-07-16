@@ -1,0 +1,101 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="Yarn_Detail_Report.ascx.cs"
+    Inherits="Module_Yarn_SalesWork_Controls_Yarn_Detail_Report" %>
+<table align="left" class=" td tContentArial" width="100%">
+    <tr>
+        <td class="td" colspan="8">
+            <table>
+                <tr>
+                    <td>
+                        <asp:ImageButton ID="imgbtnPrint" runat="server" ToolTip="Print" ImageUrl="~/CommonImages/link_print.png"
+                            OnClick="imgbtnPrint_Click"></asp:ImageButton>
+                    </td>
+                    <td>
+                        <asp:ImageButton ID="imgbtnClear" runat="server" ToolTip="Clear" ImageUrl="~/CommonImages/clear.jpg"
+                            OnClick="imgbtnClear_Click"></asp:ImageButton>
+                    </td>
+                    <td>
+                        <asp:ImageButton ID="imgbtnExit" runat="server" Height="41" ImageUrl="~/CommonImages/link_exit.png"
+                            ToolTip="Exit" Width="48" OnClick="imgbtnExit_Click" />
+                    </td>
+                    <td>
+                        <asp:ImageButton ID="imgbtnHelp" runat="server" Height="41" ImageUrl="~/CommonImages/link_help.png"
+                            ToolTip="Help" Width="48" />
+                    </td>
+                </tr>
+            </table>
+            <table width="100%">
+                <tr>
+                    <td align="center" class="TableHeader td" colspan="8">
+                        <span class="titleheading"><strong>Sewing Thread Detail Stock Report</strong> </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        Branch:
+                    </td>
+                    <td>
+                        <asp:DropDownList ID="ddlBranch" runat="server" CssClass="gCtrTxt " Font-Size="9"
+                            Width="160px">
+                        </asp:DropDownList>
+                    </td>
+                   <td class="tdRight">
+                        Yarn Type :
+                    </td>
+                    <td class="tdLeft">
+                        <asp:DropDownList ID="ddlyarntype" runat="server" CssClass="gCtrTxt"
+                            Width="160px">
+                        </asp:DropDownList>
+                    </td>
+                  
+                    <td class="tdRight">
+                        Yarn Catagory :
+                     </td>
+                    <td class="tdLeft">
+                        <asp:DropDownList ID="ddlyarncat" runat="server" CssClass="gCtrTxt"
+                            Width="160px">
+                        </asp:DropDownList>
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td class="tdRight">
+                        Party :
+                    </td>
+                    <td class="tdLeft">
+                        <asp:DropDownList ID="ddlpartycode" runat="server" CssClass="gCtrTxt"
+                            Width="160px">
+                        </asp:DropDownList>
+                    </td>
+                    <td class="tdRight">
+                        Shade Code :
+                    </td>
+                    <td align="left" valign="top" class="style8">
+                        <asp:DropDownList ID="ddlShadeCode" runat="server" CssClass="gCtrTxt" Width="160px">
+                        </asp:DropDownList>
+                    </td>
+                <td style="text-align: right"  >
+             Article Code :</td>
+           <td >
+               <asp:TextBox ID="TxtYarnCode" runat="server" Width="158px"></asp:TextBox>
+           </td>
+                </tr>
+                <tr>
+                
+                <td colspan = "8">  
+                <asp:Panel ID="Panel1" runat="server" BackColor="#99CCFF">
+                <asp:RadioButtonList ID="redForQuery" runat="server" Height="16px" 
+                        RepeatDirection="Horizontal">
+                         
+                         <asp:ListItem Text="Red" Value="red" Selected ="True">  Sewing Thread Detail Lotwise Stock Report</asp:ListItem>
+                            <asp:ListItem Text="Blue" Value="blue"> Sewing Thread Detail Challanwise Report</asp:ListItem>
+                  
+                
+                  </asp:RadioButtonList>
+        
+                    </asp:Panel>
+                    </td>
+                </tr>
+                </table>
+        </td>
+    </tr>
+</table>

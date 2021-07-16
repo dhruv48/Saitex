@@ -1,0 +1,256 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="SiftRotationMaster.ascx.cs" Inherits="Module_HRMS_Controls_SiftRotationMaster" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%@ Register assembly="obout_ComboBox" namespace="Obout.ComboBox" tagprefix="cc2" %>
+   <style type="text/css">
+    .item
+    {
+        position: relative !important;
+        display: -moz-inline-stack;
+    }
+    .header
+    {
+        margin-left: 2px;
+    }
+ 
+   .c1
+    {
+        width: 150px;
+    }
+    .c2
+    {
+        margin-left: 4px;
+        width: 150px;
+    }
+    .c3
+    {
+        margin-left: 4px;
+        width: 150px;
+    }
+    .c4
+    {
+        width: 150px;
+    }
+    .c5
+    {
+        margin-left: 4px;
+        width: 250px;
+    }
+    .c6
+    {
+        margin-left: 4px;
+        width: 100px;
+    }
+   
+</style>
+<table class="td tContentArial" width = "945px">
+ <tr>
+        <td align="Right" class="td" colspan = "6">
+            <table align="left">
+                <tr>
+                    <td id="tdSave" align="left" width="48" runat="server">
+                        <asp:ImageButton ID="imgbtnNew" runat="server" Height="41" ImageUrl="~/CommonImages/save.jpg"
+                            ToolTip="Save" ValidationGroup="M" Width="48" onclick="imgbtnNew_Click" />
+                    </td>
+                    <td id="tdUpdate" align="left" width="48" runat="server">
+                        <asp:ImageButton ID="imgbtnUpdate" runat="server" Height="41" ImageUrl="~/CommonImages/edit1.jpg"
+                             ToolTip="Update" ValidationGroup="M" 
+                            Width="48" onclick="imgbtnUpdate_Click"  />
+                    </td>
+                    
+                    <td id="tdClear" runat="server" align="left" width="48">
+                        <asp:ImageButton ID="imgbtnClear" runat="server" Height="41" ImageUrl="~/CommonImages/clear.jpg"
+                            ToolTip="Clear" Width="48" onclick="imgbtnClear_Click" />
+                    </td>                 
+                    <td id="tdfind" runat="server">
+                        <asp:ImageButton ID="Imgbtnfind" runat="server" ToolTip="find" ImageUrl="~/CommonImages/link_find.png"
+                            Width="48" Height="41" onclick="Imgbtnfind_Click"  >
+                        </asp:ImageButton>
+                    </td>
+                    <td id="tdPrint" runat="server" align="left" width="48">
+                        <asp:ImageButton ID="imgbtnPrint" runat="server" Height="41" ImageUrl="~/CommonImages/link_print.png"
+                            ToolTip="Print" Width="48" onclick="imgbtnPrint_Click"  />
+                    </td>
+                    <td id="tdExit" runat="server">
+                        <asp:ImageButton ID="imgbtnExit" runat="server" ToolTip="Exit" ImageUrl="~/CommonImages/link_exit.png"
+                            Width="48" Height="41" onclick="imgbtnExit_Click" ></asp:ImageButton>
+                    </td>
+                    <td id="tdHelp" runat="server" align="left" width="48">
+                        <asp:ImageButton ID="imgbtnHelp" runat="server" ImageUrl="~/CommonImages/link_help.png"
+                            ToolTip="Help" Height="41" Width="48"></asp:ImageButton>
+                    </td>
+                </tr>
+            </table>
+                        
+        </td>
+    </tr>
+    <tr>
+        <td class="TableHeader td" align="center" colspan = "6">
+            <span class="titleheading"> Shift Rotation Master
+        </td>
+    </tr>
+    <tr><td align="center" colspan = "6">
+                        
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" 
+                ShowMessageBox="True" ShowSummary="False" ValidationGroup="M" />
+                        
+        <asp:RequiredFieldValidator ID="Validator1" runat="server" 
+            ControlToValidate="txtEffectDate" ErrorMessage="Enter Effective Date" 
+            ValidationGroup="M" Display="None"></asp:RequiredFieldValidator>
+        <asp:RequiredFieldValidator ID="Validator2" runat="server" 
+            ErrorMessage="Select Employee." ControlToValidate="ddlemp" 
+                ValidationGroup="M" Display="None"  ></asp:RequiredFieldValidator>
+        <asp:RequiredFieldValidator ID="Validator3" runat="server" 
+            ErrorMessage="Select Shift ." ControlToValidate="ddlSftId" Display="None" 
+                ValidationGroup="M" InitialValue="Select"></asp:RequiredFieldValidator>
+        <asp:RequiredFieldValidator ID="Validator4" runat="server" 
+            ErrorMessage="Select Change Frequency ." ControlToValidate="ddlFrequency" 
+                Display="None" ValidationGroup="M" InitialValue="Select"></asp:RequiredFieldValidator>
+        <asp:RequiredFieldValidator ID="Validator5" runat="server" 
+            ErrorMessage="Enter Frequency Days ." ControlToValidate="txtDays" 
+                Display="None" ValidationGroup="M"></asp:RequiredFieldValidator>
+        <asp:RequiredFieldValidator ID="Validator6" runat="server" 
+            ErrorMessage="Select Weekly Off ." ControlToValidate="ddlweekOff" 
+                Display="None" ValidationGroup="M" InitialValue="Select"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="Validator7" runat="server" 
+                ControlToValidate="txtDays" Display="None" 
+                ErrorMessage="Pls Enter Numeric Days ." ValidationExpression="^\d+$" 
+                ValidationGroup="M"></asp:RegularExpressionValidator>
+            <asp:RangeValidator ID="RangeValidator1" runat="server" 
+                ControlToValidate="txtRemark" Display="None" 
+                ErrorMessage="Sory Remark Not More Than 200 Charecter ." MaximumValue="200" 
+                MinimumValue="0" SetFocusOnError="True" ValidationGroup="M"></asp:RangeValidator>
+        </td></tr>
+    <tr>
+        <td align="left" valign="top" class="td" colspan="6">
+            <span class="Mode">You are in &nbsp;<asp:Label ID="lblMode" runat="server"></asp:Label>&nbsp;Mode
+            </span>
+        </td>
+    </tr>
+    <tr><td style="text-align: right">Shift Rotation Code :</td><td>
+       
+        <asp:TextBox ID="txtShifCode" runat="server" CssClass="TextBox" Width="64px"></asp:TextBox>
+       
+            <cc2:ComboBox ID="ddlfind" runat="server"   EnableLoadOnDemand="True"    
+            AutoPostBack="True"  AutoValidate="True"
+                EmptyText="Find" Width="165px"  AppendDataBoundItems="False" 
+            MenuWidth="550px"   Height="250px" onloadingitems="ddlfind_LoadingItems" 
+            onselectedindexchanged="ddlfind_SelectedIndexChanged" >                                            
+                                    <HeaderTemplate>
+                                        <div class="header c1">
+                                         SHIFT ROTATE CODE
+                                        </div>
+                                        <div class="header c4">
+                                           EMP CODE
+                                        </div>
+                                         <div class="header c4">
+                                           EMP NAME
+                                        </div>
+                                    </HeaderTemplate>
+                                    <ItemTemplate>
+                                        <div class="item c4">
+                                            <%# Eval("SHIFT_ROTATE_CODE")%></div>
+                                        <div class="item c5">
+                                            <%# Eval("EMP_CODE")%></div>
+                                            <div class="item c6">
+                                            <%# Eval("EMPLOYEENAME")%></div>
+                                    </ItemTemplate>
+                                    <FooterTemplate>
+                                        Displaying items
+                                        <%# Container.ItemsCount > 0 ? "1" : "0" %>-<%# Container.ItemsLoadedCount %>
+                                        out of
+                                        <%# Container.ItemsCount %>.
+                                    </FooterTemplate>
+                                </cc2:ComboBox>
+       
+        </td>
+        <td style="text-align: right">Effective Form :</td><td>
+         <asp:TextBox ID="txtEffectDate" runat="server" CssClass="TextBox"></asp:TextBox>
+
+            
+        </td>
+        <td style="text-align: right">Employee :</td><td>
+        
+     <%--  
+        <asp:DropDownList ID="ddlemp" runat="server" Width="128px" 
+            CssClass="tContentArial" InitialValue="0" SetFocusOnError="True" ValidationGroup = "M">
+        </asp:DropDownList>--%>
+          
+           <cc2:ComboBox id="ddlemp" runat="server" autopostback="True" 
+               datavaluefield="EMP_CODE" emptytext="Select" 
+               height="150px" menuwidth="700px" width="165px" 
+            onloadingitems="ddlemp_LoadingItems1" AutoValidate="True" 
+            AppendDataBoundItems="False"  >
+               <HeaderTemplate>
+                   <div class="header c1">
+                       Code
+                   </div>
+                   <div class="header c2">
+                       Emp Name</div>
+                        <div class="header c1">
+                      Designation
+                   </div>
+                   <div class="header c2">
+                       Department</div>
+               </HeaderTemplate>
+               <ItemTemplate>
+                   <div class="item c1">
+                        <%# Eval("EMP_CODE")%></div>
+                   <div class="item c2">
+                        <%# Eval("EMPLOYEENAME")%></div>
+                        <div class="item c1">
+                        <%# Eval("DESIG_NAME")%></div>
+                   <div class="item c2">
+                        <%# Eval("DEPT_NAME")%></div>
+               </ItemTemplate>
+               <FooterTemplate>
+                   Displaying items
+                    <%# Container.ItemsCount > 0 ? "1" : "0" %>-<%# Container.ItemsLoadedCount %>
+                    out of
+                    <%# Container.ItemsCount %>.
+               </FooterTemplate>
+               </cc2:ComboBox>
+        </td>
+        </tr>
+    <tr>
+    <td style="text-align: right">Shift Id :</td><td>
+        <asp:DropDownList ID="ddlSftId" runat="server" Width="128px" 
+            CssClass="tContentArial" Height="16px" InitialValue="0" >
+        </asp:DropDownList>
+        </td>
+        <td style="text-align: right">Change Frequency :</td><td>
+        <asp:DropDownList ID="ddlFrequency" runat="server" CssClass="tContentArial" 
+            Width="128px" InitialValue="Select" SetFocusOnError="True">
+            <asp:ListItem Value="Select">Select</asp:ListItem>
+            <asp:ListItem>Days</asp:ListItem>
+            <asp:ListItem>Weekly</asp:ListItem>
+            <asp:ListItem>Fortnight</asp:ListItem>
+            <asp:ListItem>Monthly</asp:ListItem>
+        </asp:DropDownList>
+        </td>
+        <td style="text-align: right">Frequency Days :</td><td>
+        <asp:TextBox ID="txtDays" runat="server" CssClass="TextBoxNo" Width="166px"></asp:TextBox>
+        </td>
+        </tr>
+    <tr><td style="text-align: right">Weekly Off :</td><td>
+        <asp:DropDownList ID="ddlweekOff" runat="server" CssClass="tContentArial" InitialValue="Select"
+            Width="128px">
+            <asp:ListItem Value="Select">Select</asp:ListItem>
+            <asp:ListItem>Sunday</asp:ListItem>
+            <asp:ListItem>Monday</asp:ListItem>
+            <asp:ListItem>Tuesday</asp:ListItem>
+            <asp:ListItem>Wedbesdat</asp:ListItem>
+            <asp:ListItem>Thusday</asp:ListItem>
+            <asp:ListItem>Friday</asp:ListItem>
+            <asp:ListItem>saturday</asp:ListItem>
+        </asp:DropDownList>
+        </td><td style="text-align: right">Remarks :</td><td colspan = "4">
+        <asp:TextBox ID="txtRemark" runat="server" CssClass="TextBox" Width="453px"></asp:TextBox>
+        </td>
+      
+        </tr>
+        <tr><td>
+         <cc1:CalendarExtender ID="ce2" runat="server" Format="dd/MM/yyyy" TargetControlID="txtEffectDate" 
+                 PopupPosition="TopLeft">
+                        </cc1:CalendarExtender>
+        </td></tr>
+    </table>

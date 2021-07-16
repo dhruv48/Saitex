@@ -1,0 +1,65 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMaster.master.cs" Inherits="CommonMaster_UserMaster" %>
+
+<%@ Register Src="../CommonControls/UserHeader.ascx" TagName="UserHeader" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Textiles Application Management System (TexAMS)</title> 
+    <link rel="stylesheet" type="text/css" href="~/StyleSheet/CommonStyle.css" />
+    <link rel="stylesheet" type="text/css" href="~/StyleSheet/cssdesign.css" />
+    <link rel="stylesheet" type="text/css" href="~/StyleSheet/ModalPopup.css" />
+    <link href="~/StyleSheet/widget55.css" rel="stylesheet" type="text/css" />
+    <link href="~/StyleSheet/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="~/javascript/datetimestamp.js" language="javascript"></script>
+    
+    
+</head>
+<body onload="stampIt();" topmargin="0" leftmargin="0" bgcolor="#FFFFFF" width="100%">
+    <form id="form1" runat="server">
+    <div>
+        <table border="0" align="center" cellpadding="0" cellspacing="0" class="tContent"
+            width="98%">
+            <tr>
+                <td width="98%" valign="top" align="left">
+                    <table border="0" align="center" cellpadding="0" cellspacing="0" class="tContent"
+                        width="100%">
+                        <tr>
+                            <td colspan="3" width="100%" valign="top" align="center" bgcolor="#336799">
+                                <uc1:UserHeader ID="UserHeader1" runat="server" />
+                            </td>
+                        </tr>
+                        <%--   <tr>
+                                <td width="175" valign="top" align="center" bgcolor="#AFCAE4">
+                                </td>
+                                <td width="650" valign="top" align="center" bgcolor="#AFCAE4">                               
+                                </td>
+                                <td width="175" valign="top" align="center" bgcolor="#AFCAE4">
+                                   <asp:LinkButton ID="lnkbtnEmpLogin" PostBackUrl="~/Module/HRMS/Default.aspx" 
+                                        Height="15px" ValidationGroup="ff" runat="server">Employee Login</asp:LinkButton>
+                                </td>
+                            </tr>--%>
+                        <tr>
+                            <td width="175" valign="top" align="center" bgcolor="#AFCAE4">
+                            </td>
+                            <td width="650" valign="top" align="center" bgcolor="#AFCAE4">
+                                <asp:ContentPlaceHolder ID="cphBody" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                            <td width="175" valign="top" align="center" bgcolor="#AFCAE4">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td height="40" align="center" bgcolor="#29537C" class="copy">
+                    &copy; Copy Right  Jingle InfoSolutions Pvt. Ltd. 2013<br />
+                    Designed &amp; Developed by <a href="http://www.jingleinfo.com/" class="copy">Jingle
+                        Infosolutions Pvt. Ltd.</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

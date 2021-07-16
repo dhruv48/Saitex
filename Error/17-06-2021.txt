@@ -1,0 +1,30 @@
+
+Log Entry : 
+06/17/2021 16:43:20
+Error in: http://localhost:54726/Saitex/Module/Inventory/Reports/Materail_Receipt.aspx?FromNo=6&ToNo=6&TRN_TYPE=RMS02&TRN_TYPE1=. Error Message:There is no row at position 0.
+__________________________
+
+Log Entry : 
+06/17/2021 16:43:31
+Error in: http://localhost:54726/Saitex/Module/Inventory/Reports/Materail_Receipt.aspx?FromNo=0&ToNo=0&TRN_TYPE=RMS02&TRN_TYPE1=. Error Message:There is no row at position 0.
+__________________________
+
+Log Entry : 
+06/17/2021 16:43:40
+Error in: http://localhost:54726/Saitex/Module/Inventory/Reports/Materail_Receipt.aspx?FromNo=0&ToNo=0&TRN_TYPE=RMS02&TRN_TYPE1=. Error Message:There is no row at position 0.
+__________________________
+
+Log Entry : 
+06/17/2021 16:48:04
+Error in: http://localhost:54726/Saitex/Module/Inventory/Reports/Materail_Receipt.aspx?FromNo=0&ToNo=0&TRN_TYPE=RMS02&TRN_TYPE1=. Error Message:There is no row at position 0.
+__________________________
+
+Log Entry : 
+06/17/2021 16:49:05
+Error in: http://localhost:54726/Saitex/Module/Inventory/Reports/Materail_Receipt.aspx?FromNo=1&ToNo=1&TRN_TYPE=RMS01&TRN_TYPE1=. Error Message:There is no row at position 0.
+__________________________
+
+Log Entry : 
+06/17/2021 16:50:09
+Error in: http://localhost:54726/Saitex/Module/Inventory/Reports/Materail_Receipt.aspx?FromNo=0&ToNo=0&TRN_TYPE=RMS01&TRN_TYPE1=. Error Message:There is no row at position 0.
+__________________________

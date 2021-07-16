@@ -1,0 +1,10 @@
+
+Log Entry : 
+12/09/2019 16:55:20
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+12/09/2019 16:55:20
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:The process cannot access the file 'E:\ARVIND\SANIMO_SOLUTION\SANIMO Solution_Working\Saitex\Error\09-12-2019.txt' because it is being used by another process.
+__________________________

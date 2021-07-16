@@ -1,0 +1,26 @@
+﻿.hd
+{
+	font-size: 17px;
+	font-weight: bold;
+	border-style: ridge;
+	border-width: .03em;
+	border-color: #C1D3FB;
+	background-color:#336799;
+	border-color:#F6F6F6;
+	
+}
+.cl
+{
+	font-size: 14px;
+	border-style: ridge;
+	border-width: .01em;
+	border-color: #C1D3FB;
+}
+
+.ta
+{
+	border-width: .03em;
+	border-style: ridge;
+	border-color: #C1D3FB;
+	background-color:#F6F6F6;
+}

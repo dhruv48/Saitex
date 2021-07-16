@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HROfferLetter" targetNamespace="http://tempuri.org/HROfferLetter.xsd" xmlns:mstns="http://tempuri.org/HROfferLetter.xsd" xmlns="http://tempuri.org/HROfferLetter.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HROfferLetter" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="HROfferLetter" msprop:Generator_DataSetName="HROfferLetter">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="HR_OFFER_LET" msprop:Generator_UserTableName="HR_OFFER_LET" msprop:Generator_RowDeletedName="HR_OFFER_LETRowDeleted" msprop:Generator_RowChangedName="HR_OFFER_LETRowChanged" msprop:Generator_RowClassName="HR_OFFER_LETRow" msprop:Generator_RowChangingName="HR_OFFER_LETRowChanging" msprop:Generator_RowEvArgName="HR_OFFER_LETRowChangeEvent" msprop:Generator_RowEvHandlerName="HR_OFFER_LETRowChangeEventHandler" msprop:Generator_TableClassName="HR_OFFER_LETDataTable" msprop:Generator_TableVarName="tableHR_OFFER_LET" msprop:Generator_RowDeletingName="HR_OFFER_LETRowDeleting" msprop:Generator_TablePropName="HR_OFFER_LET">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OFF_REF_NO" msprop:Generator_UserColumnName="OFF_REF_NO" msprop:Generator_ColumnPropNameInRow="OFF_REF_NO" msprop:Generator_ColumnVarNameInTable="columnOFF_REF_NO" msprop:Generator_ColumnPropNameInTable="OFF_REF_NOColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OFF_REF_NO1" msprop:Generator_UserColumnName="OFF_REF_NO1" msprop:Generator_ColumnVarNameInTable="columnOFF_REF_NO1" msprop:Generator_ColumnPropNameInRow="OFF_REF_NO1" msprop:Generator_ColumnPropNameInTable="OFF_REF_NO1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="OFF_DATE" msprop:Generator_UserColumnName="OFF_DATE" msprop:Generator_ColumnPropNameInRow="OFF_DATE" msprop:Generator_ColumnVarNameInTable="columnOFF_DATE" msprop:Generator_ColumnPropNameInTable="OFF_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="OFF_NAME" msprop:Generator_UserColumnName="OFF_NAME" msprop:Generator_ColumnPropNameInRow="OFF_NAME" msprop:Generator_ColumnVarNameInTable="columnOFF_NAME" msprop:Generator_ColumnPropNameInTable="OFF_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ADD1" msprop:Generator_UserColumnName="ADD1" msprop:Generator_ColumnPropNameInRow="ADD1" msprop:Generator_ColumnVarNameInTable="columnADD1" msprop:Generator_ColumnPropNameInTable="ADD1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="ADD2" msprop:Generator_UserColumnName="ADD2" msprop:Generator_ColumnPropNameInRow="ADD2" msprop:Generator_ColumnVarNameInTable="columnADD2" msprop:Generator_ColumnPropNameInTable="ADD2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="SUB" msprop:Generator_UserColumnName="SUB" msprop:Generator_ColumnPropNameInRow="SUB" msprop:Generator_ColumnVarNameInTable="columnSUB" msprop:Generator_ColumnPropNameInTable="SUBColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OFF_JOING_DATE" msprop:Generator_UserColumnName="OFF_JOING_DATE" msprop:Generator_ColumnPropNameInRow="OFF_JOING_DATE" msprop:Generator_ColumnVarNameInTable="columnOFF_JOING_DATE" msprop:Generator_ColumnPropNameInTable="OFF_JOING_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="POSSITION" msprop:Generator_UserColumnName="POSSITION" msprop:Generator_ColumnPropNameInRow="POSSITION" msprop:Generator_ColumnVarNameInTable="columnPOSSITION" msprop:Generator_ColumnPropNameInTable="POSSITIONColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="POSITION_NAME" msprop:Generator_UserColumnName="POSITION_NAME" msprop:Generator_ColumnPropNameInRow="POSITION_NAME" msprop:Generator_ColumnVarNameInTable="columnPOSITION_NAME" msprop:Generator_ColumnPropNameInTable="POSITION_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="STATUS" msprop:Generator_UserColumnName="STATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:length value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEL_STATUS" msprop:Generator_UserColumnName="DEL_STATUS" msprop:Generator_ColumnPropNameInRow="DEL_STATUS" msprop:Generator_ColumnVarNameInTable="columnDEL_STATUS" msprop:Generator_ColumnPropNameInTable="DEL_STATUSColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:length value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TDATE" msprop:Generator_UserColumnName="TDATE" msprop:Generator_ColumnPropNameInRow="TDATE" msprop:Generator_ColumnVarNameInTable="columnTDATE" msprop:Generator_ColumnPropNameInTable="TDATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TUSER" msprop:Generator_UserColumnName="TUSER" msprop:Generator_ColumnPropNameInRow="TUSER" msprop:Generator_ColumnVarNameInTable="columnTUSER" msprop:Generator_ColumnPropNameInTable="TUSERColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

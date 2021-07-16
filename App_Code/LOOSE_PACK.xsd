@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LOOSE_PACK" targetNamespace="http://tempuri.org/LOOSE_PACK.xsd" xmlns:mstns="http://tempuri.org/LOOSE_PACK.xsd" xmlns="http://tempuri.org/LOOSE_PACK.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LOOSE_PACK" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="LOOSE_PACK" msprop:Generator_DataSetName="LOOSE_PACK">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LOOSE_PACK" msprop:Generator_UserTableName="LOOSE_PACK" msprop:Generator_RowDeletedName="LOOSE_PACKRowDeleted" msprop:Generator_RowChangedName="LOOSE_PACKRowChanged" msprop:Generator_RowClassName="LOOSE_PACKRow" msprop:Generator_RowChangingName="LOOSE_PACKRowChanging" msprop:Generator_RowEvArgName="LOOSE_PACKRowChangeEvent" msprop:Generator_RowEvHandlerName="LOOSE_PACKRowChangeEventHandler" msprop:Generator_TableClassName="LOOSE_PACKDataTable" msprop:Generator_TableVarName="tableLOOSE_PACK" msprop:Generator_RowDeletingName="LOOSE_PACKRowDeleting" msprop:Generator_TablePropName="_LOOSE_PACK">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COMP_CODE" msprop:Generator_UserColumnName="COMP_CODE" msprop:Generator_ColumnVarNameInTable="columnCOMP_CODE" msprop:Generator_ColumnPropNameInRow="COMP_CODE" msprop:Generator_ColumnPropNameInTable="COMP_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_NAME" msprop:Generator_UserColumnName="COMP_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMP_NAME" msprop:Generator_ColumnPropNameInRow="COMP_NAME" msprop:Generator_ColumnPropNameInTable="COMP_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_CODE" msprop:Generator_UserColumnName="BRANCH_CODE" msprop:Generator_ColumnVarNameInTable="columnBRANCH_CODE" msprop:Generator_ColumnPropNameInRow="BRANCH_CODE" msprop:Generator_ColumnPropNameInTable="BRANCH_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_NAME" msprop:Generator_UserColumnName="BRANCH_NAME" msprop:Generator_ColumnVarNameInTable="columnBRANCH_NAME" msprop:Generator_ColumnPropNameInRow="BRANCH_NAME" msprop:Generator_ColumnPropNameInTable="BRANCH_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="YEAR" msprop:Generator_UserColumnName="YEAR" msprop:Generator_ColumnVarNameInTable="columnYEAR" msprop:Generator_ColumnPropNameInRow="YEAR" msprop:Generator_ColumnPropNameInTable="YEARColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DEPT_CODE" msprop:Generator_UserColumnName="DEPT_CODE" msprop:Generator_ColumnVarNameInTable="columnDEPT_CODE" msprop:Generator_ColumnPropNameInRow="DEPT_CODE" msprop:Generator_ColumnPropNameInTable="DEPT_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COUNT" msprop:Generator_UserColumnName="COUNT" msprop:Generator_ColumnVarNameInTable="columnCOUNT" msprop:Generator_ColumnPropNameInRow="COUNT" msprop:Generator_ColumnPropNameInTable="COUNTColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="BLEND" msprop:Generator_UserColumnName="BLEND" msprop:Generator_ColumnVarNameInTable="columnBLEND" msprop:Generator_ColumnPropNameInRow="BLEND" msprop:Generator_ColumnPropNameInTable="BLENDColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="LOT_NO" msprop:Generator_UserColumnName="LOT_NO" msprop:Generator_ColumnVarNameInTable="columnLOT_NO" msprop:Generator_ColumnPropNameInRow="LOT_NO" msprop:Generator_ColumnPropNameInTable="LOT_NOColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CONE_TIP" msprop:Generator_UserColumnName="CONE_TIP" msprop:Generator_ColumnVarNameInTable="columnCONE_TIP" msprop:Generator_ColumnPropNameInRow="CONE_TIP" msprop:Generator_ColumnPropNameInTable="CONE_TIPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CH" msprop:Generator_UserColumnName="CH" msprop:Generator_ColumnVarNameInTable="columnCH" msprop:Generator_ColumnPropNameInRow="CH" msprop:Generator_ColumnPropNameInTable="CHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CONE_WT" msprop:Generator_UserColumnName="CONE_WT" msprop:Generator_ColumnVarNameInTable="columnCONE_WT" msprop:Generator_ColumnPropNameInRow="CONE_WT" msprop:Generator_ColumnPropNameInTable="CONE_WTColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="NO_OF_CONES" msprop:Generator_UserColumnName="NO_OF_CONES" msprop:Generator_ColumnVarNameInTable="columnNO_OF_CONES" msprop:Generator_ColumnPropNameInRow="NO_OF_CONES" msprop:Generator_ColumnPropNameInTable="NO_OF_CONESColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="WEIGHT_IN_KG" msprop:Generator_UserColumnName="WEIGHT_IN_KG" msprop:Generator_ColumnVarNameInTable="columnWEIGHT_IN_KG" msprop:Generator_ColumnPropNameInRow="WEIGHT_IN_KG" msprop:Generator_ColumnPropNameInTable="WEIGHT_IN_KGColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="REMARKS" msprop:Generator_UserColumnName="REMARKS" msprop:Generator_ColumnVarNameInTable="columnREMARKS" msprop:Generator_ColumnPropNameInRow="REMARKS" msprop:Generator_ColumnPropNameInTable="REMARKSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TUSER" msprop:Generator_UserColumnName="TUSER" msprop:Generator_ColumnPropNameInRow="TUSER" msprop:Generator_ColumnVarNameInTable="columnTUSER" msprop:Generator_ColumnPropNameInTable="TUSERColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

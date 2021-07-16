@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LOTWISE_DEPT_ISSUE_PACKING" targetNamespace="http://tempuri.org/LOTWISE_DEPT_ISSUE_PACKING.xsd" xmlns:mstns="http://tempuri.org/LOTWISE_DEPT_ISSUE_PACKING.xsd" xmlns="http://tempuri.org/LOTWISE_DEPT_ISSUE_PACKING.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LOTWISE_DEPT_ISSUE_PACKING" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="LOTWISE_DEPT_ISSUE_PACKING" msprop:Generator_DataSetName="LOTWISE_DEPT_ISSUE_PACKING">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LOT_DEPT_PACKING_SUMMARY" msprop:Generator_UserTableName="LOT_DEPT_PACKING_SUMMARY" msprop:Generator_RowDeletedName="LOT_DEPT_PACKING_SUMMARYRowDeleted" msprop:Generator_RowChangedName="LOT_DEPT_PACKING_SUMMARYRowChanged" msprop:Generator_RowClassName="LOT_DEPT_PACKING_SUMMARYRow" msprop:Generator_RowChangingName="LOT_DEPT_PACKING_SUMMARYRowChanging" msprop:Generator_RowEvArgName="LOT_DEPT_PACKING_SUMMARYRowChangeEvent" msprop:Generator_RowEvHandlerName="LOT_DEPT_PACKING_SUMMARYRowChangeEventHandler" msprop:Generator_TableClassName="LOT_DEPT_PACKING_SUMMARYDataTable" msprop:Generator_TableVarName="tableLOT_DEPT_PACKING_SUMMARY" msprop:Generator_RowDeletingName="LOT_DEPT_PACKING_SUMMARYRowDeleting" msprop:Generator_TablePropName="LOT_DEPT_PACKING_SUMMARY">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DEPT_NAME" msprop:Generator_UserColumnName="DEPT_NAME" msprop:Generator_ColumnVarNameInTable="columnDEPT_NAME" msprop:Generator_ColumnPropNameInRow="DEPT_NAME" msprop:Generator_ColumnPropNameInTable="DEPT_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LOT_NO" msprop:Generator_UserColumnName="LOT_NO" msprop:Generator_ColumnVarNameInTable="columnLOT_NO" msprop:Generator_ColumnPropNameInRow="LOT_NO" msprop:Generator_ColumnPropNameInTable="LOT_NOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TEX_LOT_NO" msprop:Generator_UserColumnName="TEX_LOT_NO" msprop:Generator_ColumnVarNameInTable="columnTEX_LOT_NO" msprop:Generator_ColumnPropNameInRow="TEX_LOT_NO" msprop:Generator_ColumnPropNameInTable="TEX_LOT_NOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FIBER_CODE" msprop:Generator_UserColumnName="FIBER_CODE" msprop:Generator_ColumnVarNameInTable="columnFIBER_CODE" msprop:Generator_ColumnPropNameInRow="FIBER_CODE" msprop:Generator_ColumnPropNameInTable="FIBER_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="YARN_DESC" msprop:Generator_UserColumnName="YARN_DESC" msprop:Generator_ColumnVarNameInTable="columnYARN_DESC" msprop:Generator_ColumnPropNameInRow="YARN_DESC" msprop:Generator_ColumnPropNameInTable="YARN_DESCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DEPT_ISSUE_QTY" msprop:Generator_UserColumnName="DEPT_ISSUE_QTY" msprop:Generator_ColumnVarNameInTable="columnDEPT_ISSUE_QTY" msprop:Generator_ColumnPropNameInRow="DEPT_ISSUE_QTY" msprop:Generator_ColumnPropNameInTable="DEPT_ISSUE_QTYColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ACTUAL_PACKING" msprop:Generator_UserColumnName="ACTUAL_PACKING" msprop:Generator_ColumnVarNameInTable="columnACTUAL_PACKING" msprop:Generator_ColumnPropNameInRow="ACTUAL_PACKING" msprop:Generator_ColumnPropNameInTable="ACTUAL_PACKINGColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="WIP_STOCK" msprop:Generator_UserColumnName="WIP_STOCK" msprop:Generator_ColumnPropNameInRow="WIP_STOCK" msprop:Generator_ColumnVarNameInTable="columnWIP_STOCK" msprop:Generator_ColumnPropNameInTable="WIP_STOCKColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

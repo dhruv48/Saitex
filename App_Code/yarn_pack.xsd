@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="yarn_pack" targetNamespace="http://tempuri.org/yarn_pack.xsd" xmlns:mstns="http://tempuri.org/yarn_pack.xsd" xmlns="http://tempuri.org/yarn_pack.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="yarn_pack" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="yarn_pack" msprop:Generator_DataSetName="yarn_pack">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Yarn_pack" msprop:Generator_UserTableName="Yarn_pack" msprop:Generator_RowDeletedName="Yarn_packRowDeleted" msprop:Generator_RowChangedName="Yarn_packRowChanged" msprop:Generator_RowClassName="Yarn_packRow" msprop:Generator_RowChangingName="Yarn_packRowChanging" msprop:Generator_RowEvArgName="Yarn_packRowChangeEvent" msprop:Generator_RowEvHandlerName="Yarn_packRowChangeEventHandler" msprop:Generator_TableClassName="Yarn_packDataTable" msprop:Generator_TableVarName="tableYarn_pack" msprop:Generator_RowDeletingName="Yarn_packRowDeleting" msprop:Generator_TablePropName="Yarn_pack">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COMP_CODE" msprop:Generator_UserColumnName="COMP_CODE" msprop:Generator_ColumnVarNameInTable="columnCOMP_CODE" msprop:Generator_ColumnPropNameInRow="COMP_CODE" msprop:Generator_ColumnPropNameInTable="COMP_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_NAME" msprop:Generator_UserColumnName="COMP_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMP_NAME" msprop:Generator_ColumnPropNameInRow="COMP_NAME" msprop:Generator_ColumnPropNameInTable="COMP_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_CODE" msprop:Generator_UserColumnName="BRANCH_CODE" msprop:Generator_ColumnVarNameInTable="columnBRANCH_CODE" msprop:Generator_ColumnPropNameInRow="BRANCH_CODE" msprop:Generator_ColumnPropNameInTable="BRANCH_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_NAME" msprop:Generator_UserColumnName="BRANCH_NAME" msprop:Generator_ColumnVarNameInTable="columnBRANCH_NAME" msprop:Generator_ColumnPropNameInRow="BRANCH_NAME" msprop:Generator_ColumnPropNameInTable="BRANCH_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="YEAR" msprop:Generator_UserColumnName="YEAR" msprop:Generator_ColumnVarNameInTable="columnYEAR" msprop:Generator_ColumnPropNameInRow="YEAR" msprop:Generator_ColumnPropNameInTable="YEARColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DEPT_CODE" msprop:Generator_UserColumnName="DEPT_CODE" msprop:Generator_ColumnVarNameInTable="columnDEPT_CODE" msprop:Generator_ColumnPropNameInRow="DEPT_CODE" msprop:Generator_ColumnPropNameInTable="DEPT_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COUNT" msprop:Generator_UserColumnName="COUNT" msprop:Generator_ColumnVarNameInTable="columnCOUNT" msprop:Generator_ColumnPropNameInRow="COUNT" msprop:Generator_ColumnPropNameInTable="COUNTColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="BLEND" msprop:Generator_UserColumnName="BLEND" msprop:Generator_ColumnVarNameInTable="columnBLEND" msprop:Generator_ColumnPropNameInRow="BLEND" msprop:Generator_ColumnPropNameInTable="BLENDColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="LOT_NO" msprop:Generator_UserColumnName="LOT_NO" msprop:Generator_ColumnVarNameInTable="columnLOT_NO" msprop:Generator_ColumnPropNameInRow="LOT_NO" msprop:Generator_ColumnPropNameInTable="LOT_NOColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CARTOON_NO" msprop:Generator_UserColumnName="CARTOON_NO" msprop:Generator_ColumnVarNameInTable="columnCARTOON_NO" msprop:Generator_ColumnPropNameInRow="CARTOON_NO" msprop:Generator_ColumnPropNameInTable="CARTOON_NOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_CART" msprop:Generator_UserColumnName="TOTAL_CART" msprop:Generator_ColumnVarNameInTable="columnTOTAL_CART" msprop:Generator_ColumnPropNameInRow="TOTAL_CART" msprop:Generator_ColumnPropNameInTable="TOTAL_CARTColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="NETTWT_C" msprop:Generator_UserColumnName="NETTWT_C" msprop:Generator_ColumnVarNameInTable="columnNETTWT_C" msprop:Generator_ColumnPropNameInRow="NETTWT_C" msprop:Generator_ColumnPropNameInTable="NETTWT_CColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="WEIGHT_IN_KG" msprop:Generator_UserColumnName="WEIGHT_IN_KG" msprop:Generator_ColumnVarNameInTable="columnWEIGHT_IN_KG" msprop:Generator_ColumnPropNameInRow="WEIGHT_IN_KG" msprop:Generator_ColumnPropNameInTable="WEIGHT_IN_KGColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TUSER" msprop:Generator_UserColumnName="TUSER" msprop:Generator_ColumnVarNameInTable="columnTUSER" msprop:Generator_ColumnPropNameInRow="TUSER" msprop:Generator_ColumnPropNameInTable="TUSERColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Yarn_pack1" msprop:Generator_UserTableName="Yarn_pack1" msprop:Generator_RowDeletedName="Yarn_pack1RowDeleted" msprop:Generator_TableClassName="Yarn_pack1DataTable" msprop:Generator_RowChangedName="Yarn_pack1RowChanged" msprop:Generator_RowClassName="Yarn_pack1Row" msprop:Generator_RowChangingName="Yarn_pack1RowChanging" msprop:Generator_RowEvArgName="Yarn_pack1RowChangeEvent" msprop:Generator_RowEvHandlerName="Yarn_pack1RowChangeEventHandler" msprop:Generator_TablePropName="Yarn_pack1" msprop:Generator_TableVarName="tableYarn_pack1" msprop:Generator_RowDeletingName="Yarn_pack1RowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COMP_CODE" msprop:Generator_UserColumnName="COMP_CODE" msprop:Generator_ColumnPropNameInRow="COMP_CODE" msprop:Generator_ColumnVarNameInTable="columnCOMP_CODE" msprop:Generator_ColumnPropNameInTable="COMP_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_NAME" msprop:Generator_UserColumnName="COMP_NAME" msprop:Generator_ColumnPropNameInRow="COMP_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMP_NAME" msprop:Generator_ColumnPropNameInTable="COMP_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_CODE" msprop:Generator_UserColumnName="BRANCH_CODE" msprop:Generator_ColumnPropNameInRow="BRANCH_CODE" msprop:Generator_ColumnVarNameInTable="columnBRANCH_CODE" msprop:Generator_ColumnPropNameInTable="BRANCH_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_NAME" msprop:Generator_UserColumnName="BRANCH_NAME" msprop:Generator_ColumnPropNameInRow="BRANCH_NAME" msprop:Generator_ColumnVarNameInTable="columnBRANCH_NAME" msprop:Generator_ColumnPropNameInTable="BRANCH_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="YEAR" msprop:Generator_UserColumnName="YEAR" msprop:Generator_ColumnPropNameInRow="YEAR" msprop:Generator_ColumnVarNameInTable="columnYEAR" msprop:Generator_ColumnPropNameInTable="YEARColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DEPT_CODE" msprop:Generator_UserColumnName="DEPT_CODE" msprop:Generator_ColumnPropNameInRow="DEPT_CODE" msprop:Generator_ColumnVarNameInTable="columnDEPT_CODE" msprop:Generator_ColumnPropNameInTable="DEPT_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COUNT" msprop:Generator_UserColumnName="COUNT" msprop:Generator_ColumnPropNameInRow="COUNT" msprop:Generator_ColumnVarNameInTable="columnCOUNT" msprop:Generator_ColumnPropNameInTable="COUNTColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="BLEND" msprop:Generator_UserColumnName="BLEND" msprop:Generator_ColumnPropNameInRow="BLEND" msprop:Generator_ColumnVarNameInTable="columnBLEND" msprop:Generator_ColumnPropNameInTable="BLENDColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="LOT_NO" msprop:Generator_UserColumnName="LOT_NO" msprop:Generator_ColumnPropNameInRow="LOT_NO" msprop:Generator_ColumnVarNameInTable="columnLOT_NO" msprop:Generator_ColumnPropNameInTable="LOT_NOColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CARTOON_NO" msprop:Generator_UserColumnName="CARTOON_NO" msprop:Generator_ColumnPropNameInRow="CARTOON_NO" msprop:Generator_ColumnVarNameInTable="columnCARTOON_NO" msprop:Generator_ColumnPropNameInTable="CARTOON_NOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_CART" msprop:Generator_UserColumnName="TOTAL_CART" msprop:Generator_ColumnPropNameInRow="TOTAL_CART" msprop:Generator_ColumnVarNameInTable="columnTOTAL_CART" msprop:Generator_ColumnPropNameInTable="TOTAL_CARTColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="NETTWT_C" msprop:Generator_UserColumnName="NETTWT_C" msprop:Generator_ColumnPropNameInRow="NETTWT_C" msprop:Generator_ColumnVarNameInTable="columnNETTWT_C" msprop:Generator_ColumnPropNameInTable="NETTWT_CColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="WEIGHT_IN_KG" msprop:Generator_UserColumnName="WEIGHT_IN_KG" msprop:Generator_ColumnPropNameInRow="WEIGHT_IN_KG" msprop:Generator_ColumnVarNameInTable="columnWEIGHT_IN_KG" msprop:Generator_ColumnPropNameInTable="WEIGHT_IN_KGColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TUSER" msprop:Generator_UserColumnName="TUSER" msprop:Generator_ColumnPropNameInRow="TUSER" msprop:Generator_ColumnVarNameInTable="columnTUSER" msprop:Generator_ColumnPropNameInTable="TUSERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WEIGHT_IN_KG1" msprop:Generator_UserColumnName="WEIGHT_IN_KG1" msprop:Generator_ColumnPropNameInRow="WEIGHT_IN_KG1" msprop:Generator_ColumnVarNameInTable="columnWEIGHT_IN_KG1" msprop:Generator_ColumnPropNameInTable="WEIGHT_IN_KG1Column" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,374 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="CommonMaster_admin" %>
+
+<%@ Register Src="~/Module/Admin/Controls/GetUserMenu.ascx" TagName="GetUserMenu"
+    TagPrefix="uc3" %>
+<%@ Register Src="../CommonControls/AdminHeader.ascx" TagName="AdminHeader" TagPrefix="uc1" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%@ Register Src="../CommonControls/EmailMenu.ascx" TagName="EmailMenu" TagPrefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Textiles Application Management System (TexAMS)</title>
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0.2)" />
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0.2)" />
+    <link rel="stylesheet" type="text/css" href="~/StyleSheet/CommonStyle.css" />
+    <link rel="stylesheet" type="text/css" href="~/StyleSheet/cssdesign.css" />
+    <link href="~/StyleSheet/MailMenuCss.css" rel="stylesheet" type="text/css" />
+    <link href="~/StyleSheet/ModalPopup.css" rel="stylesheet" type="text/css" />
+
+    <script src="~/javascript/jquery.min.js" type="text/javascript"></script>
+
+    <script src="~/javascript/ScrollableGrid.js" type="text/javascript"></script>
+
+    <script language="javascript" type="text/javascript">
+        function checkNumeric(evt) {
+            evt = (evt) ? evt : window.event
+            var charCode = (evt.which) ? evt.which : evt.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false
+            }
+            return true
+        }
+
+        function filterNonNumeric(field) {
+            var result = new String();
+            var numbers = "0123456789.";
+            var chars = field.value.split(""); // create array 
+            for (i = 0; i < chars.length; i++) {
+                if (numbers.indexOf(chars[i]) != -1) result += chars[i];
+            }
+            if (field.value != result) field.value = result;
+        }
+        function pricevalidate(test1) {
+            var dec = "";
+            var fra = "";
+            var i;
+            var val = test1.value;
+            var l = test1.value.length;
+            var res = "";
+            var dl = 0;
+            var fl = 0;
+            var index_of_dot;
+            var index_of_dot = val.indexOf('.');
+            var check = 0;
+            if (index_of_dot == -1)
+                dl = l;
+            else {
+                dl = index_of_dot;
+                fl = (l - (index_of_dot)) - 1;
+                for (i = index_of_dot + 1; i < l; i++) {
+                    check++;
+                    if (check < 4) {
+                        var schar = val.charAt(i);
+                        fra += schar;
+                    }
+                    else {
+                        alert("Fraction point value should be upto 3 digit");
+                        break;
+                    }
+
+                }
+            }
+            for (i = 0; i < dl; i++) {
+                if (i == 6) {
+                    alert("Decimal Place length should be upto 6 digit");
+                    break;
+                }
+                var schar = val.charAt(i);
+                dec += schar;
+            }
+
+            if (index_of_dot != -1) {
+                if (isNaN(dec) || isNaN(fra)) {
+                    test1.value = '';
+
+                }
+                else
+                    test1.value = dec + "." + fra;
+            }
+            else {
+                if (isNaN(dec)) {
+                    test1.value = '';
+                } else
+                    test1.value = dec;
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        //created by viresh//
+        function MaskTimeFormat(fldnm) {
+            var strTimeValue = fldnm.value;
+            fldnm.value = GiveCorrectTimeFormat(strTimeValue);
+        }
+        function GiveCorrectTimeFormat(strInputTime) {
+            var strReturnValue = "";
+            if (strInputTime.length <= 5) {
+                strInputTime = strInputTime.replace(":", "");
+                if (strInputTime.length == 1) {
+                    strInputTime = "0" + strInputTime + ":" + "00";
+                }
+                else if (strInputTime.length == 2) {
+                    if (strInputTime <= 23) {
+                        strInputTime = strInputTime + ":" + "00";
+                    }
+                    else if (strInputTime <= 59) {
+                        strInputTime = "00" + ":" + strInputTime;
+                    }
+                    else {
+                        strInputTime = ""
+                    }
+                }
+                else if (strInputTime.length == 3) {
+                    if (strInputTime < 959) {
+                        if (strInputTime.substring(1, 2) <= 5) {
+                            strInputTime = "0" + strInputTime.substring(0, 1) + ":" + strInputTime.substring(1, 3);
+                        }
+                        else {
+                            strInputTime = "0" + strInputTime.substring(0, 1) + ":" + "00";
+                        }
+                    }
+                    else {
+                        strInputTime = "0" + strInputTime.substring(0, 1) + ":" + "00";
+                    }
+                }
+                else if (strInputTime.length == 4) {
+                    if (strInputTime < 2359) {
+                        if (strInputTime.substring(0, 2) <= 23) {
+                            if (strInputTime.substring(2, 3) <= 5) {
+                                strInputTime = strInputTime.substring(0, 2) + ":" + strInputTime.substring(2, 4);
+                            } else {
+                                strInputTime = strInputTime.substring(0, 2) + ":" + "00";
+                            }
+                        }
+
+                        else {
+                            strInputTime = ""
+                        }
+                    } else { if (strInputTime.substring(0, 2) <= 23) { if (strInputTime.substring(2, 3) <= 5) { strInputTime = strInputTime.substring(0, 2) + ":" + strInputTime.substring(2, 4); } else { strInputTime = strInputTime.substring(0, 2) + ":" + "00"; } } else { strInputTime = "" } }
+                } else { strInputTime = "" } //alert(strInputTime);
+                strReturnValue = strInputTime;
+            } return strReturnValue;
+        }
+    </script>
+
+    <style type="text/css">
+        a
+        {
+            font: 11px Verdana;
+            color: #315686;
+            text-decoration: underline;
+        }
+        a:hover
+        {
+            color: Teal;
+        }
+        .textboxno
+        {
+            text-align: right;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="Head1" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="text/javascript" language="javascript">
+        function checkDate(sender, args) {
+            if (sender._selectedDate > new Date()) {
+                alert("You cannot select a advance day than today!");
+                sender._selectedDate = new Date();
+                // set the date back to the current date
+                sender._textbox.set_Value(sender._selectedDate.format(sender._format))
+            }
+        }
+    </script>
+
+    <script type="text/javascript" language="javascript">
+        my_window = null;
+
+        function popuponclick(val) {
+            my_window = window.open(val, '_blank', 'toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=no,minimizable=no,dialog=yes,menubar=no,width=800,height=450,left=100,top=200');
+            my_window.focus();
+        }
+        // Added By Rajesh for Ledger Master popup (01 Nov 2011)
+        function popuponclickLedger(val) {
+            my_window = window.open(val, '_blank', 'location=no, titlebar=no,toolbar=no,statusbar=no,directories=no,status=no,scrollbars=yes,resizable=no,minimizable=no,dialog=yes,menubar=no,width=420,height=450,left=100,top=200');
+            my_window.focus();
+        }
+        function check() {
+            if (my_window && !my_window.closed)
+                my_window.focus();
+        }
+        function checkBackDate(sender, args) {
+            if (sender._selectedDate < new Date()) {
+                alert("You cannot select a Back date  than today!");
+                sender._selectedDate = new Date();
+                // set the date back to the current date
+                sender._textbox.set_Value(sender._selectedDate.format(sender._format))
+            }
+        }
+    </script>
+
+</head>
+<body runat="server" id="Mybody" bgcolor="#FFFFFF" topmargin="0" leftmargin="0" width="100%" onkeypress="javascript:return saveevent(event);"
+    onclick="check();" onfocus="check();">
+    <form id="form1" runat="server" autocomplete="off" method="post">
+    <cc1:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+    <Scripts>
+        <asp:ScriptReference Path="~/javascript/jquery-1.4.1.min.js" />
+        <asp:ScriptReference Path="~/javascript/KeyShortcut.js" />        
+    </Scripts>
+    </cc1:ToolkitScriptManager>
+    <div style="width: 100%">
+        <asp:HiddenField ID="HiddenMenuChange" runat="server" />
+        <table border="0" align="center" cellpadding="0" cellspacing="0" class="tContent"
+            width="98%">
+            <tr>
+                <td width="100%" valign="top" align="left">
+                    <table border="0" align="Left" cellpadding="0" cellspacing="0" class="tContent" width="100%">
+                        <tr>
+                            <td colspan="2" width="100%" valign="top" align="center" bgcolor="#336799">
+                                <uc1:AdminHeader ID="AdminHeader1" runat="server" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" width="100%" valign="top">
+                                <table width="100%" valign="top">
+                                    <tr style="height: 2px;">
+                                        <td width="4%" bgcolor="#336799" class="SmallFont">
+                                            <span style="font-family: Arial; font-size: 12px; color: White; font-weight: bold;">
+                                                Quick Id</span>
+                                        </td>
+                                        <td width="4%" class="tdRight" bgcolor="#AFCAE4">
+                                            <asp:TextBox ID="txtNavId" runat="server" CssClass="TextBoxNo TextBox" Font-Size="XX-Small"
+                                                Width="100%"></asp:TextBox>
+                                        </td>
+                                        <td width="2%" class="tdLeft" bgcolor="#AFCAE4">
+                                            <asp:Button ID="btnGOToNav" runat="server" Font-Size="X-Small" OnClick="btnGOToNav_Click"
+                                                Width="100%" Text="Go" />
+                                        </td>
+                                        <td width="8%" bgcolor="#336799" class="SmallFont">
+                                            <span style="font-family: Arial; font-size: 12px; color: White; font-weight: bold;">
+                                                &nbsp;Latest News</span>
+                                        </td>
+                                        <td width="80s%" bgcolor="#AFCAE4">
+                                            <marquee direction="Left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="1"
+                                                id="Marquee1" runat="server">
+                                                <asp:DataList ID="DataList1" runat="server" RepeatDirection="Horizontal" OnItemCommand="DataList1_ItemCommand">
+                                                    <ItemTemplate>
+                                                        <asp:LinkButton ID="lnkNews" runat="server" CommandArgument='<%# Eval("NEWS_ID") %>'
+                                                            Text='<%# Eval("NEWS_HEAD")+" || " %>' CommandName="Detail" ToolTip="Click Here To Get Details"></asp:LinkButton>
+                                                    </ItemTemplate>
+                                                </asp:DataList></marquee>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table width="100%">
+                                    <tr style="height: 1px;">
+                                        <td align="Left" class="logout" width="40%" valign="top">
+                                            <table>
+                                                <tr>
+                                                    <td id="tdLabel" runat="server">
+                                                        <asp:Label ID="Label1" ForeColor="#336799" runat="server" Text="You are at >"></asp:Label>
+                                                    </td>
+                                                    <td id="tdModule" runat="server">
+                                                        <asp:Label ID="lblModule" ForeColor="#336799" runat="server"></asp:Label>
+                                                    </td>
+                                                    <td id="tdChildMoudule" runat="server">
+                                                        <asp:Label ID="lblChildModule" ForeColor="#336799" runat="server"></asp:Label>
+                                                    </td>
+                                                    <td id="tdNavigation" runat="server">
+                                                        <asp:Label ID="lblNavigation" ForeColor="#336799" runat="server"></asp:Label>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td align="right" width="60%" valign="top" style="color: Blue">
+                                            <uc2:EmailMenu ID="EmailMenu1" runat="server" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" bgcolor="#afcae4" valign="top">
+                                &nbsp;&nbsp;<uc3:GetUserMenu ID="GetUserMenu1" runat="server"></uc3:GetUserMenu>
+                                <%-- <uc4:GetEmpMenu ID="GetEmpMenu1" runat="server" />--%>
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                            </td>
+                            <td align="left" valign="top" bgcolor="#afcae4">
+                                <br />
+                                <asp:ContentPlaceHolder ID="cphBody" runat="server">
+                                </asp:ContentPlaceHolder>
+                                <br />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%" height="40" align="center" valign="top" bgcolor="#29537C" class="copy">
+                    &copy; Copy Right Jingle InfoSolutions Pvt. Ltd. 2013<br />
+                    Designed &amp; Developed by <a href="http://www.jingleinfo.com/" class="copy">Jingle
+                        Infosolutions Pvt. Ltd.</a>
+                        <br />
+                   <div>CLEAR :F1, UPDATE :F2, SAVE :F3, ZOOM :F4, REFRESH :F5, EXIT :F7, DELETE :F8, FIND :F9, PRINT :F10  </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    
+    </form>
+    
+    
+    <script type = "text/javascript">
+    window.onload = function () {
+
+        var scrollY = parseInt('<%# Request.Form["scrollY"] == null ? "0" : Request.Form["scrollY"] %>');
+        stampIt();
+        if (!isNaN(scrollY)) {
+            window.scrollTo(0, scrollY);
+        }
+    };
+    window.onscroll = function () {
+        var scrollY = document.body.scrollTop;
+        if (scrollY == 0) {
+            if (window.pageYOffset) {
+                scrollY = window.pageYOffset;
+            }
+            else {
+                scrollY = (document.body.parentElement) ? document.body.parentElement.scrollTop : 0;
+            }
+        }
+
+        if (scrollY > 0) {
+            var input = document.getElementById("scrollY");
+            if (input == null) {
+                input = document.createElement("input");
+                input.setAttribute("type", "hidden");
+                input.setAttribute("id", "scrollY");
+                input.setAttribute("name", "scrollY");
+                document.forms[0].appendChild(input);
+            }
+            input.value = scrollY;
+            //alert(scrollY);
+        }
+    };
+</script>
+</body>
+</html>

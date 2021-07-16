@@ -1,0 +1,147 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="CasualLeave.ascx.cs" Inherits="CommonControls_CasualLeave" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<table cellpadding="0" cellspacing="0" border="0" class="tContentArial" width="100%">
+    <tr>
+        <td>
+            <table cellpadding="0" cellspacing="0" border="0" class="tContentArial" width="250">
+                <tr>
+                    <td>
+                        <asp:ImageButton ID="imgbtnSave" runat="server" ToolTip="Find" ImageUrl="~/CommonImages/save.jpg"
+                            Width="61px" Height="40px"  ValidationGroup="Casual" OnClick="imgbtnSave_Click1"></asp:ImageButton>
+                    </td>
+                    <td>
+                        <asp:ImageButton ID="imgbtnUpdate" runat="server" ToolTip="Update" ImageUrl="~/CommonImages/edit1.jpg"
+                            Width="48" Height="41" ValidationGroup="Casual" OnClick="imgbtnUpdate_Click"></asp:ImageButton>
+                    </td>
+                  
+                    <td>
+                        <asp:ImageButton ID="imgbtnClear" runat="server" ToolTip="Clear" ImageUrl="~/CommonImages/clear.jpg"
+                            Width="48" Height="41" OnClientClick="javascript:return window.confirm('Are you sure you want to clear this record')"
+                            OnClick="imgbtnClear_Click"></asp:ImageButton>
+                    </td>
+                    <td>
+                        <asp:ImageButton ID="imgbtnPrint" runat="server" ToolTip="Print" ImageUrl="~/CommonImages/link_print.png"
+                            Width="48" Height="41" OnClick="imgbtnPrint_Click"></asp:ImageButton>
+                    </td>
+                    <td>
+                        <asp:ImageButton ID="imgbtnExit" runat="server" ToolTip="Exit" ImageUrl="~/CommonImages/link_exit.png"
+                            Width="48" Height="41" OnClick="imgbtnExit_Click"></asp:ImageButton>
+                    </td>
+                    <td>
+                        <asp:ImageButton ID="imgbtnHelp" runat="server" ToolTip="Help" ImageUrl="~/CommonImages/link_help.png"
+                            Width="48" Height="41"></asp:ImageButton>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table border="0" cellpadding="0" cellspacing="0" width="400" class="tContentArial tablebox">
+                <tr>
+                    <td align="center" colspan="8" valign="top" class="tRowColorAdmin">
+                        <span class="H3Heading">Casual Leave Master</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="6">
+                        <asp:Label ID="lblMessage" runat="server" CssClass="csslblMessage"></asp:Label>
+                        <asp:Label ID="lblErrorMessage" runat="server" CssClass="UserError"></asp:Label></td>
+                </tr>
+                <tr>
+                    <td align="left" colspan="3" valign="top">
+                        <span class="Mode">You are in &nbsp;<asp:Label ID="lblMode" runat="server"></asp:Label>&nbsp;Mode
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="48%" align="right" valign="top">
+                        Year</td>
+                    <td width="2%" align="center" valign="top">
+                        <b>:</b></td>
+                    <td width="50%" align="left" valign="top">
+                        <asp:TextBox ID="txtYear" runat="server" MaxLength="4" Width="50px" CssClass="gCtrTxt" ValidationGroup="Casual"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtYear"
+                            Display="Dynamic" ErrorMessage="Field Can't be Empty" ValidationGroup="Casual"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="txtYear"
+                            Display="Dynamic" ErrorMessage="Digit only(Example:2000,2001,2010)" Font-Bold="False"
+                            ValidationExpression="^\d{4}$" ValidationGroup="Casual"></asp:RegularExpressionValidator>
+                        <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txtYear"
+                            ErrorMessage="Year Cant't be Previous Year" MaximumValue="2100" MinimumValue="2010"
+                            ValidationGroup="Casual" Type="Integer"></asp:RangeValidator>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="48%" align="right" valign="top" >
+                        No of Days</td>
+                    <td width="2%" align="center" valign="top" >
+                        <b>:</b></td>
+                    <td width="50%" align="left" valign="top" >
+                        <asp:TextBox ID="txtNoOfDays" runat="server" MaxLength="4" Width="50px" CssClass="gCtrTxt" ValidationGroup="Casual"></asp:TextBox></td>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtNoOfDays"
+                            Display="Dynamic" ErrorMessage="Field Can't be Empty" ValidationGroup="Casual"></asp:RequiredFieldValidator></tr>
+                <tr>
+                    <td align="right" valign="top" width="48%">
+                        Carrying Forward Leave
+                    </td>
+                    <td align="center" valign="top" width="2%">
+                        <b>:</b>
+                    </td>
+                    <td align="left" valign="top" width="50%">
+                        <asp:RadioButtonList ID="radLeaveSelection" runat="server" RepeatColumns="2" RepeatDirection="Horizontal">
+                            <asp:ListItem Text="Yes" Value="Y" Selected="True"></asp:ListItem>
+                            <asp:ListItem Text="No" Value="N"></asp:ListItem>
+                        </asp:RadioButtonList>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="48%" align="right" valign="top">
+                        Status</td>
+                    <td width="2%" align="center" valign="top">
+                        <b>:</b></td>
+                    <td width="50%" align="left" valign="top">
+                        <asp:CheckBox ID="chkActive" runat="server" TabIndex="2" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" align="left" width="100%">
+                        <br />
+                        <b>Total Record&nbsp;&nbsp;:&nbsp;&nbsp;<asp:Label ID="lblTotalRecord" runat="server"></asp:Label>
+                        </b>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" width="100%" colspan="3">
+                    <br />
+                        <asp:GridView ID="gvCasualLeavemaster" runat="server" PagerSettings-Mode="Numeric" PageSize="10"
+                            PagerSettings-Position="Bottom" PagerStyle-HorizontalAlign="Left" AutoGenerateColumns="False"
+                            AllowPaging="True" Width="100%" CssClass="tContentArial" OnRowCommand="gvCasualLeavemaster_RowCommand1" OnPageIndexChanging="gvCasualLeavemaster_PageIndexChanging">
+                          <HeaderStyle HorizontalAlign="center"/>
+                            <Columns>
+                                <asp:BoundField HeaderText="CASUALLEAVEMASTERID" DataField="IN_CASUALLEAVEMASTERID"
+                                    Visible="false">
+                                 </asp:BoundField>
+                                <asp:BoundField HeaderText="YEAR" DataField="CH_YEAR">
+                                    <ItemStyle HorizontalAlign="center" />
+                                </asp:BoundField>
+                                <asp:BoundField HeaderText="NO OF DAYS" DataField="CH_LEAVEDAY">
+                                <ItemStyle HorizontalAlign="center" />
+                                   </asp:BoundField>
+                                <asp:BoundField HeaderText="CARRING FORWARDED" DataField="CH_FORWARDED">
+                                    <ItemStyle HorizontalAlign="center" />
+                                </asp:BoundField>
+                                <asp:TemplateField HeaderText="Edit">
+                                    <ItemTemplate>
+                                        <asp:LinkButton ID="lnkEdit" runat="server" CausesValidation="false" CommandArgument='<%# Eval("IN_CASUALLEAVEMASTERID") %>'
+                                            Text="Edit" ></asp:LinkButton>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                            </Columns>
+                            <PagerStyle HorizontalAlign="Left" />
+                        </asp:GridView>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

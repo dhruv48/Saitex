@@ -1,0 +1,1366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVendorCategoryList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVendorCategoryListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVendorCategoryListResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetVendorList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVendorListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVendorListResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPOVendorList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPOVendorListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPOVendorListResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPOVendorListCash">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPOVendorListCashResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPOVendorListCashResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompanyName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompanyNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCompanyNameResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompanyName1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompanyName1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCompanyName1Result" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBranchMasterList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBranchMasterListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBranchMasterListResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBranchMasterName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBranchMasterNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBranchMasterNameResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDepartmentMasterList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDepartmentMasterListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDepartmentMasterListResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDepartmentName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDepartmentNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDepartmentNameResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDepartmentName1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDepartmentName1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDepartmentName1Result" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserMaster">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserMasterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserMasterResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBranchNameByCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="contextKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBranchNameByCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBranchNameByCompanyResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBranchCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="contextKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBranchCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBranchCodeResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGroupNameResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrency">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrencyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCurrencyResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemCategoryNameListTT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemCategoryNameListTTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetItemCategoryNameListTTResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUnitMasterNameList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUnitMasterNameListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUnitMasterNameListResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrencyMaster">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrencyMasterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCurrencyMasterResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVendorNameList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVendorNameListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVendorNameListResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemForPO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemForPOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetItemForPOResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterNameResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterCodeResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDesignationName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDesignationNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDesignationNameResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemForRecPO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="contextKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemForRecPOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetItemForRecPOResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPONUMB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPONUMBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPONUMBResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPONUMBCash">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPONUMBCashResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPONUMBCashResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetYarnData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetYarnDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetYarnDataResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNavByChildModule">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="contextKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNavByChildModuleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNavByChildModuleResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmCustomerRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtPODetail">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmCustomerRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="confirmCustomerRequestResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVendorCategoryListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVendorCategoryList" />
+  </wsdl:message>
+  <wsdl:message name="GetVendorCategoryListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVendorCategoryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVendorListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVendorList" />
+  </wsdl:message>
+  <wsdl:message name="GetVendorListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVendorListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPOVendorListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPOVendorList" />
+  </wsdl:message>
+  <wsdl:message name="GetPOVendorListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPOVendorListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPOVendorListCashSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPOVendorListCash" />
+  </wsdl:message>
+  <wsdl:message name="GetPOVendorListCashSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPOVendorListCashResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCompanyNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCompanyName" />
+  </wsdl:message>
+  <wsdl:message name="GetCompanyNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCompanyNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCompanyName1SoapIn">
+    <wsdl:part name="parameters" element="tns:GetCompanyName1" />
+  </wsdl:message>
+  <wsdl:message name="GetCompanyName1SoapOut">
+    <wsdl:part name="parameters" element="tns:GetCompanyName1Response" />
+  </wsdl:message>
+  <wsdl:message name="GetBranchMasterListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBranchMasterList" />
+  </wsdl:message>
+  <wsdl:message name="GetBranchMasterListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBranchMasterListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBranchMasterNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBranchMasterName" />
+  </wsdl:message>
+  <wsdl:message name="GetBranchMasterNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBranchMasterNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDepartmentMasterListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDepartmentMasterList" />
+  </wsdl:message>
+  <wsdl:message name="GetDepartmentMasterListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDepartmentMasterListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDepartmentNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDepartmentName" />
+  </wsdl:message>
+  <wsdl:message name="GetDepartmentNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDepartmentNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDepartmentName1SoapIn">
+    <wsdl:part name="parameters" element="tns:GetDepartmentName1" />
+  </wsdl:message>
+  <wsdl:message name="GetDepartmentName1SoapOut">
+    <wsdl:part name="parameters" element="tns:GetDepartmentName1Response" />
+  </wsdl:message>
+  <wsdl:message name="GetUserMasterSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserMaster" />
+  </wsdl:message>
+  <wsdl:message name="GetUserMasterSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBranchNameByCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:GetBranchNameByCompany" />
+  </wsdl:message>
+  <wsdl:message name="GetBranchNameByCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:GetBranchNameByCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBranchCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBranchCode" />
+  </wsdl:message>
+  <wsdl:message name="GetBranchCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBranchCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGroupName" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGroupNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrencySoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrency" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrencySoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetItemCategoryNameListTTSoapIn">
+    <wsdl:part name="parameters" element="tns:GetItemCategoryNameListTT" />
+  </wsdl:message>
+  <wsdl:message name="GetItemCategoryNameListTTSoapOut">
+    <wsdl:part name="parameters" element="tns:GetItemCategoryNameListTTResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUnitMasterNameListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUnitMasterNameList" />
+  </wsdl:message>
+  <wsdl:message name="GetUnitMasterNameListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUnitMasterNameListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrencyMasterSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrencyMaster" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrencyMasterSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrencyMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVendorNameListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVendorNameList" />
+  </wsdl:message>
+  <wsdl:message name="GetVendorNameListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVendorNameListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetItemForPOSoapIn">
+    <wsdl:part name="parameters" element="tns:GetItemForPO" />
+  </wsdl:message>
+  <wsdl:message name="GetItemForPOSoapOut">
+    <wsdl:part name="parameters" element="tns:GetItemForPOResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterName" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterCode" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDesignationNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDesignationName" />
+  </wsdl:message>
+  <wsdl:message name="GetDesignationNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDesignationNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetItemForRecPOSoapIn">
+    <wsdl:part name="parameters" element="tns:GetItemForRecPO" />
+  </wsdl:message>
+  <wsdl:message name="GetItemForRecPOSoapOut">
+    <wsdl:part name="parameters" element="tns:GetItemForRecPOResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPONUMBSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPONUMB" />
+  </wsdl:message>
+  <wsdl:message name="GetPONUMBSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPONUMBResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPONUMBCashSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPONUMBCash" />
+  </wsdl:message>
+  <wsdl:message name="GetPONUMBCashSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPONUMBCashResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetYarnDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetYarnData" />
+  </wsdl:message>
+  <wsdl:message name="GetYarnDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetYarnDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNavByChildModuleSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNavByChildModule" />
+  </wsdl:message>
+  <wsdl:message name="GetNavByChildModuleSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNavByChildModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="confirmCustomerRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:confirmCustomerRequest" />
+  </wsdl:message>
+  <wsdl:message name="confirmCustomerRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:confirmCustomerRequestResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AutoCompleteSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVendorCategoryList">
+      <wsdl:input message="tns:GetVendorCategoryListSoapIn" />
+      <wsdl:output message="tns:GetVendorCategoryListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVendorList">
+      <wsdl:input message="tns:GetVendorListSoapIn" />
+      <wsdl:output message="tns:GetVendorListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPOVendorList">
+      <wsdl:input message="tns:GetPOVendorListSoapIn" />
+      <wsdl:output message="tns:GetPOVendorListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPOVendorListCash">
+      <wsdl:input message="tns:GetPOVendorListCashSoapIn" />
+      <wsdl:output message="tns:GetPOVendorListCashSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyName">
+      <wsdl:input message="tns:GetCompanyNameSoapIn" />
+      <wsdl:output message="tns:GetCompanyNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyName1">
+      <wsdl:input message="tns:GetCompanyName1SoapIn" />
+      <wsdl:output message="tns:GetCompanyName1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchMasterList">
+      <wsdl:input message="tns:GetBranchMasterListSoapIn" />
+      <wsdl:output message="tns:GetBranchMasterListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchMasterName">
+      <wsdl:input message="tns:GetBranchMasterNameSoapIn" />
+      <wsdl:output message="tns:GetBranchMasterNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentMasterList">
+      <wsdl:input message="tns:GetDepartmentMasterListSoapIn" />
+      <wsdl:output message="tns:GetDepartmentMasterListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentName">
+      <wsdl:input message="tns:GetDepartmentNameSoapIn" />
+      <wsdl:output message="tns:GetDepartmentNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentName1">
+      <wsdl:input message="tns:GetDepartmentName1SoapIn" />
+      <wsdl:output message="tns:GetDepartmentName1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserMaster">
+      <wsdl:input message="tns:GetUserMasterSoapIn" />
+      <wsdl:output message="tns:GetUserMasterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchNameByCompany">
+      <wsdl:input message="tns:GetBranchNameByCompanySoapIn" />
+      <wsdl:output message="tns:GetBranchNameByCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchCode">
+      <wsdl:input message="tns:GetBranchCodeSoapIn" />
+      <wsdl:output message="tns:GetBranchCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupName">
+      <wsdl:input message="tns:GetGroupNameSoapIn" />
+      <wsdl:output message="tns:GetGroupNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrency">
+      <wsdl:input message="tns:GetCurrencySoapIn" />
+      <wsdl:output message="tns:GetCurrencySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemCategoryNameListTT">
+      <wsdl:input message="tns:GetItemCategoryNameListTTSoapIn" />
+      <wsdl:output message="tns:GetItemCategoryNameListTTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnitMasterNameList">
+      <wsdl:input message="tns:GetUnitMasterNameListSoapIn" />
+      <wsdl:output message="tns:GetUnitMasterNameListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyMaster">
+      <wsdl:input message="tns:GetCurrencyMasterSoapIn" />
+      <wsdl:output message="tns:GetCurrencyMasterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVendorNameList">
+      <wsdl:input message="tns:GetVendorNameListSoapIn" />
+      <wsdl:output message="tns:GetVendorNameListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemForPO">
+      <wsdl:input message="tns:GetItemForPOSoapIn" />
+      <wsdl:output message="tns:GetItemForPOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterName">
+      <wsdl:input message="tns:GetMasterNameSoapIn" />
+      <wsdl:output message="tns:GetMasterNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterCode">
+      <wsdl:input message="tns:GetMasterCodeSoapIn" />
+      <wsdl:output message="tns:GetMasterCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignationName">
+      <wsdl:input message="tns:GetDesignationNameSoapIn" />
+      <wsdl:output message="tns:GetDesignationNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemForRecPO">
+      <wsdl:input message="tns:GetItemForRecPOSoapIn" />
+      <wsdl:output message="tns:GetItemForRecPOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPONUMB">
+      <wsdl:input message="tns:GetPONUMBSoapIn" />
+      <wsdl:output message="tns:GetPONUMBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPONUMBCash">
+      <wsdl:input message="tns:GetPONUMBCashSoapIn" />
+      <wsdl:output message="tns:GetPONUMBCashSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetYarnData">
+      <wsdl:input message="tns:GetYarnDataSoapIn" />
+      <wsdl:output message="tns:GetYarnDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNavByChildModule">
+      <wsdl:input message="tns:GetNavByChildModuleSoapIn" />
+      <wsdl:output message="tns:GetNavByChildModuleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmCustomerRequest">
+      <wsdl:input message="tns:confirmCustomerRequestSoapIn" />
+      <wsdl:output message="tns:confirmCustomerRequestSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AutoCompleteSoap" type="tns:AutoCompleteSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVendorCategoryList">
+      <soap:operation soapAction="http://tempuri.org/GetVendorCategoryList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVendorList">
+      <soap:operation soapAction="http://tempuri.org/GetVendorList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPOVendorList">
+      <soap:operation soapAction="http://tempuri.org/GetPOVendorList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPOVendorListCash">
+      <soap:operation soapAction="http://tempuri.org/GetPOVendorListCash" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyName">
+      <soap:operation soapAction="http://tempuri.org/GetCompanyName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyName1">
+      <soap:operation soapAction="http://tempuri.org/GetCompanyName1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchMasterList">
+      <soap:operation soapAction="http://tempuri.org/GetBranchMasterList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchMasterName">
+      <soap:operation soapAction="http://tempuri.org/GetBranchMasterName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentMasterList">
+      <soap:operation soapAction="http://tempuri.org/GetDepartmentMasterList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentName">
+      <soap:operation soapAction="http://tempuri.org/GetDepartmentName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentName1">
+      <soap:operation soapAction="http://tempuri.org/GetDepartmentName1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserMaster">
+      <soap:operation soapAction="http://tempuri.org/GetUserMaster" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchNameByCompany">
+      <soap:operation soapAction="http://tempuri.org/GetBranchNameByCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchCode">
+      <soap:operation soapAction="http://tempuri.org/GetBranchCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupName">
+      <soap:operation soapAction="http://tempuri.org/GetGroupName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrency">
+      <soap:operation soapAction="http://tempuri.org/GetCurrency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemCategoryNameListTT">
+      <soap:operation soapAction="http://tempuri.org/GetItemCategoryNameListTT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnitMasterNameList">
+      <soap:operation soapAction="http://tempuri.org/GetUnitMasterNameList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyMaster">
+      <soap:operation soapAction="http://tempuri.org/GetCurrencyMaster" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVendorNameList">
+      <soap:operation soapAction="http://tempuri.org/GetVendorNameList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemForPO">
+      <soap:operation soapAction="http://tempuri.org/GetItemForPO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterName">
+      <soap:operation soapAction="http://tempuri.org/GetMasterName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterCode">
+      <soap:operation soapAction="http://tempuri.org/GetMasterCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignationName">
+      <soap:operation soapAction="http://tempuri.org/GetDesignationName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemForRecPO">
+      <soap:operation soapAction="http://tempuri.org/GetItemForRecPO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPONUMB">
+      <soap:operation soapAction="http://tempuri.org/GetPONUMB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPONUMBCash">
+      <soap:operation soapAction="http://tempuri.org/GetPONUMBCash" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetYarnData">
+      <soap:operation soapAction="http://tempuri.org/GetYarnData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNavByChildModule">
+      <soap:operation soapAction="http://tempuri.org/GetNavByChildModule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmCustomerRequest">
+      <soap:operation soapAction="http://tempuri.org/confirmCustomerRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AutoCompleteSoap12" type="tns:AutoCompleteSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVendorCategoryList">
+      <soap12:operation soapAction="http://tempuri.org/GetVendorCategoryList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVendorList">
+      <soap12:operation soapAction="http://tempuri.org/GetVendorList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPOVendorList">
+      <soap12:operation soapAction="http://tempuri.org/GetPOVendorList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPOVendorListCash">
+      <soap12:operation soapAction="http://tempuri.org/GetPOVendorListCash" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyName">
+      <soap12:operation soapAction="http://tempuri.org/GetCompanyName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyName1">
+      <soap12:operation soapAction="http://tempuri.org/GetCompanyName1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchMasterList">
+      <soap12:operation soapAction="http://tempuri.org/GetBranchMasterList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchMasterName">
+      <soap12:operation soapAction="http://tempuri.org/GetBranchMasterName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentMasterList">
+      <soap12:operation soapAction="http://tempuri.org/GetDepartmentMasterList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentName">
+      <soap12:operation soapAction="http://tempuri.org/GetDepartmentName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartmentName1">
+      <soap12:operation soapAction="http://tempuri.org/GetDepartmentName1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserMaster">
+      <soap12:operation soapAction="http://tempuri.org/GetUserMaster" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchNameByCompany">
+      <soap12:operation soapAction="http://tempuri.org/GetBranchNameByCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchCode">
+      <soap12:operation soapAction="http://tempuri.org/GetBranchCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupName">
+      <soap12:operation soapAction="http://tempuri.org/GetGroupName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrency">
+      <soap12:operation soapAction="http://tempuri.org/GetCurrency" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemCategoryNameListTT">
+      <soap12:operation soapAction="http://tempuri.org/GetItemCategoryNameListTT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnitMasterNameList">
+      <soap12:operation soapAction="http://tempuri.org/GetUnitMasterNameList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyMaster">
+      <soap12:operation soapAction="http://tempuri.org/GetCurrencyMaster" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVendorNameList">
+      <soap12:operation soapAction="http://tempuri.org/GetVendorNameList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemForPO">
+      <soap12:operation soapAction="http://tempuri.org/GetItemForPO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterName">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterCode">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDesignationName">
+      <soap12:operation soapAction="http://tempuri.org/GetDesignationName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemForRecPO">
+      <soap12:operation soapAction="http://tempuri.org/GetItemForRecPO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPONUMB">
+      <soap12:operation soapAction="http://tempuri.org/GetPONUMB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPONUMBCash">
+      <soap12:operation soapAction="http://tempuri.org/GetPONUMBCash" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetYarnData">
+      <soap12:operation soapAction="http://tempuri.org/GetYarnData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNavByChildModule">
+      <soap12:operation soapAction="http://tempuri.org/GetNavByChildModule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmCustomerRequest">
+      <soap12:operation soapAction="http://tempuri.org/confirmCustomerRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AutoComplete">
+    <wsdl:port name="AutoCompleteSoap" binding="tns:AutoCompleteSoap">
+      <soap:address location="http://localhost:2682/Saitex/AutoComplete.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AutoCompleteSoap12" binding="tns:AutoCompleteSoap12">
+      <soap12:address location="http://localhost:2682/Saitex/AutoComplete.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

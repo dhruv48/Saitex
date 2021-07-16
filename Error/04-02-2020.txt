@@ -1,0 +1,15 @@
+
+Log Entry : 
+02/04/2020 10:52:25
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+02/04/2020 16:20:31
+Error in: http://localhost:54726/Saitex/Module/Yarn/SalesWork/Pages/GetPODisTex.aspx?FinalAmount=&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&YARN_CODE=CT0001&SHADE_CODE=GREY&SHADE_FAMILY=GREY. Error Message:Input string was not in a correct format.
+__________________________
+
+Log Entry : 
+02/04/2020 16:20:45
+Error in: http://localhost:54726/Saitex/Module/Yarn/SalesWork/Pages/GetPODisTex.aspx?FinalAmount=&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&YARN_CODE=CT0001&SHADE_CODE=GREY&SHADE_FAMILY=GREY. Error Message:Input string was not in a correct format.
+__________________________

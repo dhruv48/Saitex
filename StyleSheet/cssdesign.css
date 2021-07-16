@@ -1,0 +1,73 @@
+﻿.copy {	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: normal;
+	color: #E5E5E5;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.tabbox {
+	border: 1px solid #999999;
+}
+.heading1 {
+	font-family: Tahoma;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.logout {
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+
+.toplink {
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+}
+.formtext {
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.saitex {
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight:bold;
+	color: #FFFFFF;
+}
+
+.forgotpassword {
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: normal;
+	color: #00FFFF;
+}
+.wel {
+	font-family: Tahoma;
+	font-size: 14px;
+	font-weight:bolder;
+	color: #336799;
+}
+
+.logintext {
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.Mode {
+	font-family:Arial;
+	font-size: 13px;
+	font-weight:normal;
+	color: #FF0000;
+}

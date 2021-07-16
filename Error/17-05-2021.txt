@@ -1,0 +1,12 @@
+
+Log Entry : 
+05/17/2021 15:42:06
+Error in: http://localhost:54726/Saitex/Module/NewFiber/Pages/Fiber_MST.aspx. Error Message:System.Data.OracleClient.OracleException (0x80131938): ORA-06550: line 1, column 7:
+PLS-00905: object SANIMODBFINA.P_TX_FIBER_MST_INSERT is invalid
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+   at SaitexDL.Interface.Method.TX_FIBER_MST.iNSERT_rECORD(TX_FIBER_MST FM) in d:\Raghvendra\SPPINING_SIDHARTH\MARGESOLUTION_INSANIMO\SaitexDL\Interface\Method\TX_FIBER_MST.cs:line 49
+   at SaitexBL.Interface.Method.TX_FIBER_MST.iNSERT_rECORD(TX_FIBER_MST FM) in d:\Raghvendra\SPPINING_SIDHARTH\MARGESOLUTION_INSANIMO\SaitexBL\Interface\Method\TX_FIBER_MST.cs:line 18
+   at Module_Fiber_Controls_FIBER_MST.Insert_Record() in d:\Raghvendra\SPPINING_SIDHARTH\MARGESOLUTION_INSANIMO\Saitex\Module\NewFiber\Controls\FIBER_MST.ascx.cs:line 340
+__________________________

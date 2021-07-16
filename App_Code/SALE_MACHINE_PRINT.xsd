@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SALE_MACHINE_PRINT" targetNamespace="http://tempuri.org/SALE_MACHINE_PRINT.xsd" xmlns:mstns="http://tempuri.org/SALE_MACHINE_PRINT.xsd" xmlns="http://tempuri.org/SALE_MACHINE_PRINT.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SALE_MACHINE_PRINT" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SALE_MACHINE_PRINT" msprop:Generator_DataSetName="SALE_MACHINE_PRINT">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SALE_MACHINE_PRINT" msprop:Generator_UserTableName="SALE_MACHINE_PRINT" msprop:Generator_RowDeletedName="SALE_MACHINE_PRINTRowDeleted" msprop:Generator_RowChangedName="SALE_MACHINE_PRINTRowChanged" msprop:Generator_RowClassName="SALE_MACHINE_PRINTRow" msprop:Generator_RowChangingName="SALE_MACHINE_PRINTRowChanging" msprop:Generator_RowEvArgName="SALE_MACHINE_PRINTRowChangeEvent" msprop:Generator_RowEvHandlerName="SALE_MACHINE_PRINTRowChangeEventHandler" msprop:Generator_TableClassName="SALE_MACHINE_PRINTDataTable" msprop:Generator_TableVarName="tableSALE_MACHINE_PRINT" msprop:Generator_RowDeletingName="SALE_MACHINE_PRINTRowDeleting" msprop:Generator_TablePropName="_SALE_MACHINE_PRINT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ORDER_NO" msprop:Generator_UserColumnName="ORDER_NO" msprop:Generator_ColumnVarNameInTable="columnORDER_NO" msprop:Generator_ColumnPropNameInRow="ORDER_NO" msprop:Generator_ColumnPropNameInTable="ORDER_NOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ORDER_DATE" msprop:Generator_UserColumnName="ORDER_DATE" msprop:Generator_ColumnVarNameInTable="columnORDER_DATE" msprop:Generator_ColumnPropNameInRow="ORDER_DATE" msprop:Generator_ColumnPropNameInTable="ORDER_DATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PRTY_CODE" msprop:Generator_UserColumnName="PRTY_CODE" msprop:Generator_ColumnVarNameInTable="columnPRTY_CODE" msprop:Generator_ColumnPropNameInRow="PRTY_CODE" msprop:Generator_ColumnPropNameInTable="PRTY_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PRTY_NAME" msprop:Generator_UserColumnName="PRTY_NAME" msprop:Generator_ColumnVarNameInTable="columnPRTY_NAME" msprop:Generator_ColumnPropNameInRow="PRTY_NAME" msprop:Generator_ColumnPropNameInTable="PRTY_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="YARN_CODE" msprop:Generator_UserColumnName="YARN_CODE" msprop:Generator_ColumnVarNameInTable="columnYARN_CODE" msprop:Generator_ColumnPropNameInRow="YARN_CODE" msprop:Generator_ColumnPropNameInTable="YARN_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="YARN_DESC" msprop:Generator_UserColumnName="YARN_DESC" msprop:Generator_ColumnVarNameInTable="columnYARN_DESC" msprop:Generator_ColumnPropNameInRow="YARN_DESC" msprop:Generator_ColumnPropNameInTable="YARN_DESCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ASS_YARN_DESC" msprop:Generator_UserColumnName="ASS_YARN_DESC" msprop:Generator_ColumnVarNameInTable="columnASS_YARN_DESC" msprop:Generator_ColumnPropNameInRow="ASS_YARN_DESC" msprop:Generator_ColumnPropNameInTable="ASS_YARN_DESCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SHADE_CODE" msprop:Generator_UserColumnName="SHADE_CODE" msprop:Generator_ColumnVarNameInTable="columnSHADE_CODE" msprop:Generator_ColumnPropNameInRow="SHADE_CODE" msprop:Generator_ColumnPropNameInTable="SHADE_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SHADE_FAMILY" msprop:Generator_UserColumnName="SHADE_FAMILY" msprop:Generator_ColumnVarNameInTable="columnSHADE_FAMILY" msprop:Generator_ColumnPropNameInRow="SHADE_FAMILY" msprop:Generator_ColumnPropNameInTable="SHADE_FAMILYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SHADE_REFF_NO" msprop:Generator_UserColumnName="SHADE_REFF_NO" msprop:Generator_ColumnVarNameInTable="columnSHADE_REFF_NO" msprop:Generator_ColumnPropNameInRow="SHADE_REFF_NO" msprop:Generator_ColumnPropNameInTable="SHADE_REFF_NOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MACHINE" msprop:Generator_UserColumnName="MACHINE" msprop:Generator_ColumnVarNameInTable="columnMACHINE" msprop:Generator_ColumnPropNameInRow="MACHINE" msprop:Generator_ColumnPropNameInTable="MACHINEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MACHINE_CAPACITY" msprop:Generator_UserColumnName="MACHINE_CAPACITY" msprop:Generator_ColumnVarNameInTable="columnMACHINE_CAPACITY" msprop:Generator_ColumnPropNameInRow="MACHINE_CAPACITY" msprop:Generator_ColumnPropNameInTable="MACHINE_CAPACITYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BATCH" msprop:Generator_UserColumnName="BATCH" msprop:Generator_ColumnVarNameInTable="columnBATCH" msprop:Generator_ColumnPropNameInRow="BATCH" msprop:Generator_ColumnPropNameInTable="BATCHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="YEAR" msprop:Generator_UserColumnName="YEAR" msprop:Generator_ColumnVarNameInTable="columnYEAR" msprop:Generator_ColumnPropNameInRow="YEAR" msprop:Generator_ColumnPropNameInTable="YEARColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="QUANTITY" msprop:Generator_UserColumnName="QUANTITY" msprop:Generator_ColumnVarNameInTable="columnQUANTITY" msprop:Generator_ColumnPropNameInRow="QUANTITY" msprop:Generator_ColumnPropNameInTable="QUANTITYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CR_UNIT" msprop:Generator_UserColumnName="CR_UNIT" msprop:Generator_ColumnVarNameInTable="columnCR_UNIT" msprop:Generator_ColumnPropNameInRow="CR_UNIT" msprop:Generator_ColumnPropNameInTable="CR_UNITColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="REQ_DATE" msprop:Generator_UserColumnName="REQ_DATE" msprop:Generator_ColumnVarNameInTable="columnREQ_DATE" msprop:Generator_ColumnPropNameInRow="REQ_DATE" msprop:Generator_ColumnPropNameInTable="REQ_DATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SHADE_NATURE" msprop:Generator_UserColumnName="SHADE_NATURE" msprop:Generator_ColumnVarNameInTable="columnSHADE_NATURE" msprop:Generator_ColumnPropNameInRow="SHADE_NATURE" msprop:Generator_ColumnPropNameInTable="SHADE_NATUREColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CONF_TYPE" msprop:Generator_UserColumnName="CONF_TYPE" msprop:Generator_ColumnVarNameInTable="columnCONF_TYPE" msprop:Generator_ColumnPropNameInRow="CONF_TYPE" msprop:Generator_ColumnPropNameInTable="CONF_TYPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SHADE_GROUP" msprop:Generator_UserColumnName="SHADE_GROUP" msprop:Generator_ColumnVarNameInTable="columnSHADE_GROUP" msprop:Generator_ColumnPropNameInRow="SHADE_GROUP" msprop:Generator_ColumnPropNameInTable="SHADE_GROUPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SHADE_SEQ" msprop:Generator_UserColumnName="SHADE_SEQ" msprop:Generator_ColumnVarNameInTable="columnSHADE_SEQ" msprop:Generator_ColumnPropNameInRow="SHADE_SEQ" msprop:Generator_ColumnPropNameInTable="SHADE_SEQColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

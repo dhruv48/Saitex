@@ -1,0 +1,61 @@
+
+Log Entry : 
+12/28/2019 12:18:35
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+12/28/2019 14:24:42
+Error in: http://localhost:54726/Saitex/Module/OrderDevelopment/CustomerRequest/Pages/CRApprovalYarnDyeing.aspx. Error Message:System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a send. ---> System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslState.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.ProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.TlsStream.CallProcessAuthentication(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Net.TlsStream.ProcessAuthentication(LazyAsyncResult result)
+   at System.Net.TlsStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.Net.PooledStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.Net.ConnectStream.WriteHeaders(Boolean async)
+   --- End of inner exception stack trace ---
+   at SaitexDL.Interface.Method.OD_CAPTURE_MST.SendSMS(String Mobile, String Message) in e:\SANIMO SOLUTION\24 DEC SANIMO\SANIMO Solution_Working\SaitexDL\Interface\Method\OD_CAPTURE_MST.cs:line 7588
+   at SaitexBL.Interface.Method.OD_CAPTURE_MST.SendSMS(String Mobile, String Message) in e:\SANIMO SOLUTION\24 DEC SANIMO\SANIMO Solution_Working\SaitexBL\Interface\Method\OD_CAPTURE_MST.cs:line 850
+   at Module_OrderDevelopment_CustomerRequest_Controls_CRApprovalYarnDyeing.imgbtnUpdate_Click1(Object sender, ImageClickEventArgs e) in e:\SANIMO SOLUTION\24 DEC SANIMO\SANIMO Solution_Working\Saitex\Module\OrderDevelopment\CustomerRequest\Controls\CRApprovalYarnDyeing.ascx.cs:line 258
+__________________________
+
+Log Entry : 
+12/28/2019 14:25:03
+Error in: http://localhost:54726/Saitex/Module/OrderDevelopment/CustomerRequest/Pages/CRApprovalYarnDyeing.aspx. Error Message:System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a send. ---> System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslState.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslState.ProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.TlsStream.CallProcessAuthentication(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Net.TlsStream.ProcessAuthentication(LazyAsyncResult result)
+   at System.Net.TlsStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.Net.PooledStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.Net.ConnectStream.WriteHeaders(Boolean async)
+   --- End of inner exception stack trace ---
+   at SaitexDL.Interface.Method.OD_CAPTURE_MST.SendSMS(String Mobile, String Message) in e:\SANIMO SOLUTION\24 DEC SANIMO\SANIMO Solution_Working\SaitexDL\Interface\Method\OD_CAPTURE_MST.cs:line 7588
+   at SaitexBL.Interface.Method.OD_CAPTURE_MST.SendSMS(String Mobile, String Message) in e:\SANIMO SOLUTION\24 DEC SANIMO\SANIMO Solution_Working\SaitexBL\Interface\Method\OD_CAPTURE_MST.cs:line 850
+   at Module_OrderDevelopment_CustomerRequest_Controls_CRApprovalYarnDyeing.imgbtnUpdate_Click1(Object sender, ImageClickEventArgs e) in e:\SANIMO SOLUTION\24 DEC SANIMO\SANIMO Solution_Working\Saitex\Module\OrderDevelopment\CustomerRequest\Controls\CRApprovalYarnDyeing.ascx.cs:line 258
+__________________________
+
+Log Entry : 
+12/28/2019 14:26:23
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+12/28/2019 16:20:42
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________

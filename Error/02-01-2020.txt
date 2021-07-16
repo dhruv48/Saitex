@@ -1,0 +1,6 @@
+
+Log Entry : 
+01/02/2020 10:36:18
+Error in: http://localhost:54726/Saitex/Module/Yarn/SalesWork/Reports/Dispatch_Print_Report.aspx?Year=2019&YARN_CODE=&Comp_Code=C00001&Branch_Code=SL0001&Sdate=01/04/2019 00:00:00&Edate=31/03/2020 00:00:00. Error Message:ORA-12571: TNS:packet writer failure
+
+__________________________

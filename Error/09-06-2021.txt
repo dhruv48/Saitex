@@ -1,0 +1,67 @@
+
+Log Entry : 
+06/09/2021 11:35:24
+Error in: http://localhost:54726/Saitex/Module/NewFiber/Pages/Fiber_Qc_Chacking.aspx. Error Message:Response.Redirect cannot be called in a Page callback.
+__________________________
+
+Log Entry : 
+06/09/2021 12:11:17
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+06/09/2021 12:59:41
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+06/09/2021 16:19:09
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+06/09/2021 16:34:54
+Error in: http://localhost:54726/Saitex/Module/NewFiber/Pages/Fiber_QC_CheckingList.aspx. Error Message:ORA-01791: not a SELECTed expression
+
+__________________________
+
+Log Entry : 
+06/09/2021 16:36:11
+Error in: http://localhost:54726/Saitex/Module/NewFiber/Pages/Fiber_QC_CheckingList.aspx. Error Message:ORA-01791: not a SELECTed expression
+
+__________________________
+
+Log Entry : 
+06/09/2021 16:52:00
+Error in: http://localhost:54726/Saitex/Module/NewFiber/Pages/Fiber_QC_CheckingList.aspx. Error Message:ORA-01791: not a SELECTed expression
+
+__________________________
+
+Log Entry : 
+06/09/2021 17:21:56
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+06/09/2021 17:22:28
+Error in: http://localhost:54726/Saitex/Module/NewFiber/Pages/Fiber_QC_CheckingList.aspx. Error Message:ORA-01791: not a SELECTed expression
+
+__________________________
+
+Log Entry : 
+06/09/2021 17:25:19
+Error in: http://localhost:54726/Saitex/Module/NewFiber/Pages/Fiber_QC_CheckingList.aspx. Error Message:ORA-01791: not a SELECTed expression
+
+__________________________
+
+Log Entry : 
+06/09/2021 17:55:09
+Error in: http://localhost:54726/Saitex/Module/NewFiber/Pages/Fiber_QC_CheckingList.aspx. Error Message:ORA-01791: not a SELECTed expression
+
+__________________________
+
+Log Entry : 
+06/09/2021 17:55:16
+Error in: http://localhost:54726/Saitex/Module/NewFiber/Pages/Fiber_QC_CheckingList.aspx. Error Message:ORA-01791: not a SELECTed expression
+
+__________________________

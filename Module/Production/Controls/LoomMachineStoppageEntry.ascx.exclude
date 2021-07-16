@@ -1,0 +1,243 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="LoomMachineStoppageEntry.ascx.cs" Inherits="Module_Production_Controls_LoomMachineStoppageEntry" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%@ Register Assembly="obout_ComboBox" Namespace="Obout.ComboBox" TagPrefix="cc2" %>
+<style type="text/css">
+    .item
+    {
+        position: relative !important;
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1; *display:inline;overflow:hidden;white-space:nowrap;}
+    .header
+    {
+        margin-left: 4px;
+    }
+    .c1
+    {
+        width: 60px;
+    }
+    .c2
+    {
+        margin-left: 4px;
+        width: 80px;
+    }
+    .c3
+    {
+        margin-left: 4px;
+        width: 100;
+    }
+</style>
+
+<table class="tContentArial" style="background-color: #afcae4">
+    <tr>
+        <td align="left" valign="top" class="td" width="100%">
+            <table class="tContentArial">
+                <tr>
+                    <td id="tdSave" runat="server">
+                        <asp:ImageButton ID="imgbtnSave" OnClick="imgbtnSave_Click" runat="server" ToolTip="Save"
+                            ImageUrl="~/CommonImages/save.jpg" ValidationGroup="YM"></asp:ImageButton>
+                    </td>
+                    <td id="tdUpdate" runat="server">
+                        <asp:ImageButton ID="imgbtnUpdate" OnClick="imgbtnUpdate_Click" runat="server" ToolTip="Update"
+                            ImageUrl="~/CommonImages/edit1.jpg" ValidationGroup="M1"></asp:ImageButton>
+                    </td>
+                    <td id="tdDelete" runat="server">
+                        <asp:ImageButton ID="imgbtnDelete" OnClick="imgbtnDelete_Click" runat="server" ToolTip="Delete"
+                            ImageUrl="~/CommonImages/del6.png"></asp:ImageButton>
+                    </td>
+                    <td>
+                        <asp:ImageButton ID="imgbtnFind" OnClick="imgbtnFind_Click" runat="server" ToolTip="Find"
+                            ImageUrl="~/CommonImages/link_find.png"></asp:ImageButton>
+                    </td>
+                    <td>
+                        <asp:ImageButton ID="imgbtnClear" OnClick="imgbtnClear_Click" runat="server" ToolTip="Clear"
+                            ImageUrl="~/CommonImages/clear.jpg" style="width: 48px"></asp:ImageButton>
+                    </td>
+                    <td>
+                        <asp:ImageButton ID="imgbtnPrint" OnClick="imgbtnPrint_Click" runat="server" ToolTip="Print"
+                            ImageUrl="~/CommonImages/link_print.png"></asp:ImageButton>
+                    </td>
+                    <td>
+                        <asp:ImageButton ID="imgbtnExit" OnClick="imgbtnExit_Click" runat="server" ToolTip="Exit"
+                            ImageUrl="~/CommonImages/link_exit.png"></asp:ImageButton>
+                    </td>
+                    <td>
+                        <asp:ImageButton ID="imgbtnHelp" OnClick="imgbtnHelp_Click" runat="server" ToolTip="Help"
+                            ImageUrl="~/CommonImages/link_help.png"></asp:ImageButton>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="TableHeader td tdCenter">
+            <span class="titleheading">Loom Machine Stopage Details</span>
+        </td>
+    </tr>
+    <tr>
+        <td class="tdCenter td SmallFont">
+            <asp:Label ID="lblValidateStartTime" runat="server" Visible="False"></asp:Label>
+            &nbsp;
+            <asp:Label ID="lblValidateEndTime" runat="server" Visible="False"></asp:Label>
+            <asp:HiddenField ID="hfTextBoxId" runat="server" />
+            <asp:HiddenField ID="hfPROS_CODE" runat="server" />
+        </td>
+    </tr>
+    <tr>
+        <td class="tdLeft td SmallFont">
+            <table>
+                <tr>
+                    <td class="tdLeft">
+                        Machine
+                    </td>
+                    <td class="tdLeft">
+                        Stopage From
+                    </td>
+                    <td class="tdLeft">
+                        Stopage To
+                    </td>
+                    <td class="tdRight">
+                        Stop Time (Minutes)
+                    </td>
+                    <td class="tdLeft">
+                        Stopage Reason
+                    </td>
+                    <td colspan="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdLeft">
+                        <cc2:ComboBox ID="ddlMachineCode" runat="server" DataTextField="MACHINE_CODE" DataValueField="MACHINE_DATA"
+                            EnableLoadOnDemand="true" Height="200px" MenuWidth="750px" OnLoadingItems="ddlMachineCode_LoadingItems"
+                            OnSelectedIndexChanged="ddlMachineCode_SelectedIndexChanged" Width="98%" AutoPostBack="True">
+                            <HeaderTemplate>
+                                <div class="header c1">
+                                    Machine Code</div>
+                                <div class="header c2">
+                                    Machine Group</div>
+                                <div class="header c3">
+                                    Machine Make</div>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <div class="item c1">
+                                    <asp:Literal ID="Literal4" runat="server" Text='<%# Eval("MACHINE_CODE") %>' />
+                                </div>
+                                <div class="item c2">
+                                    <asp:Literal ID="Container10" runat="server" Text='<%# Eval("MACHINE_GROUP") %>' />
+                                </div>
+                                <div class="item c3">
+                                    <asp:Literal ID="Container11" runat="server" Text='<%# Eval("MACHINE_MAKE") %>' />
+                                </div>
+                            </ItemTemplate>
+                            <FooterTemplate>
+                                Displaying items
+                                <%# Container.ItemsCount > 0 ? "1" : "0" %>-<%# Container.ItemsLoadedCount %>
+                                out of
+                                <%# Container.ItemsCount %>.
+                            </FooterTemplate>
+                        </cc2:ComboBox>
+                    </td>
+                    <td class="tdLeft">
+                        <asp:TextBox ID="txtMacStopBeginTime" runat="server" AutoPostBack="True" CssClass="SmallFont TextBox"
+                            OnTextChanged="txtMacStopBeginTime_TextChanged"></asp:TextBox>
+                        <cc1:MaskedEditExtender TargetControlID="txtMacStopBeginTime" ID="meeLoadingDate"
+                            runat="server" Mask="99/99/9999 99:99:99" MessageValidatorTip="true" OnFocusCssClass="MaskedEditFocus"
+                            OnInvalidCssClass="MaskedEditError" MaskType="DateTime" CultureName="en-CA" AcceptAMPM="True" />
+                        <cc1:MaskedEditValidator ID="mevLoadingDate" runat="server" ControlExtender="meeLoadingDate"
+                            ControlToValidate="txtMacStopBeginTime" IsValidEmpty="false" InvalidValueMessage="Invalid Loading Date"
+                            Display="Dynamic" ValidationGroup="YM" />
+                    </td>
+                    <td class="tdLeft">
+                        <asp:TextBox ID="txtMacStopEndTime" runat="server" AutoPostBack="True" CssClass="SmallFont TextBox"
+                            OnTextChanged="txtMacStopEndTime_TextChanged"></asp:TextBox>
+                        <cc1:MaskedEditExtender TargetControlID="txtMacStopEndTime" ID="meeUnLoadingDate"
+                            runat="server" Mask="99/99/9999 99:99:99" MessageValidatorTip="true" OnFocusCssClass="MaskedEditFocus"
+                            OnInvalidCssClass="MaskedEditError" MaskType="DateTime" CultureName="en-CA" AcceptAMPM="true" />
+                        <cc1:MaskedEditValidator ID="mevUnLoadingDate" runat="server" ControlExtender="meeUnLoadingDate"
+                            ControlToValidate="txtMacStopEndTime" IsValidEmpty="false" InvalidValueMessage="Invalid Un-Loading Date"
+                            Display="Dynamic" ValidationGroup="YM" />
+                    </td>
+                    <td class="tdRight">
+                        <asp:TextBox ID="txtMacStopDuration" runat="server" CssClass="SmallFont TextBox"></asp:TextBox>
+                    </td>
+                    <td class="tdLeft">
+                        <asp:DropDownList ID="ddlMacStopReason" runat="server" CssClass="SmallFont TextBox"
+                            AppendDataBoundItems="True">
+                        </asp:DropDownList>
+                    </td>
+                    <td class="tdLeft">
+                        <asp:Button ID="btnMacStopSave" runat="server" Text="Save" CssClass="SmallFont" OnClick="btnMacStopSave_Click" />
+                    </td>
+                    <td class="tdLeft">
+                        <asp:Button ID="btnMacStopCancel" runat="server" Text="Cancel" CssClass="SmallFont"
+                            OnClick="btnMacStopCancel_Click" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdLeft">
+                        <asp:TextBox ID="txtMachineCode" CssClass="Smallfont" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="tdLeft" colspan="3">
+                        <asp:TextBox ID="txtMachineDescription" Width ="99%"  CssClass="Smallfont" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="tdLeft">
+                        &nbsp;</td>
+                    <td class="tdLeft">
+                        &nbsp;</td>
+                    <td class="tdLeft">
+                        &nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="tdLeft td SmallFont">
+            <asp:Panel ID="pnlBOMAdjustment" runat="server" ScrollBars="Vertical" Height="200px"
+                BackColor="#afcae4">
+                <asp:GridView ID="grdMachineStopage" runat="server" AutoGenerateColumns="False" OnRowCommand="grdMachineStopage_RowCommand"
+                    Width="98%">
+                    <Columns>
+                        <asp:TemplateField HeaderText="S No.">
+                            <ItemTemplate>
+                                <asp:Label ID="lblgrdUniqueid" runat="server" CssClass="SmallFont" Text='<%# Bind("UNIQUE_ID") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Begin Time">
+                            <ItemTemplate>
+                                <asp:Label ID="lblgrdBeginTime" runat="server" CssClass="SmallFont" Text='<%# Bind("STOP_TIME_BEGIN") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="End Time">
+                            <ItemTemplate>
+                                <asp:Label ID="lblgrdEndTime" runat="server" CssClass="SmallFont" Text='<%# Bind("STOP_TIME_END") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Duration">
+                            <ItemTemplate>
+                                <asp:Label ID="lblgrdDuration" runat="server" CssClass="SmallFont" Text='<%# Bind("STOP_TIME_DURATION") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Reason">
+                            <ItemTemplate>
+                                <asp:Label ID="lblgrdReason" runat="server" CssClass="SmallFont" Text='<%# Bind("STOP_REASON") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField>
+                            <ItemTemplate>
+                                <asp:Button ID="btngrdDelete" runat="server" Text="Remove" CssClass="SmallFont" CommandName="DelRow"
+                                    CommandArgument='<%# Bind("UNIQUE_ID") %>' />
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
+                </asp:GridView>
+            </asp:Panel>
+        </td>
+    </tr>
+    <tr>
+        <td class="tdCenter td SmallFont">
+            <asp:Button ID="btnMacStopSubmit" runat="server" Text="Submit" CssClass="SmallFont"
+                OnClick="btnMacStopSubmit_Click" />
+        </td>
+    </tr>
+</table>

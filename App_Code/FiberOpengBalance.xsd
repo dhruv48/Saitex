@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FiberOpengBalance" targetNamespace="http://tempuri.org/FiberOpengBalance.xsd" xmlns:mstns="http://tempuri.org/FiberOpengBalance.xsd" xmlns="http://tempuri.org/FiberOpengBalance.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FiberOpengBalance" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="FiberOpengBalance" msprop:Generator_DataSetName="FiberOpengBalance">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FiberOpengBalance1" msprop:Generator_UserTableName="FiberOpengBalance1" msprop:Generator_RowDeletedName="FiberOpengBalance1RowDeleted" msprop:Generator_TableClassName="FiberOpengBalance1DataTable" msprop:Generator_RowChangedName="FiberOpengBalance1RowChanged" msprop:Generator_RowClassName="FiberOpengBalance1Row" msprop:Generator_RowChangingName="FiberOpengBalance1RowChanging" msprop:Generator_RowEvArgName="FiberOpengBalance1RowChangeEvent" msprop:Generator_RowEvHandlerName="FiberOpengBalance1RowChangeEventHandler" msprop:Generator_TablePropName="FiberOpengBalance1" msprop:Generator_TableVarName="tableFiberOpengBalance1" msprop:Generator_RowDeletingName="FiberOpengBalance1RowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="YEAR" msprop:Generator_UserColumnName="YEAR" msprop:Generator_ColumnPropNameInRow="YEAR" msprop:Generator_ColumnVarNameInTable="columnYEAR" msprop:Generator_ColumnPropNameInTable="YEARColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_NAME" msprop:Generator_UserColumnName="COMP_NAME" msprop:Generator_ColumnPropNameInRow="COMP_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMP_NAME" msprop:Generator_ColumnPropNameInTable="COMP_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_NAME" msprop:Generator_UserColumnName="BRANCH_NAME" msprop:Generator_ColumnPropNameInRow="BRANCH_NAME" msprop:Generator_ColumnVarNameInTable="columnBRANCH_NAME" msprop:Generator_ColumnPropNameInTable="BRANCH_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TRN_TYPE" msprop:Generator_UserColumnName="TRN_TYPE" msprop:Generator_ColumnPropNameInRow="TRN_TYPE" msprop:Generator_ColumnVarNameInTable="columnTRN_TYPE" msprop:Generator_ColumnPropNameInTable="TRN_TYPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TRN_NUMB" msprop:Generator_UserColumnName="TRN_NUMB" msprop:Generator_ColumnPropNameInRow="TRN_NUMB" msprop:Generator_ColumnVarNameInTable="columnTRN_NUMB" msprop:Generator_ColumnPropNameInTable="TRN_NUMBColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TRN_DATE" msprop:Generator_UserColumnName="TRN_DATE" msprop:Generator_ColumnPropNameInRow="TRN_DATE" msprop:Generator_ColumnVarNameInTable="columnTRN_DATE" msprop:Generator_ColumnPropNameInTable="TRN_DATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FIBER_CODE" msprop:Generator_UserColumnName="FIBER_CODE" msprop:Generator_ColumnPropNameInRow="FIBER_CODE" msprop:Generator_ColumnVarNameInTable="columnFIBER_CODE" msprop:Generator_ColumnPropNameInTable="FIBER_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TRN_QTY" msprop:Generator_UserColumnName="TRN_QTY" msprop:Generator_ColumnPropNameInRow="TRN_QTY" msprop:Generator_ColumnVarNameInTable="columnTRN_QTY" msprop:Generator_ColumnPropNameInTable="TRN_QTYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="GRADE" msprop:Generator_UserColumnName="GRADE" msprop:Generator_ColumnPropNameInRow="GRADE" msprop:Generator_ColumnVarNameInTable="columnGRADE" msprop:Generator_ColumnPropNameInTable="GRADEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LOT_NO" msprop:Generator_UserColumnName="LOT_NO" msprop:Generator_ColumnPropNameInRow="LOT_NO" msprop:Generator_ColumnVarNameInTable="columnLOT_NO" msprop:Generator_ColumnPropNameInTable="LOT_NOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TUSER" msprop:Generator_UserColumnName="TUSER" msprop:Generator_ColumnPropNameInRow="TUSER" msprop:Generator_ColumnVarNameInTable="columnTUSER" msprop:Generator_ColumnPropNameInTable="TUSERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TDATE" msprop:Generator_UserColumnName="TDATE" msprop:Generator_ColumnPropNameInRow="TDATE" msprop:Generator_ColumnVarNameInTable="columnTDATE" msprop:Generator_ColumnPropNameInTable="TDATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UOM_OF_UNIT" msprop:Generator_UserColumnName="UOM_OF_UNIT" msprop:Generator_ColumnPropNameInRow="UOM_OF_UNIT" msprop:Generator_ColumnVarNameInTable="columnUOM_OF_UNIT" msprop:Generator_ColumnPropNameInTable="UOM_OF_UNITColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WEIGHT_OF_UNIT" msprop:Generator_UserColumnName="WEIGHT_OF_UNIT" msprop:Generator_ColumnPropNameInRow="WEIGHT_OF_UNIT" msprop:Generator_ColumnVarNameInTable="columnWEIGHT_OF_UNIT" msprop:Generator_ColumnPropNameInTable="WEIGHT_OF_UNITColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FINAL_RATE" msprop:Generator_UserColumnName="FINAL_RATE" msprop:Generator_ColumnPropNameInRow="FINAL_RATE" msprop:Generator_ColumnVarNameInTable="columnFINAL_RATE" msprop:Generator_ColumnPropNameInTable="FINAL_RATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NO_OF_UNIT" msprop:Generator_UserColumnName="NO_OF_UNIT" msprop:Generator_ColumnPropNameInRow="NO_OF_UNIT" msprop:Generator_ColumnVarNameInTable="columnNO_OF_UNIT" msprop:Generator_ColumnPropNameInTable="NO_OF_UNITColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PRTY_CODE" msprop:Generator_UserColumnName="PRTY_CODE" msprop:Generator_ColumnPropNameInRow="PRTY_CODE" msprop:Generator_ColumnVarNameInTable="columnPRTY_CODE" msprop:Generator_ColumnPropNameInTable="PRTY_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PRTY_NAME" msprop:Generator_UserColumnName="PRTY_NAME" msprop:Generator_ColumnPropNameInRow="PRTY_NAME" msprop:Generator_ColumnVarNameInTable="columnPRTY_NAME" msprop:Generator_ColumnPropNameInTable="PRTY_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PALLET_NO" msprop:Generator_UserColumnName="PALLET_NO" msprop:Generator_ColumnPropNameInRow="PALLET_NO" msprop:Generator_ColumnVarNameInTable="columnPALLET_NO" msprop:Generator_ColumnPropNameInTable="PALLET_NOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PALLET_CODE" msprop:Generator_UserColumnName="PALLET_CODE" msprop:Generator_ColumnPropNameInRow="PALLET_CODE" msprop:Generator_ColumnVarNameInTable="columnPALLET_CODE" msprop:Generator_ColumnPropNameInTable="PALLET_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NO_OF_PALLET" msprop:Generator_UserColumnName="NO_OF_PALLET" msprop:Generator_ColumnPropNameInRow="NO_OF_PALLET" msprop:Generator_ColumnVarNameInTable="columnNO_OF_PALLET" msprop:Generator_ColumnPropNameInTable="NO_OF_PALLETColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FIBER_DESC" msprop:Generator_UserColumnName="FIBER_DESC" msprop:Generator_ColumnPropNameInRow="FIBER_DESC" msprop:Generator_ColumnVarNameInTable="columnFIBER_DESC" msprop:Generator_ColumnPropNameInTable="FIBER_DESCColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

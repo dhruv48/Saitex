@@ -1,0 +1,218 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="EMPMaster.master.cs" Inherits="CommonMaster_EMPMaster" %>
+
+<%@ Register Src="~/Module/Admin/Controls/GetUserMenu.ascx" TagName="GetUserMenu"
+    TagPrefix="uc3" %>
+<%@ Register Src="../CommonControls/AdminHeader.ascx" TagName="AdminHeader" TagPrefix="uc1" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%@ Register Src="../CommonControls/EmailMenu.ascx" TagName="EmailMenu" TagPrefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Textiles Application Management System (TexAMS)</title>
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0.1)" />
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0.1)" />
+    <link rel="stylesheet" type="text/css" href="~/StyleSheet/CommonStyle.css" />
+    <link rel="stylesheet" type="text/css" href="~/StyleSheet/cssdesign.css" />
+    <link href="../StyleSheet/MailMenuCss.css" rel="stylesheet" type="text/css" />
+
+    <script language="javascript" type="text/javascript">
+    function checkNumeric(evt) {
+    evt = (evt) ? evt : window.event
+    var charCode = (evt.which) ? evt.which : evt.keyCode
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+    {      
+        return false
+    }   
+         return true
+    }
+    
+function filterNonNumeric(field) {
+var result = new String();
+var numbers = "0123456789.";
+var chars = field.value.split(""); // create array 
+for (i = 0; i < chars.length; i++) {
+if (numbers.indexOf(chars[i]) != -1) result += chars[i];
+}
+if (field.value != result) field.value = result;
+}
+
+    </script>
+
+    <style type="text/css">
+        .item
+        {
+            position: relative !important;
+            display: -moz-inline-stack;
+            display: inline-block;
+            zoom: 1; *display:inline;overflow:hidden;white-space:nowrap;}
+        .header
+        {
+            margin-left: 4px;
+        }
+        .c1
+        {
+            width: 40px;
+        }
+        .c2
+        {
+            margin-left: 4px;
+            width: 80px;
+        }
+        .c3
+        {
+            width: 50px;
+        }
+        .c4
+        {
+            margin-left: 4px;
+            width: 100px;
+        }
+        .tdText
+        {
+            font: 11px Verdana;
+            color: #333333;
+        }
+        .option2
+        {
+            font: 11px Verdana;
+            color: #0033cc;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+        a
+        {
+            font: 11px Verdana;
+            color: #315686;
+            text-decoration: underline;
+        }
+        a:hover
+        {
+            color: Teal;
+        }
+        .ob_gMCont_DT
+        {
+            overflow: hidden;
+        }
+        .ob_gMCont
+        {
+            position: relative;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="text/javascript" language="javascript">
+    function checkDate(sender,args)
+{
+ if (sender._selectedDate > new Date())
+            {
+                alert("You cannot select a advance day than today!");
+                sender._selectedDate = new Date(); 
+                // set the date back to the current date
+sender._textbox.set_Value(sender._selectedDate.format(sender._format))
+            }
+}
+    </script>
+
+    <script type="text/javascript" language="javascript">
+    function checkBackDate(sender,args)
+{
+ if (sender._selectedDate < new Date())
+            {
+                alert("You cannot select a Back date  than today!");
+                sender._selectedDate = new Date(); 
+                // set the date back to the current date
+sender._textbox.set_Value(sender._selectedDate.format(sender._format))
+            }
+}
+    </script>
+
+</head>
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" width="100%">
+    <form id="form1" runat="server" autocomplete="off">
+    <cc1:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+    </cc1:ToolkitScriptManager>
+    <div style="width: 100%">
+        <asp:HiddenField ID="HiddenMenuChange" runat="server" />
+        <table border="0" align="center" cellpadding="0" cellspacing="0" class="tContent"
+            width="98%">
+            <tr>
+                <td width="100%" valign="top" align="left">
+                    <table border="0" align="Left" cellpadding="0" cellspacing="0" class="tContent" width="100%">
+                        <tr>
+                            <td colspan="2" width="100%" valign="top" align="center" bgcolor="#336799">
+                                <uc1:AdminHeader ID="AdminHeader1" runat="server" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" width="100%" valign="top">
+                                <table width="100%">
+                                    <tr>
+                                        <td align="Left" class="logout" width="40%" valign="top">
+                                            <table>
+                                                <tr>
+                                                    <td id="tdLabel" runat="server">
+                                                        <asp:Label ID="Label1" ForeColor="#336799" runat="server" Text="You are at >"></asp:Label>
+                                                    </td>
+                                                    <td id="tdModule" runat="server">
+                                                        <asp:Label ID="lblModule" ForeColor="#336799" runat="server"></asp:Label>
+                                                    </td>
+                                                    <td id="tdChildMoudule" runat="server">
+                                                        <asp:Label ID="lblChildModule" ForeColor="#336799" runat="server"></asp:Label>
+                                                    </td>
+                                                    <td id="tdNavigation" runat="server">
+                                                        <asp:Label ID="lblNavigation" ForeColor="#336799" runat="server"></asp:Label>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td align="right" width="60%" valign="top" style="color: Blue">
+                                            <uc2:EmailMenu ID="EmailMenu1" runat="server" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" bgcolor="#afcae4" valign="top">
+                                &nbsp;
+                                <uc3:GetUserMenu ID="GetUserMenu1" runat="server"></uc3:GetUserMenu>
+                                <%-- <uc4:GetEmpMenu ID="GetEmpMenu1" runat="server" />--%>
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                            </td>
+                            <td align="left" valign="top" bgcolor="#afcae4">
+                                <br />
+                                <asp:ContentPlaceHolder ID="cphBody" runat="server">
+                                </asp:ContentPlaceHolder>
+                                <br />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%" height="40" align="center" valign="top" bgcolor="#29537C" class="copy">
+                    &copy; Copy Right  Jingle InfoSolutions Pvt. Ltd. 2013<br />
+                    Designed &amp; Developed by <a href="http://www.jingleinfo.com/" class="copy">Jingle
+                        Infosolutions Pvt. Ltd.</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

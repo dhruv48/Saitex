@@ -1,0 +1,217 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+using errorLog;
+using Obout.ComboBox;
+using Obout.Interface;
+using Common;
+public partial class Module_Yarn_SalesWork_Controls_Yarn_Detail_Report : System.Web.UI.UserControl
+{
+    SaitexDM.Common.DataModel.UserLoginDetail oUserLoginDetail;
+    SaitexDM.Common.DataModel.OD_SHADE_FAMILY oOD_SHADE_FAMILY = new SaitexDM.Common.DataModel.OD_SHADE_FAMILY();
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        oUserLoginDetail = (SaitexDM.Common.DataModel.UserLoginDetail)Session["LoginDetail"];
+        try
+        {
+            if (!IsPostBack)
+            {
+                InitialControl();
+            }
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+
+    }
+    private void InitialControl()
+    {
+        try
+        {
+            BindBranch();
+            ddlBranch.SelectedValue = oUserLoginDetail.CH_BRANCHCODE;
+            BindYarnCat();
+            BindYarnType();
+            BindParty();
+            BindShadeCode();
+         
+           
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+    private void BindBranch()
+    {
+        try
+        {
+            string strCompanyCode = oUserLoginDetail.COMP_CODE.Trim().ToString();
+            DataTable dt = SaitexBL.Interface.Method.EmployeeMaster.getBranchName(strCompanyCode);
+            ddlBranch.Items.Clear();
+            DataView dv = new DataView(dt);
+            ddlBranch.DataSource = dv;
+            ddlBranch.DataValueField = "BRANCH_CODE";
+            ddlBranch.DataTextField = "BRANCH_NAME";
+            ddlBranch.DataBind();
+            ddlBranch.Items.Insert(0, new ListItem("All", string.Empty));
+            dt.Dispose();
+            dt = null;
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+    private void BindYarnCat()
+    {
+        try
+        {
+            DataTable dt = new DataTable();
+            dt = SaitexBL.Interface.Method.YRN_MST.GetYarnCate();
+            ddlyarncat.Items.Clear();
+            ddlyarncat.DataSource = dt;
+            ddlyarncat.DataValueField = "YARN_CAT";
+            ddlyarncat.DataTextField = "YARN_CAT";
+            ddlyarncat.DataBind();
+            ddlyarncat.Items.Insert(0, new ListItem("All", string.Empty));
+            dt.Dispose();
+            dt = null;
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+    private void BindYarnType()
+    {
+        try
+        {
+            DataTable dt = null;
+            dt = new DataTable();
+            dt = SaitexBL.Interface.Method.YRN_MST.GetYarnType();
+            ddlyarntype.Items.Clear();
+            ddlyarntype.DataSource = dt;
+            ddlyarntype.DataValueField = "YARN_TYPE";
+            ddlyarntype.DataTextField = "YARN_TYPE";
+            ddlyarntype.DataBind();
+            ddlyarntype.Items.Insert(0, new ListItem("All", string.Empty));
+            dt.Dispose();
+            dt = null;
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+    private void BindParty()
+    {
+        try
+        {
+            DataTable dt = null;
+            dt = new DataTable();
+            dt = SaitexBL.Interface.Method.TX_VENDOR_MST.SelectVendorMst();
+            ddlpartycode.Items.Clear();
+            ddlpartycode.DataSource = dt;
+            ddlpartycode.DataValueField = "PRTY_CODE";
+            ddlpartycode.DataTextField = "PRTY_NAME";
+            ddlpartycode.DataBind();
+            ddlpartycode.Items.Insert(0, new ListItem("All", ""));
+            dt.Dispose();
+            dt = null;
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+    private void BindShadeCode()
+    {
+        try
+        {
+            DataTable dt = SaitexBL.Interface.Method.OD_SHADE_FAMILY.GetShadeCodeALL(oOD_SHADE_FAMILY);
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                ddlShadeCode.Items.Clear();
+                ddlShadeCode.DataSource = dt;
+                ddlShadeCode.DataTextField = "SHADE_CODE";
+                ddlShadeCode.DataValueField = "SHADE_CODE";
+                ddlShadeCode.DataBind();
+                ddlShadeCode.Items.Insert(0, new ListItem("All", string.Empty));
+
+            }
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+    protected void imgbtnPrint_Click(object sender, ImageClickEventArgs e)
+    {
+        try
+        {
+            string chk = string.Empty;
+            if (redForQuery.SelectedValue == "red")
+            {
+                chk = "";
+            }
+            else
+            {
+                chk = "str";
+            }
+
+            string URL = "../Reports/YarnDetailreport.aspx?BRANCH_CODE=" + ddlBranch.SelectedValue.ToString() + "&YARN_CAT=" + ddlyarncat.SelectedValue.ToString() + "&YARN_TYPE=" + ddlyarntype.SelectedValue.ToString() + "&PRTY_CODE=" + ddlpartycode.SelectedValue.ToString() + "&SHADE_CODE=" + ddlShadeCode.SelectedValue.ToString() + "&BRANCH=" + ddlBranch.SelectedItem.Text + "&YARNCAT=" + ddlyarncat.SelectedItem.Text + "&YARNTYPE=" + ddlyarntype.SelectedItem.Text + "&PARTY=" + ddlpartycode.SelectedItem.Text + "&SHADCODE=" + ddlShadeCode.SelectedItem.Text + "&chk=" + chk + "&YARN_CODE=" + TxtYarnCode.Text.ToString();
+            
+            ScriptManager.RegisterStartupScript(Page, Page.GetType(), "PrintWindow", "window.open('" + URL + "','_blank','status=1,toolbar=0,menubar=0,location=20,scrollbars=1,resizable=1,width=850,height=600');", true);
+
+        }
+        catch (Exception ex)
+        {
+            CommonFuction.ShowMessage(ErrHandler.LogError(ex, @"\r\nProblem in getting print.\r\nSee error log for detail."));
+        }
+      
+    }
+    protected void imgbtnClear_Click(object sender, ImageClickEventArgs e)
+    {
+        try
+        {
+            InitialControl();
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+    protected void imgbtnExit_Click(object sender, ImageClickEventArgs e)
+    {
+        try
+        {
+            if (Session["RedirectURL"] != null)
+            {
+                Response.Redirect(Session["RedirectURL"].ToString(), false);
+                Session["RedirectURL"] = null;
+            }
+            else
+            {
+                Response.Redirect("~/Module/Admin/Pages/Welcome.aspx", false);
+            }
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+    
+   
+}

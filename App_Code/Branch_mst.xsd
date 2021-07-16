@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Branch_mst" targetNamespace="http://tempuri.org/Branch_mst.xsd" xmlns:mstns="http://tempuri.org/Branch_mst.xsd" xmlns="http://tempuri.org/Branch_mst.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Branch_mst" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Branch_mst" msprop:Generator_DataSetName="Branch_mst">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Branch_mst" msprop:Generator_UserTableName="Branch_mst" msprop:Generator_RowDeletedName="Branch_mstRowDeleted" msprop:Generator_RowChangedName="Branch_mstRowChanged" msprop:Generator_RowClassName="Branch_mstRow" msprop:Generator_RowChangingName="Branch_mstRowChanging" msprop:Generator_RowEvArgName="Branch_mstRowChangeEvent" msprop:Generator_RowEvHandlerName="Branch_mstRowChangeEventHandler" msprop:Generator_TableClassName="Branch_mstDataTable" msprop:Generator_TableVarName="tableBranch_mst" msprop:Generator_RowDeletingName="Branch_mstRowDeleting" msprop:Generator_TablePropName="_Branch_mst">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IN_BRACHID" msprop:Generator_UserColumnName="IN_BRACHID" msprop:Generator_ColumnPropNameInRow="IN_BRACHID" msprop:Generator_ColumnVarNameInTable="columnIN_BRACHID" msprop:Generator_ColumnPropNameInTable="IN_BRACHIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CH_BRANCHCODE" msprop:Generator_UserColumnName="CH_BRANCHCODE" msprop:Generator_ColumnPropNameInRow="CH_BRANCHCODE" msprop:Generator_ColumnVarNameInTable="columnCH_BRANCHCODE" msprop:Generator_ColumnPropNameInTable="CH_BRANCHCODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_CODE" msprop:Generator_UserColumnName="COMP_CODE" msprop:Generator_ColumnPropNameInRow="COMP_CODE" msprop:Generator_ColumnVarNameInTable="columnCOMP_CODE" msprop:Generator_ColumnPropNameInTable="COMP_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_BRANCHNAME" msprop:Generator_UserColumnName="VC_BRANCHNAME" msprop:Generator_ColumnPropNameInRow="VC_BRANCHNAME" msprop:Generator_ColumnVarNameInTable="columnVC_BRANCHNAME" msprop:Generator_ColumnPropNameInTable="VC_BRANCHNAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_BRANCHADDRESS" msprop:Generator_UserColumnName="VC_BRANCHADDRESS" msprop:Generator_ColumnPropNameInRow="VC_BRANCHADDRESS" msprop:Generator_ColumnVarNameInTable="columnVC_BRANCHADDRESS" msprop:Generator_ColumnPropNameInTable="VC_BRANCHADDRESSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_BRANCHCONTACTNUMBER" msprop:Generator_UserColumnName="VC_BRANCHCONTACTNUMBER" msprop:Generator_ColumnPropNameInRow="VC_BRANCHCONTACTNUMBER" msprop:Generator_ColumnVarNameInTable="columnVC_BRANCHCONTACTNUMBER" msprop:Generator_ColumnPropNameInTable="VC_BRANCHCONTACTNUMBERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_BRANCHEMAILID" msprop:Generator_UserColumnName="VC_BRANCHEMAILID" msprop:Generator_ColumnPropNameInRow="VC_BRANCHEMAILID" msprop:Generator_ColumnVarNameInTable="columnVC_BRANCHEMAILID" msprop:Generator_ColumnPropNameInTable="VC_BRANCHEMAILIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_BRANCHFAXNUMBER" msprop:Generator_UserColumnName="VC_BRANCHFAXNUMBER" msprop:Generator_ColumnPropNameInRow="VC_BRANCHFAXNUMBER" msprop:Generator_ColumnVarNameInTable="columnVC_BRANCHFAXNUMBER" msprop:Generator_ColumnPropNameInTable="VC_BRANCHFAXNUMBERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_BRANCHESINUMBER" msprop:Generator_UserColumnName="VC_BRANCHESINUMBER" msprop:Generator_ColumnPropNameInRow="VC_BRANCHESINUMBER" msprop:Generator_ColumnVarNameInTable="columnVC_BRANCHESINUMBER" msprop:Generator_ColumnPropNameInTable="VC_BRANCHESINUMBERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_BRANCHPFNUMBER" msprop:Generator_UserColumnName="VC_BRANCHPFNUMBER" msprop:Generator_ColumnPropNameInRow="VC_BRANCHPFNUMBER" msprop:Generator_ColumnVarNameInTable="columnVC_BRANCHPFNUMBER" msprop:Generator_ColumnPropNameInTable="VC_BRANCHPFNUMBERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_BRANCHSERVICETAXNUMBER" msprop:Generator_UserColumnName="VC_BRANCHSERVICETAXNUMBER" msprop:Generator_ColumnPropNameInRow="VC_BRANCHSERVICETAXNUMBER" msprop:Generator_ColumnVarNameInTable="columnVC_BRANCHSERVICETAXNUMBER" msprop:Generator_ColumnPropNameInTable="VC_BRANCHSERVICETAXNUMBERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_REMARKS" msprop:Generator_UserColumnName="VC_REMARKS" msprop:Generator_ColumnPropNameInRow="VC_REMARKS" msprop:Generator_ColumnVarNameInTable="columnVC_REMARKS" msprop:Generator_ColumnPropNameInTable="VC_REMARKSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CH_STATUS" msprop:Generator_UserColumnName="CH_STATUS" msprop:Generator_ColumnPropNameInRow="CH_STATUS" msprop:Generator_ColumnVarNameInTable="columnCH_STATUS" msprop:Generator_ColumnPropNameInTable="CH_STATUSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CH_DELETESTATUS" msprop:Generator_UserColumnName="CH_DELETESTATUS" msprop:Generator_ColumnPropNameInRow="CH_DELETESTATUS" msprop:Generator_ColumnVarNameInTable="columnCH_DELETESTATUS" msprop:Generator_ColumnPropNameInTable="CH_DELETESTATUSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DT_CREATED" msprop:Generator_UserColumnName="DT_CREATED" msprop:Generator_ColumnPropNameInRow="DT_CREATED" msprop:Generator_ColumnVarNameInTable="columnDT_CREATED" msprop:Generator_ColumnPropNameInTable="DT_CREATEDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DT_UPDATED" msprop:Generator_UserColumnName="DT_UPDATED" msprop:Generator_ColumnPropNameInRow="DT_UPDATED" msprop:Generator_ColumnVarNameInTable="columnDT_UPDATED" msprop:Generator_ColumnPropNameInTable="DT_UPDATEDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_CompanyName" msprop:Generator_UserColumnName="VC_CompanyName" msprop:Generator_ColumnVarNameInTable="columnVC_CompanyName" msprop:Generator_ColumnPropNameInRow="VC_CompanyName" msprop:Generator_ColumnPropNameInTable="VC_CompanyNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_NAME" msprop:Generator_UserColumnName="COMP_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMP_NAME" msprop:Generator_ColumnPropNameInRow="COMP_NAME" msprop:Generator_ColumnPropNameInTable="COMP_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_NAME" msprop:Generator_UserColumnName="BRANCH_NAME" msprop:Generator_ColumnVarNameInTable="columnBRANCH_NAME" msprop:Generator_ColumnPropNameInRow="BRANCH_NAME" msprop:Generator_ColumnPropNameInTable="BRANCH_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_ADD" msprop:Generator_UserColumnName="COMP_ADD" msprop:Generator_ColumnVarNameInTable="columnCOMP_ADD" msprop:Generator_ColumnPropNameInRow="COMP_ADD" msprop:Generator_ColumnPropNameInTable="COMP_ADDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_NAME" msprop:Generator_UserColumnName="USER_NAME" msprop:Generator_ColumnVarNameInTable="columnUSER_NAME" msprop:Generator_ColumnPropNameInRow="USER_NAME" msprop:Generator_ColumnPropNameInTable="USER_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DEVELOPER_WEB" msprop:Generator_UserColumnName="DEVELOPER_WEB" msprop:Generator_ColumnPropNameInRow="DEVELOPER_WEB" msprop:Generator_ColumnVarNameInTable="columnDEVELOPER_WEB" msprop:Generator_ColumnPropNameInTable="DEVELOPER_WEBColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DEVELOPER_COMP" msprop:Generator_UserColumnName="DEVELOPER_COMP" msprop:Generator_ColumnPropNameInRow="DEVELOPER_COMP" msprop:Generator_ColumnVarNameInTable="columnDEVELOPER_COMP" msprop:Generator_ColumnPropNameInTable="DEVELOPER_COMPColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,17 @@
+
+Log Entry : 
+06/15/2021 10:18:01
+Error in: http://localhost:54726/Saitex/Module/OrderDevelopment/Fiber Lap Dip/Pages/Fiber_CustReqForLabDip.aspx. Error Message:ORA-00942: table or view does not exist
+
+__________________________
+
+Log Entry : 
+06/15/2021 10:21:09
+Error in: http://localhost:54726/Saitex/Module/OrderDevelopment/Fiber Lap Dip/Pages/Fiber_CustReqForLabDip.aspx. Error Message:ORA-00942: table or view does not exist
+
+__________________________
+
+Log Entry : 
+06/15/2021 12:28:23
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________

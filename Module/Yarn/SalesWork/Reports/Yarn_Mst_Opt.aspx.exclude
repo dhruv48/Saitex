@@ -1,0 +1,62 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/CommonMaster/admin.master" AutoEventWireup="true" CodeFile="Yarn_Mst_Opt.aspx.cs" Inherits="Module_Yarn_SalesWork_Reports_Yarn_Mst_Opt" Title="Untitled Page" %>
+
+<%@ Register Assembly="obout_Interface" Namespace="Obout.Interface" TagPrefix="cc1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="Head1" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphBody" Runat="Server">
+    <asp:Panel ID="Panel1" BackColor="#afcae4" runat="server">
+            <table align="left" class="tContentArial">
+                <tr>
+                    <td align="center" class="td">
+                        <table align="left" class="tContentArial">
+                            <tr>
+                                <td align="center" class="TableHeader" colspan="6">
+                                    <span style="font-size: 13pt" class="titleheading"><strong>Yarn Master report</strong> </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+                                    YarnCode
+                                </td>
+                                <td align="left">
+                                    <asp:TextBox ID="txtYarnCodeRpt" runat="server" Width="150px" 
+                                        CssClass="SmallFont TextBox"></asp:TextBox>
+                                </td>
+                                <td align="left">
+                                    Department Code
+                                </td>
+                                <td align="left">
+                                    <asp:TextBox ID="txtDeptCodeRpt" runat="server" Width="150px" 
+                                        CssClass="SmallFont TextBox"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+                                    Category Code
+                                </td>
+                                <td align="left">
+                                    <asp:TextBox ID="txtCatCodeRpt" runat="server" Width="150px" 
+                                        CssClass="SmallFont TextBox"></asp:TextBox>
+                                </td>
+                                <td align="left">
+                                    Branch Code
+                                </td>
+                                <td align="left">
+                                    <asp:TextBox ID="txtBranchCodeRpt" CssClass="SmallFont TextBox" runat="server" Width="150px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" colspan="6">
+                        
+                                    
+                                    <cc1:OboutButton ID="btnGetReport" runat="server" OnClick="btnGetReport_Click" Text="Get Report" /></cc1:OboutButton>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </asp:Panel>
+</asp:Content>
+

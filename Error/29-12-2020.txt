@@ -1,0 +1,5 @@
+
+Log Entry : 
+12/29/2020 15:10:03
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________

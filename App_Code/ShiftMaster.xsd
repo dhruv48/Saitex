@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ShiftMaster" targetNamespace="http://tempuri.org/ShiftMaster.xsd" xmlns:mstns="http://tempuri.org/ShiftMaster.xsd" xmlns="http://tempuri.org/ShiftMaster.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ShiftMaster" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ShiftMaster" msprop:Generator_DataSetName="ShiftMaster">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_TablePropName="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SFT_NAME" msprop:Generator_UserColumnName="SFT_NAME" msprop:Generator_ColumnVarNameInTable="columnSFT_NAME" msprop:Generator_ColumnPropNameInRow="SFT_NAME" msprop:Generator_ColumnPropNameInTable="SFT_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SFT_IN_TIME" msprop:Generator_UserColumnName="SFT_IN_TIME" msprop:Generator_ColumnVarNameInTable="columnSFT_IN_TIME" msprop:Generator_ColumnPropNameInRow="SFT_IN_TIME" msprop:Generator_ColumnPropNameInTable="SFT_IN_TIMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SFT_OUT_TIME" msprop:Generator_UserColumnName="SFT_OUT_TIME" msprop:Generator_ColumnVarNameInTable="columnSFT_OUT_TIME" msprop:Generator_ColumnPropNameInRow="SFT_OUT_TIME" msprop:Generator_ColumnPropNameInTable="SFT_OUT_TIMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SFT_RLX_TIME" msprop:Generator_UserColumnName="SFT_RLX_TIME" msprop:Generator_ColumnVarNameInTable="columnSFT_RLX_TIME" msprop:Generator_ColumnPropNameInRow="SFT_RLX_TIME" msprop:Generator_ColumnPropNameInTable="SFT_RLX_TIMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SFT_OVR_TIME" msprop:Generator_UserColumnName="SFT_OVR_TIME" msprop:Generator_ColumnVarNameInTable="columnSFT_OVR_TIME" msprop:Generator_ColumnPropNameInRow="SFT_OVR_TIME" msprop:Generator_ColumnPropNameInTable="SFT_OVR_TIMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SFT_MIN_WRK_HOUR" msprop:Generator_UserColumnName="SFT_MIN_WRK_HOUR" msprop:Generator_ColumnVarNameInTable="columnSFT_MIN_WRK_HOUR" msprop:Generator_ColumnPropNameInRow="SFT_MIN_WRK_HOUR" msprop:Generator_ColumnPropNameInTable="SFT_MIN_WRK_HOURColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SFT_MIN_HLD_HOUR" msprop:Generator_UserColumnName="SFT_MIN_HLD_HOUR" msprop:Generator_ColumnVarNameInTable="columnSFT_MIN_HLD_HOUR" msprop:Generator_ColumnPropNameInRow="SFT_MIN_HLD_HOUR" msprop:Generator_ColumnPropNameInTable="SFT_MIN_HLD_HOURColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SFT_MIN_SOFT_DAY_HOUR" msprop:Generator_UserColumnName="SFT_MIN_SOFT_DAY_HOUR" msprop:Generator_ColumnVarNameInTable="columnSFT_MIN_SOFT_DAY_HOUR" msprop:Generator_ColumnPropNameInRow="SFT_MIN_SOFT_DAY_HOUR" msprop:Generator_ColumnPropNameInTable="SFT_MIN_SOFT_DAY_HOURColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SFT_LNCH_TIME" msprop:Generator_UserColumnName="SFT_LNCH_TIME" msprop:Generator_ColumnVarNameInTable="columnSFT_LNCH_TIME" msprop:Generator_ColumnPropNameInRow="SFT_LNCH_TIME" msprop:Generator_ColumnPropNameInTable="SFT_LNCH_TIMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TUSER" msprop:Generator_UserColumnName="TUSER" msprop:Generator_ColumnVarNameInTable="columnTUSER" msprop:Generator_ColumnPropNameInRow="TUSER" msprop:Generator_ColumnPropNameInTable="TUSERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_ADD" msprop:Generator_UserColumnName="COMP_ADD" msprop:Generator_ColumnVarNameInTable="columnCOMP_ADD" msprop:Generator_ColumnPropNameInRow="COMP_ADD" msprop:Generator_ColumnPropNameInTable="COMP_ADDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_NAME" msprop:Generator_UserColumnName="COMP_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMP_NAME" msprop:Generator_ColumnPropNameInRow="COMP_NAME" msprop:Generator_ColumnPropNameInTable="COMP_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_NAME" msprop:Generator_UserColumnName="BRANCH_NAME" msprop:Generator_ColumnVarNameInTable="columnBRANCH_NAME" msprop:Generator_ColumnPropNameInRow="BRANCH_NAME" msprop:Generator_ColumnPropNameInTable="BRANCH_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_NAME" msprop:Generator_UserColumnName="USER_NAME" msprop:Generator_ColumnVarNameInTable="columnUSER_NAME" msprop:Generator_ColumnPropNameInRow="USER_NAME" msprop:Generator_ColumnPropNameInTable="USER_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DEVELOPER_WEB" msprop:Generator_UserColumnName="DEVELOPER_WEB" msprop:Generator_ColumnPropNameInRow="DEVELOPER_WEB" msprop:Generator_ColumnVarNameInTable="columnDEVELOPER_WEB" msprop:Generator_ColumnPropNameInTable="DEVELOPER_WEBColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DEVELOPER_COMP" msprop:Generator_UserColumnName="DEVELOPER_COMP" msprop:Generator_ColumnPropNameInRow="DEVELOPER_COMP" msprop:Generator_ColumnVarNameInTable="columnDEVELOPER_COMP" msprop:Generator_ColumnPropNameInTable="DEVELOPER_COMPColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

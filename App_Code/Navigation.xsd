@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Navigation" targetNamespace="http://tempuri.org/Navigation.xsd" xmlns:mstns="http://tempuri.org/Navigation.xsd" xmlns="http://tempuri.org/Navigation.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="csTextile" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="csTextile (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.csTextile.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Navigation" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Navigation" msprop:Generator_DataSetName="Navigation">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_CM_NAV_MST" msprop:Generator_UserTableName="V_CM_NAV_MST" msprop:Generator_RowDeletedName="V_CM_NAV_MSTRowDeleted" msprop:Generator_RowChangedName="V_CM_NAV_MSTRowChanged" msprop:Generator_RowClassName="V_CM_NAV_MSTRow" msprop:Generator_RowChangingName="V_CM_NAV_MSTRowChanging" msprop:Generator_RowEvArgName="V_CM_NAV_MSTRowChangeEvent" msprop:Generator_RowEvHandlerName="V_CM_NAV_MSTRowChangeEventHandler" msprop:Generator_TableClassName="V_CM_NAV_MSTDataTable" msprop:Generator_TableVarName="tableV_CM_NAV_MST" msprop:Generator_RowDeletingName="V_CM_NAV_MSTRowDeleting" msprop:Generator_TablePropName="V_CM_NAV_MST">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MDL_NAME" msprop:Generator_UserColumnName="MDL_NAME" msprop:Generator_ColumnPropNameInRow="MDL_NAME" msprop:Generator_ColumnVarNameInTable="columnMDL_NAME" msprop:Generator_ColumnPropNameInTable="MDL_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CHILD_MDL_NAME" msprop:Generator_UserColumnName="CHILD_MDL_NAME" msprop:Generator_ColumnPropNameInRow="CHILD_MDL_NAME" msprop:Generator_ColumnVarNameInTable="columnCHILD_MDL_NAME" msprop:Generator_ColumnPropNameInTable="CHILD_MDL_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NAV_ID" msprop:Generator_UserColumnName="NAV_ID" msprop:Generator_ColumnPropNameInRow="NAV_ID" msprop:Generator_ColumnVarNameInTable="columnNAV_ID" msprop:Generator_ColumnPropNameInTable="NAV_IDColumn" type="xs:int" />
+              <xs:element name="MDL_ID" msprop:Generator_UserColumnName="MDL_ID" msprop:Generator_ColumnPropNameInRow="MDL_ID" msprop:Generator_ColumnVarNameInTable="columnMDL_ID" msprop:Generator_ColumnPropNameInTable="MDL_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CHILD_MDL_ID" msprop:Generator_UserColumnName="CHILD_MDL_ID" msprop:Generator_ColumnPropNameInRow="CHILD_MDL_ID" msprop:Generator_ColumnVarNameInTable="columnCHILD_MDL_ID" msprop:Generator_ColumnPropNameInTable="CHILD_MDL_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="NAV_NAME" msprop:Generator_UserColumnName="NAV_NAME" msprop:Generator_ColumnPropNameInRow="NAV_NAME" msprop:Generator_ColumnVarNameInTable="columnNAV_NAME" msprop:Generator_ColumnPropNameInTable="NAV_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NAV_URL" msprop:Generator_UserColumnName="NAV_URL" msprop:Generator_ColumnPropNameInRow="NAV_URL" msprop:Generator_ColumnVarNameInTable="columnNAV_URL" msprop:Generator_ColumnPropNameInTable="NAV_URLColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DISP_ODR" msprop:Generator_UserColumnName="DISP_ODR" msprop:Generator_ColumnPropNameInRow="DISP_ODR" msprop:Generator_ColumnVarNameInTable="columnDISP_ODR" msprop:Generator_ColumnPropNameInTable="DISP_ODRColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SUB_CAT_IMG" msprop:Generator_UserColumnName="SUB_CAT_IMG" msprop:Generator_ColumnPropNameInRow="SUB_CAT_IMG" msprop:Generator_ColumnVarNameInTable="columnSUB_CAT_IMG" msprop:Generator_ColumnPropNameInTable="SUB_CAT_IMGColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="POSTED_LENGTH" msprop:Generator_UserColumnName="POSTED_LENGTH" msprop:Generator_ColumnPropNameInRow="POSTED_LENGTH" msprop:Generator_ColumnVarNameInTable="columnPOSTED_LENGTH" msprop:Generator_ColumnPropNameInTable="POSTED_LENGTHColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SUBCAT_CONTENT_TYPE" msprop:Generator_UserColumnName="SUBCAT_CONTENT_TYPE" msprop:Generator_ColumnPropNameInRow="SUBCAT_CONTENT_TYPE" msprop:Generator_ColumnVarNameInTable="columnSUBCAT_CONTENT_TYPE" msprop:Generator_ColumnPropNameInTable="SUBCAT_CONTENT_TYPEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REMARKS" msprop:Generator_UserColumnName="REMARKS" msprop:Generator_ColumnPropNameInRow="REMARKS" msprop:Generator_ColumnVarNameInTable="columnREMARKS" msprop:Generator_ColumnPropNameInTable="REMARKSColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS" msprop:Generator_UserColumnName="STATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEL_STATUS" msprop:Generator_UserColumnName="DEL_STATUS" msprop:Generator_ColumnPropNameInRow="DEL_STATUS" msprop:Generator_ColumnVarNameInTable="columnDEL_STATUS" msprop:Generator_ColumnPropNameInTable="DEL_STATUSColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACTIVEDES" msprop:Generator_UserColumnName="ACTIVEDES" msprop:Generator_ColumnPropNameInRow="ACTIVEDES" msprop:Generator_ColumnVarNameInTable="columnACTIVEDES" msprop:Generator_ColumnPropNameInTable="ACTIVEDESColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DELDES" msprop:Generator_UserColumnName="DELDES" msprop:Generator_ColumnPropNameInRow="DELDES" msprop:Generator_ColumnVarNameInTable="columnDELDES" msprop:Generator_ColumnPropNameInTable="DELDESColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TDATE" msprop:Generator_UserColumnName="TDATE" msprop:Generator_ColumnPropNameInRow="TDATE" msprop:Generator_ColumnVarNameInTable="columnTDATE" msprop:Generator_ColumnPropNameInTable="TDATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TUSER" msprop:Generator_UserColumnName="TUSER" msprop:Generator_ColumnPropNameInRow="TUSER" msprop:Generator_ColumnVarNameInTable="columnTUSER" msprop:Generator_ColumnPropNameInTable="TUSERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BRANCH_NAME" msprop:Generator_UserColumnName="BRANCH_NAME" msprop:Generator_ColumnVarNameInTable="columnBRANCH_NAME" msprop:Generator_ColumnPropNameInRow="BRANCH_NAME" msprop:Generator_ColumnPropNameInTable="BRANCH_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_ADD" msprop:Generator_UserColumnName="COMP_ADD" msprop:Generator_ColumnVarNameInTable="columnCOMP_ADD" msprop:Generator_ColumnPropNameInRow="COMP_ADD" msprop:Generator_ColumnPropNameInTable="COMP_ADDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_NAME" msprop:Generator_UserColumnName="COMP_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMP_NAME" msprop:Generator_ColumnPropNameInRow="COMP_NAME" msprop:Generator_ColumnPropNameInTable="COMP_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_NAME" msprop:Generator_UserColumnName="USER_NAME" msprop:Generator_ColumnVarNameInTable="columnUSER_NAME" msprop:Generator_ColumnPropNameInRow="USER_NAME" msprop:Generator_ColumnPropNameInTable="USER_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DEVELOPER_COMP" msprop:Generator_UserColumnName="DEVELOPER_COMP" msprop:Generator_ColumnPropNameInRow="DEVELOPER_COMP" msprop:Generator_ColumnVarNameInTable="columnDEVELOPER_COMP" msprop:Generator_ColumnPropNameInTable="DEVELOPER_COMPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DEVELOPER_WEB" msprop:Generator_UserColumnName="DEVELOPER_WEB" msprop:Generator_ColumnPropNameInRow="DEVELOPER_WEB" msprop:Generator_ColumnVarNameInTable="columnDEVELOPER_WEB" msprop:Generator_ColumnPropNameInTable="DEVELOPER_WEBColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

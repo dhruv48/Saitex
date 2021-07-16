@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="From_Stock_Sales" targetNamespace="http://tempuri.org/From_Stock_Sales.xsd" xmlns:mstns="http://tempuri.org/From_Stock_Sales.xsd" xmlns="http://tempuri.org/From_Stock_Sales.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="From_Stock_Sales" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="From_Stock_Sales" msprop:Generator_UserDSName="From_Stock_Sales">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FROM_STOCK_SALE_CONTRACT" msprop:Generator_TableClassName="FROM_STOCK_SALE_CONTRACTDataTable" msprop:Generator_TableVarName="tableFROM_STOCK_SALE_CONTRACT" msprop:Generator_TablePropName="FROM_STOCK_SALE_CONTRACT" msprop:Generator_RowDeletingName="FROM_STOCK_SALE_CONTRACTRowDeleting" msprop:Generator_RowChangingName="FROM_STOCK_SALE_CONTRACTRowChanging" msprop:Generator_RowEvHandlerName="FROM_STOCK_SALE_CONTRACTRowChangeEventHandler" msprop:Generator_RowDeletedName="FROM_STOCK_SALE_CONTRACTRowDeleted" msprop:Generator_UserTableName="FROM_STOCK_SALE_CONTRACT" msprop:Generator_RowChangedName="FROM_STOCK_SALE_CONTRACTRowChanged" msprop:Generator_RowEvArgName="FROM_STOCK_SALE_CONTRACTRowChangeEvent" msprop:Generator_RowClassName="FROM_STOCK_SALE_CONTRACTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ORDER_NO" msprop:Generator_ColumnVarNameInTable="columnORDER_NO" msprop:Generator_ColumnPropNameInRow="ORDER_NO" msprop:Generator_ColumnPropNameInTable="ORDER_NOColumn" msprop:Generator_UserColumnName="ORDER_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="ORDER_DATE" msprop:Generator_ColumnVarNameInTable="columnORDER_DATE" msprop:Generator_ColumnPropNameInRow="ORDER_DATE" msprop:Generator_ColumnPropNameInTable="ORDER_DATEColumn" msprop:Generator_UserColumnName="ORDER_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PRTY_NAME" msprop:Generator_ColumnVarNameInTable="columnPRTY_NAME" msprop:Generator_ColumnPropNameInRow="PRTY_NAME" msprop:Generator_ColumnPropNameInTable="PRTY_NAMEColumn" msprop:Generator_UserColumnName="PRTY_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SHADE_CODE" msprop:Generator_ColumnVarNameInTable="columnSHADE_CODE" msprop:Generator_ColumnPropNameInRow="SHADE_CODE" msprop:Generator_ColumnPropNameInTable="SHADE_CODEColumn" msprop:Generator_UserColumnName="SHADE_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="SHADE_REFF_NO" msprop:Generator_ColumnVarNameInTable="columnSHADE_REFF_NO" msprop:Generator_ColumnPropNameInRow="SHADE_REFF_NO" msprop:Generator_ColumnPropNameInTable="SHADE_REFF_NOColumn" msprop:Generator_UserColumnName="SHADE_REFF_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="QUANTITY" msprop:Generator_ColumnVarNameInTable="columnQUANTITY" msprop:Generator_ColumnPropNameInRow="QUANTITY" msprop:Generator_ColumnPropNameInTable="QUANTITYColumn" msprop:Generator_UserColumnName="QUANTITY" type="xs:double" minOccurs="0" />
+              <xs:element name="NO_OF_UNIT" msprop:Generator_ColumnVarNameInTable="columnNO_OF_UNIT" msprop:Generator_ColumnPropNameInRow="NO_OF_UNIT" msprop:Generator_ColumnPropNameInTable="NO_OF_UNITColumn" msprop:Generator_UserColumnName="NO_OF_UNIT" type="xs:double" minOccurs="0" />
+              <xs:element name="SALE_RATE" msprop:Generator_ColumnVarNameInTable="columnSALE_RATE" msprop:Generator_ColumnPropNameInRow="SALE_RATE" msprop:Generator_ColumnPropNameInTable="SALE_RATEColumn" msprop:Generator_UserColumnName="SALE_RATE" type="xs:double" minOccurs="0" />
+              <xs:element name="FINAL_RATE" msprop:Generator_ColumnVarNameInTable="columnFINAL_RATE" msprop:Generator_ColumnPropNameInRow="FINAL_RATE" msprop:Generator_ColumnPropNameInTable="FINAL_RATEColumn" msprop:Generator_UserColumnName="FINAL_RATE" type="xs:double" minOccurs="0" />
+              <xs:element name="BUSINESS_TYPE" msprop:Generator_ColumnVarNameInTable="columnBUSINESS_TYPE" msprop:Generator_ColumnPropNameInRow="BUSINESS_TYPE" msprop:Generator_ColumnPropNameInTable="BUSINESS_TYPEColumn" msprop:Generator_UserColumnName="BUSINESS_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="ORDER_TYPE" msprop:Generator_ColumnVarNameInTable="columnORDER_TYPE" msprop:Generator_ColumnPropNameInRow="ORDER_TYPE" msprop:Generator_ColumnPropNameInTable="ORDER_TYPEColumn" msprop:Generator_UserColumnName="ORDER_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="END_USE" msprop:Generator_ColumnVarNameInTable="columnEND_USE" msprop:Generator_ColumnPropNameInRow="END_USE" msprop:Generator_ColumnPropNameInTable="END_USEColumn" msprop:Generator_UserColumnName="END_USE" type="xs:string" minOccurs="0" />
+              <xs:element name="TUSER" msprop:Generator_ColumnVarNameInTable="columnTUSER" msprop:Generator_ColumnPropNameInRow="TUSER" msprop:Generator_ColumnPropNameInTable="TUSERColumn" msprop:Generator_UserColumnName="TUSER" type="xs:string" minOccurs="0" />
+              <xs:element name="FROMDATE" msprop:Generator_ColumnVarNameInTable="columnFROMDATE" msprop:Generator_ColumnPropNameInRow="FROMDATE" msprop:Generator_ColumnPropNameInTable="FROMDATEColumn" msprop:Generator_UserColumnName="FROMDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TODATE" msprop:Generator_ColumnVarNameInTable="columnTODATE" msprop:Generator_ColumnPropNameInRow="TODATE" msprop:Generator_ColumnPropNameInTable="TODATEColumn" msprop:Generator_UserColumnName="TODATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="COMP_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMP_NAME" msprop:Generator_ColumnPropNameInRow="COMP_NAME" msprop:Generator_ColumnPropNameInTable="COMP_NAMEColumn" msprop:Generator_UserColumnName="COMP_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_NAME" msprop:Generator_ColumnVarNameInTable="columnBRANCH_NAME" msprop:Generator_ColumnPropNameInRow="BRANCH_NAME" msprop:Generator_ColumnPropNameInTable="BRANCH_NAMEColumn" msprop:Generator_UserColumnName="BRANCH_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PARTY_ARTICLE_DESC" msprop:Generator_ColumnVarNameInTable="columnPARTY_ARTICLE_DESC" msprop:Generator_ColumnPropNameInRow="PARTY_ARTICLE_DESC" msprop:Generator_ColumnPropNameInTable="PARTY_ARTICLE_DESCColumn" msprop:Generator_UserColumnName="PARTY_ARTICLE_DESC" type="xs:string" minOccurs="0" />
+              <xs:element name="CONF_BY" msprop:Generator_ColumnVarNameInTable="columnCONF_BY" msprop:Generator_ColumnPropNameInRow="CONF_BY" msprop:Generator_ColumnPropNameInTable="CONF_BYColumn" msprop:Generator_UserColumnName="CONF_BY" type="xs:string" minOccurs="0" />
+              <xs:element name="CONF_DATE" msprop:Generator_ColumnVarNameInTable="columnCONF_DATE" msprop:Generator_ColumnPropNameInRow="CONF_DATE" msprop:Generator_ColumnPropNameInTable="CONF_DATEColumn" msprop:Generator_UserColumnName="CONF_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AGENT" msprop:Generator_ColumnVarNameInTable="columnAGENT" msprop:Generator_ColumnPropNameInRow="AGENT" msprop:Generator_ColumnPropNameInTable="AGENTColumn" msprop:Generator_UserColumnName="AGENT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

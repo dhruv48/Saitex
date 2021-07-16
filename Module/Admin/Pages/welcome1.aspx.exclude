@@ -1,0 +1,10 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/CommonMaster/admin.master" AutoEventWireup="true" CodeFile="welcome1.aspx.cs" Inherits="Module_Admin_Pages_welcome1" %>
+
+<%@ Register src="../Controls/welcome.ascx" tagname="welcome1" tagprefix="uc1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="Head1" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphBody" Runat="Server">
+    <uc1:welcome1 ID="welcome11" runat="server" />
+</asp:Content>
+

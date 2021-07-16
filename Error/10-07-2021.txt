@@ -1,0 +1,20 @@
+
+Log Entry : 
+07/10/2021 10:20:58
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+07/10/2021 11:09:40
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+07/10/2021 13:11:20
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________
+
+Log Entry : 
+07/10/2021 17:46:01
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/ItemMaster.aspx. Error Message:Response.Redirect cannot be called in a Page callback.
+__________________________

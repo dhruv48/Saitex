@@ -1,0 +1,344 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using errorLog;
+using Common;
+using System.Globalization;
+public partial class Module_HRMS_Controls_SiftRotationMaster : System.Web.UI.UserControl
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            Clear();
+        }
+
+    }
+    private void MaxReqNO()
+    {
+        try
+        {
+            string x = "";
+            int y = 0;
+            DataTable dt = SaitexBL.Interface.Method.HR_SHIFT_ROTATION_MST.GetMaxSiftRotationNO();
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                DataView dv = new DataView(dt);
+                if (dv.Count > 0)
+                {
+                    for (int iLoop = 0; iLoop < dv.Count; iLoop++)
+                    {
+                        x = dv[iLoop]["SHIFT_ROTATE_CODE"].ToString();
+                        y = int.Parse(x);
+                        y = y + 1;
+                        txtShifCode.Text  = y.ToString();
+                    }
+                }
+            }
+        }
+        catch
+        {
+            throw;
+        }
+    }
+    private void Empinfo()
+    {
+        try
+        {
+            DataTable dt = SaitexBL.Interface.Method.HR_SHIFT_ROTATION_MST.Empinfo();
+            ddlemp.DataSource = dt;
+            ddlemp.DataTextField = "EMPLOYEENAME";
+            ddlemp.DataValueField = "EMP_CODE";
+            ddlemp.DataBind();
+          
+        }
+        catch
+        {
+            throw;
+        }
+
+    }
+    private void ShifId()
+    {
+        try
+        {
+            DataTable dt = SaitexBL.Interface.Method.HR_SFT_MST.SelectShiftName();
+            ddlSftId.DataSource = dt;
+            ddlSftId.DataTextField = "SFT_NAME";
+            ddlSftId.DataValueField = "SFT_ID";
+            ddlSftId.DataBind();
+            ddlSftId.Items.Insert(0, "Select");
+        }
+        catch
+        {
+            throw;
+        }
+    }
+    private void Insert()
+    {
+
+        try
+        {
+                if (ddlemp.SelectedIndex > -1)
+                {
+                  
+
+                            int iRecordFound = 0;
+                            SaitexDM.Common.DataModel.HR_SHIFT_ROTATION_MST oHR_SHIFT_ROTATION_MST = new SaitexDM.Common.DataModel.HR_SHIFT_ROTATION_MST();
+                            SaitexDM.Common.DataModel.OD_ISS_REQ_MST oOD_ISS_REQ_MST = new SaitexDM.Common.DataModel.OD_ISS_REQ_MST();
+                            SaitexDM.Common.DataModel.UserLoginDetail oUserLoginDetail = (SaitexDM.Common.DataModel.UserLoginDetail)Session["LoginDetail"];
+                            oHR_SHIFT_ROTATION_MST.COMP_CODE = oUserLoginDetail.COMP_CODE;
+                            oHR_SHIFT_ROTATION_MST.BRANCH_CODE = oUserLoginDetail.CH_BRANCHCODE;
+                            oHR_SHIFT_ROTATION_MST.SHIFT_ROTATE_CODE = CommonFuction.funFixQuotes(txtShifCode.Text.ToString());
+                            oHR_SHIFT_ROTATION_MST.EMP_CODE = CommonFuction.funFixQuotes(ddlemp.SelectedValue.ToString());
+                            oHR_SHIFT_ROTATION_MST.SHIFT_ID = int.Parse(ddlSftId.SelectedValue.ToString());
+                            string st = string.Format("{0:dd/MM/yyyy}", txtEffectDate.Text.ToString());
+                            
+                            oHR_SHIFT_ROTATION_MST.EFF_DATE = DateTime.Parse(st.ToString());
+                           
+                            oHR_SHIFT_ROTATION_MST.WEEKLY_OFF = CommonFuction.funFixQuotes(ddlweekOff.SelectedValue.ToString());
+                            oHR_SHIFT_ROTATION_MST.CHANGE_FREQUENCY = CommonFuction.funFixQuotes(ddlFrequency.SelectedValue.ToString());
+                            oHR_SHIFT_ROTATION_MST.FREQUENCY_DAYS = int.Parse(txtDays.Text.ToString());
+                            oHR_SHIFT_ROTATION_MST.REMARKS = CommonFuction.funFixQuotes(txtRemark.Text.ToString());
+                            oHR_SHIFT_ROTATION_MST.TUSER = oUserLoginDetail.UserCode;
+                            bool bResult = SaitexBL.Interface.Method.HR_SHIFT_ROTATION_MST.InsertShiftRotationMst(oHR_SHIFT_ROTATION_MST, out iRecordFound);
+                            if (bResult)
+                            {
+                                Common.CommonFuction.ShowMessage("Record  Saved .");
+                                Clear();
+
+                            }
+                            else
+                            {
+                                ScriptManager.RegisterStartupScript(Page, Page.GetType(), "25", "window.alert('Duplicate Record.');", true);
+
+                            }
+                        }    
+                else
+                {
+                    ScriptManager.RegisterStartupScript(Page, Page.GetType(), "25", "window.alert(' Select Employee .');", true);
+                }
+            }
+       
+        catch
+        {
+            throw;
+        }
+    }
+    protected void imgbtnNew_Click(object sender, ImageClickEventArgs e)
+    {
+        try
+        {
+            Insert();
+        }
+        catch
+        {
+            throw;
+        }
+    }
+    private void Update()
+    {
+        try
+        {
+
+                        int iRecordFound = 0;
+                        SaitexDM.Common.DataModel.HR_SHIFT_ROTATION_MST oHR_SHIFT_ROTATION_MST = new SaitexDM.Common.DataModel.HR_SHIFT_ROTATION_MST();
+                        SaitexDM.Common.DataModel.OD_ISS_REQ_MST oOD_ISS_REQ_MST = new SaitexDM.Common.DataModel.OD_ISS_REQ_MST();
+                        SaitexDM.Common.DataModel.UserLoginDetail oUserLoginDetail = (SaitexDM.Common.DataModel.UserLoginDetail)Session["LoginDetail"];
+                        oHR_SHIFT_ROTATION_MST.COMP_CODE = oUserLoginDetail.COMP_CODE;
+                        oHR_SHIFT_ROTATION_MST.BRANCH_CODE = oUserLoginDetail.CH_BRANCHCODE;
+                        oHR_SHIFT_ROTATION_MST.SHIFT_ROTATE_CODE = CommonFuction.funFixQuotes(txtShifCode.Text.ToString());
+                        oHR_SHIFT_ROTATION_MST.EMP_CODE = CommonFuction.funFixQuotes(ddlemp.SelectedValue.ToString());
+                        oHR_SHIFT_ROTATION_MST.SHIFT_ID = int.Parse(ddlSftId.SelectedValue.ToString());
+                        oHR_SHIFT_ROTATION_MST.EFF_DATE = DateTime.ParseExact(txtEffectDate.Text.ToString(),"dd/MM/yyyy" ,null );
+                        oHR_SHIFT_ROTATION_MST.WEEKLY_OFF = CommonFuction.funFixQuotes(ddlweekOff.SelectedValue.ToString());
+                        oHR_SHIFT_ROTATION_MST.CHANGE_FREQUENCY = CommonFuction.funFixQuotes(ddlFrequency.SelectedValue.ToString());
+                        oHR_SHIFT_ROTATION_MST.FREQUENCY_DAYS = int.Parse(txtDays.Text.ToString());
+                        oHR_SHIFT_ROTATION_MST.REMARKS = CommonFuction.funFixQuotes(txtRemark.Text.ToString());                     
+                        bool bResult = SaitexBL.Interface.Method.HR_SHIFT_ROTATION_MST.UpdateShiftRotationMst(oHR_SHIFT_ROTATION_MST, out iRecordFound); 
+                        if (bResult)
+                        {
+                            Common.CommonFuction.ShowMessage("Record  Update .");
+                            Clear();
+                        }
+            else
+            {
+                ScriptManager.RegisterStartupScript(Page, Page.GetType(), "25", "window.alert('Record already exist.');", true);
+            }
+        }
+        catch
+        {
+            throw;
+        }
+    }
+    protected void imgbtnUpdate_Click(object sender, ImageClickEventArgs e)
+    {
+        try
+        {
+            Update();
+        }
+        catch
+        {
+        }
+    }
+    protected void imgbtnExit_Click(object sender, ImageClickEventArgs e)
+    {
+        try
+        {
+            if (Session["RedirectURL"] != null)
+            {
+                Response.Redirect(Session["RedirectURL"].ToString(), false);
+                Session["RedirectURL"] = null;
+            }
+            else
+            {
+                Response.Redirect("~/Module/Admin/Pages/Welcome.aspx", false);
+            }
+        }
+        catch (Exception ex)
+        {
+            errorLog.ErrHandler.WriteError(ex.Message);
+        }
+    }
+    private void Clear()
+    {
+        try
+        {
+           
+            lblMode.Text = "Save";
+            tdUpdate.Visible = false ;
+            tdSave.Visible = true ;     
+            MaxReqNO();
+            Empinfo();
+            ShifId();
+            ddlweekOff.SelectedIndex = 0;
+            ddlFrequency.SelectedIndex = 0;
+            txtEffectDate.Text = System.DateTime.Now.ToShortDateString();
+            txtRemark.Text = string.Empty;
+            txtShifCode.Enabled = false;
+            ddlfind.Visible = false;
+            tdfind.Visible = true;
+            ddlemp.SelectedIndex = -1;
+            txtDays.Text = string.Empty;
+        }
+        catch
+        {
+            throw;
+        }
+    }
+    protected void imgbtnClear_Click(object sender, ImageClickEventArgs e)
+    {
+        try
+        {
+            Clear();
+        }
+        catch
+        {
+            throw;
+        }
+
+    }  
+    protected void Imgbtnfind_Click(object sender, ImageClickEventArgs e)
+    {
+        try
+        {
+           
+            lblMode.Text = "Update";
+            tdUpdate.Visible = false ;
+            tdSave.Visible = false;     
+            ddlfind.Visible = true;
+            ddlfind.SelectedIndex = -1;
+        }
+        catch
+        {
+            throw;
+        }
+     
+    }
+    private void ddlfindShiftRotation()
+    {
+        try
+        {
+            ddlfind.Visible = true;
+            ddlfind.Items.Clear();
+
+            DataTable dt = SaitexBL.Interface.Method.HR_SHIFT_ROTATION_MST.FindShifRotateCode();
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                ddlfind.DataSource = dt;
+                ddlfind.DataValueField = "SHIFT_ROTATE_CODE";
+                ddlfind.DataTextField = "SHIFT_ROTATE_CODE";
+                ddlfind.DataBind();
+            }
+        }
+        catch
+        {
+            throw;
+        }
+    }
+    protected void ddlfind_LoadingItems(object sender, Obout.ComboBox.ComboBoxLoadingItemsEventArgs e)
+    {
+        try
+        {
+            ddlfindShiftRotation();
+        }
+        catch
+        {
+            throw;
+        }
+    }
+    protected void ddlfind_SelectedIndexChanged(object sender, Obout.ComboBox.ComboBoxItemEventArgs e)
+    {
+        tdSave.Visible = false;
+        tdUpdate.Visible = true;
+        tdfind.Visible = false;
+        int strcode = int.Parse(ddlfind.SelectedValue.ToString());
+        DataTable dt = SaitexBL.Interface.Method.HR_SHIFT_ROTATION_MST.FindShifdata(strcode);
+        if (dt.Rows.Count > 0)
+        {   
+            txtShifCode.Text = dt.Rows[0]["SHIFT_ROTATE_CODE"].ToString();
+            
+             string str = dt.Rows[0]["EFF_DATE"].ToString();
+             txtEffectDate.Text = DateTime.Parse(str.ToString()).ToShortDateString() ;
+            ddlemp.SelectedValue = dt.Rows[0]["EMP_CODE"].ToString();
+            ddlSftId.SelectedValue = dt.Rows[0]["SHIFT_ID"].ToString();
+            ddlFrequency.SelectedValue = dt.Rows[0]["CHANGE_FREQUENCY"].ToString();
+            txtDays.Text = dt.Rows[0]["FREQUENCY_DAYS"].ToString();
+            ddlweekOff.SelectedValue = dt.Rows[0]["WEEKLY_OFF"].ToString();
+            txtRemark.Text = dt.Rows[0]["REMARKS"].ToString();
+
+        }
+    }
+    protected void imgbtnPrint_Click(object sender, ImageClickEventArgs e)
+    {
+        try
+        {
+
+            DataTable dt = SaitexBL.Interface.Method.HR_SHIFT_ROTATION_MST.PrintHRotation();
+            Session["PrintSftRotation"] = dt;
+            string URL = "../Reports/HrShifRotaionMstCry.aspx";
+            ScriptManager.RegisterStartupScript(Page, Page.GetType(), "PrintWindow", "window.open('" + URL + "','_blank','top=2,left=2,toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,menubar=no,width=1000,height=800');", true);
+        }
+        catch
+        {
+            throw;
+        }
+    }
+    
+    protected void ddlemp_LoadingItems1(object sender, Obout.ComboBox.ComboBoxLoadingItemsEventArgs e)
+    {
+        try
+        {
+            Empinfo();
+        }
+        catch
+        {
+            throw;
+        }
+
+    }
+}

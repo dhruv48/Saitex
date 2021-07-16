@@ -1,0 +1,35 @@
+
+Log Entry : 
+04/03/2021 13:16:08
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/POIndentAdjustment.aspx?ItemCodeId=CHE01002&TextBoxId=ctl00_cphBody_POCredit1_txtOrderQty&PONum=1&PO_TYPE=PUM. Error Message:Input string was not in a correct format.
+__________________________
+
+Log Entry : 
+04/03/2021 22:43:01
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=38&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01003. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+04/03/2021 22:54:38
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=38&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01003. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+04/03/2021 22:55:08
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=38&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01003. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+04/03/2021 22:55:11
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=38&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01003. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+04/03/2021 22:55:13
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=38&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01003. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________
+
+Log Entry : 
+04/03/2021 23:16:52
+Error in: http://localhost:54726/Saitex/Module/Inventory/Pages/GetPODisTex.aspx?FinalAmount=38&TextBoxId=ctl00_cphBody_POCredit1_txtFinalRate&ITEM_CODE=CHE01003. Error Message:Collection was modified; enumeration operation might not execute.
+__________________________

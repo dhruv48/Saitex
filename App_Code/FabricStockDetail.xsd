@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="FabricStockDetail"
+                  targetNamespace="http://tempuri.org/FabricStockDetail.xsd"
+                 xmlns="http://tempuri.org/FabricStockDetail.xsd"
+                  xmlns:mstns="http://tempuri.org/FabricStockDetail.xsd"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+  xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+ 
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="csTextile" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="csTextile (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.csTextile.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  
+  <xs:element name="FabricStockDetail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Fabric_Detail_Stock" msprop:Generator_UserTableName="Fabric_Detail_Stock" msprop:Generator_RowDeletedName="Fabric_Detail_StockRowDeleted" msprop:Generator_RowChangedName="Fabric_Detail_StockRowChanged" msprop:Generator_RowClassName="Fabric_Detail_StockRow" msprop:Generator_RowChangingName="Fabric_Detail_StockRowChanging" msprop:Generator_RowEvArgName="Fabric_Detail_StockRowChangeEvent" msprop:Generator_RowEvHandlerName="Fabric_Detail_StockRowChangeEventHandler" msprop:Generator_TableClassName="Fabric_Detail_StockDataTable" msprop:Generator_TableVarName="tableFabric_Detail_Stock" msprop:Generator_RowDeletingName="Fabric_Detail_StockRowDeleting" msprop:Generator_TablePropName="Fabric_Detail_Stock">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="YEAR" msprop:Generator_UserColumnName="YEAR" msprop:Generator_ColumnVarNameInTable="columnYEAR" msprop:Generator_ColumnPropNameInRow="YEAR" msprop:Generator_ColumnPropNameInTable="YEARColumn" type="xs:decimal" />
+              <xs:element name="COMP_CODE" msprop:Generator_UserColumnName="COMP_CODE" msprop:Generator_ColumnVarNameInTable="columnCOMP_CODE" msprop:Generator_ColumnPropNameInRow="COMP_CODE" msprop:Generator_ColumnPropNameInTable="COMP_CODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BRANCH_CODE" msprop:Generator_UserColumnName="BRANCH_CODE" msprop:Generator_ColumnVarNameInTable="columnBRANCH_CODE" msprop:Generator_ColumnPropNameInRow="BRANCH_CODE" msprop:Generator_ColumnPropNameInTable="BRANCH_CODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRN_TYPE" msprop:Generator_UserColumnName="TRN_TYPE" msprop:Generator_ColumnVarNameInTable="columnTRN_TYPE" msprop:Generator_ColumnPropNameInRow="TRN_TYPE" msprop:Generator_ColumnPropNameInTable="TRN_TYPEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRN_NUMB" msprop:Generator_UserColumnName="TRN_NUMB" msprop:Generator_ColumnVarNameInTable="columnTRN_NUMB" msprop:Generator_ColumnPropNameInRow="TRN_NUMB" msprop:Generator_ColumnPropNameInTable="TRN_NUMBColumn" type="xs:decimal" />
+              <xs:element name="TRN_DATE" msprop:Generator_UserColumnName="TRN_DATE" msprop:Generator_ColumnVarNameInTable="columnTRN_DATE" msprop:Generator_ColumnPropNameInRow="TRN_DATE" msprop:Generator_ColumnPropNameInTable="TRN_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PRTY_NAME" msprop:Generator_UserColumnName="PRTY_NAME" msprop:Generator_ColumnVarNameInTable="columnPRTY_NAME" msprop:Generator_ColumnPropNameInRow="PRTY_NAME" msprop:Generator_ColumnPropNameInTable="PRTY_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TOTAL_AMOUNT" msprop:Generator_UserColumnName="TOTAL_AMOUNT" msprop:Generator_ColumnVarNameInTable="columnTOTAL_AMOUNT" msprop:Generator_ColumnPropNameInRow="TOTAL_AMOUNT" msprop:Generator_ColumnPropNameInTable="TOTAL_AMOUNTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FINAL_AMOUNT" msprop:Generator_UserColumnName="FINAL_AMOUNT" msprop:Generator_ColumnVarNameInTable="columnFINAL_AMOUNT" msprop:Generator_ColumnPropNameInRow="FINAL_AMOUNT" msprop:Generator_ColumnPropNameInTable="FINAL_AMOUNTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PO_NUMB" msprop:Generator_UserColumnName="PO_NUMB" msprop:Generator_ColumnVarNameInTable="columnPO_NUMB" msprop:Generator_ColumnPropNameInRow="PO_NUMB" msprop:Generator_ColumnPropNameInTable="PO_NUMBColumn" type="xs:decimal" />
+              <xs:element name="FABR_CODE" msprop:Generator_UserColumnName="FABR_CODE" msprop:Generator_ColumnVarNameInTable="columnFABR_CODE" msprop:Generator_ColumnPropNameInRow="FABR_CODE" msprop:Generator_ColumnPropNameInTable="FABR_CODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SHADE_CODE" msprop:Generator_UserColumnName="SHADE_CODE" msprop:Generator_ColumnVarNameInTable="columnSHADE_CODE" msprop:Generator_ColumnPropNameInRow="SHADE_CODE" msprop:Generator_ColumnPropNameInTable="SHADE_CODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRN_QTY" msprop:Generator_UserColumnName="TRN_QTY" msprop:Generator_ColumnVarNameInTable="columnTRN_QTY" msprop:Generator_ColumnPropNameInRow="TRN_QTY" msprop:Generator_ColumnPropNameInTable="TRN_QTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRN_QTY_ADJ" msprop:Generator_UserColumnName="TRN_QTY_ADJ" msprop:Generator_ColumnVarNameInTable="columnTRN_QTY_ADJ" msprop:Generator_ColumnPropNameInRow="TRN_QTY_ADJ" msprop:Generator_ColumnPropNameInTable="TRN_QTY_ADJColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UOM" msprop:Generator_UserColumnName="UOM" msprop:Generator_ColumnVarNameInTable="columnUOM" msprop:Generator_ColumnPropNameInRow="UOM" msprop:Generator_ColumnPropNameInTable="UOMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FINAL_RATE" msprop:Generator_UserColumnName="FINAL_RATE" msprop:Generator_ColumnVarNameInTable="columnFINAL_RATE" msprop:Generator_ColumnPropNameInRow="FINAL_RATE" msprop:Generator_ColumnPropNameInTable="FINAL_RATEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ISS_QTY" msprop:Generator_UserColumnName="ISS_QTY" msprop:Generator_ColumnVarNameInTable="columnISS_QTY" msprop:Generator_ColumnPropNameInRow="ISS_QTY" msprop:Generator_ColumnPropNameInTable="ISS_QTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ISS_REF" msprop:Generator_UserColumnName="ISS_REF" msprop:Generator_ColumnVarNameInTable="columnISS_REF" msprop:Generator_ColumnPropNameInRow="ISS_REF" msprop:Generator_ColumnPropNameInTable="ISS_REFColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DATE_OF_MFG" msprop:Generator_UserColumnName="DATE_OF_MFG" msprop:Generator_ColumnVarNameInTable="columnDATE_OF_MFG" msprop:Generator_ColumnPropNameInRow="DATE_OF_MFG" msprop:Generator_ColumnPropNameInTable="DATE_OF_MFGColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FABR_TYPE" msprop:Generator_UserColumnName="FABR_TYPE" msprop:Generator_ColumnVarNameInTable="columnFABR_TYPE" msprop:Generator_ColumnPropNameInRow="FABR_TYPE" msprop:Generator_ColumnPropNameInTable="FABR_TYPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FABR_DESC" msprop:Generator_UserColumnName="FABR_DESC" msprop:Generator_ColumnVarNameInTable="columnFABR_DESC" msprop:Generator_ColumnPropNameInRow="FABR_DESC" msprop:Generator_ColumnPropNameInTable="FABR_DESCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LOT_NO" msprop:Generator_UserColumnName="LOT_NO" msprop:Generator_ColumnVarNameInTable="columnLOT_NO" msprop:Generator_ColumnPropNameInRow="LOT_NO" msprop:Generator_ColumnPropNameInTable="LOT_NOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="GRADE" msprop:Generator_UserColumnName="GRADE" msprop:Generator_ColumnVarNameInTable="columnGRADE" msprop:Generator_ColumnPropNameInRow="GRADE" msprop:Generator_ColumnPropNameInTable="GRADEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FINAL_x0020_RATE" msprop:Generator_UserColumnName="FINAL RATE" msprop:Generator_ColumnVarNameInTable="_columnFINAL_RATE" msprop:Generator_ColumnPropNameInRow="_FINAL_RATE" msprop:Generator_ColumnPropNameInTable="_FINAL_RATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MATERIAL_STATUS" msprop:Generator_UserColumnName="MATERIAL_STATUS" msprop:Generator_ColumnVarNameInTable="columnMATERIAL_STATUS" msprop:Generator_ColumnPropNameInRow="MATERIAL_STATUS" msprop:Generator_ColumnPropNameInTable="MATERIAL_STATUSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BALVAL" msprop:Generator_UserColumnName="BALVAL" msprop:Generator_ColumnVarNameInTable="columnBALVAL" msprop:Generator_ColumnPropNameInRow="BALVAL" msprop:Generator_ColumnPropNameInTable="BALVALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BALQTY" msprop:Generator_UserColumnName="BALQTY" msprop:Generator_ColumnPropNameInRow="BALQTY" msprop:Generator_ColumnVarNameInTable="columnBALQTY" msprop:Generator_ColumnPropNameInTable="BALQTYColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

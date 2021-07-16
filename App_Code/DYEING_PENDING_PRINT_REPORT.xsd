@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DYEING_PENDING_PRINT_REPORT" targetNamespace="http://tempuri.org/DYEING_PENDING_PRINT_REPORT.xsd" xmlns:mstns="http://tempuri.org/DYEING_PENDING_PRINT_REPORT.xsd" xmlns="http://tempuri.org/DYEING_PENDING_PRINT_REPORT.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DYEING_PENDING_PRINT_REPORT" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DYEING_PENDING_PRINT_REPORT" msprop:Generator_UserDSName="DYEING_PENDING_PRINT_REPORT">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DYEING_PENDING_PRINT_REPORT" msprop:Generator_TableClassName="DYEING_PENDING_PRINT_REPORTDataTable" msprop:Generator_TableVarName="tableDYEING_PENDING_PRINT_REPORT" msprop:Generator_RowChangedName="DYEING_PENDING_PRINT_REPORTRowChanged" msprop:Generator_TablePropName="_DYEING_PENDING_PRINT_REPORT" msprop:Generator_RowDeletingName="DYEING_PENDING_PRINT_REPORTRowDeleting" msprop:Generator_RowChangingName="DYEING_PENDING_PRINT_REPORTRowChanging" msprop:Generator_RowEvHandlerName="DYEING_PENDING_PRINT_REPORTRowChangeEventHandler" msprop:Generator_RowDeletedName="DYEING_PENDING_PRINT_REPORTRowDeleted" msprop:Generator_RowClassName="DYEING_PENDING_PRINT_REPORTRow" msprop:Generator_UserTableName="DYEING_PENDING_PRINT_REPORT" msprop:Generator_RowEvArgName="DYEING_PENDING_PRINT_REPORTRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BATCH_CODE" msprop:Generator_ColumnVarNameInTable="columnBATCH_CODE" msprop:Generator_ColumnPropNameInRow="BATCH_CODE" msprop:Generator_ColumnPropNameInTable="BATCH_CODEColumn" msprop:Generator_UserColumnName="BATCH_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="BATCH_DATE" msprop:Generator_ColumnVarNameInTable="columnBATCH_DATE" msprop:Generator_ColumnPropNameInRow="BATCH_DATE" msprop:Generator_ColumnPropNameInTable="BATCH_DATEColumn" msprop:Generator_UserColumnName="BATCH_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CUST_REQ_NO" msprop:Generator_ColumnVarNameInTable="columnCUST_REQ_NO" msprop:Generator_ColumnPropNameInRow="CUST_REQ_NO" msprop:Generator_ColumnPropNameInTable="CUST_REQ_NOColumn" msprop:Generator_UserColumnName="CUST_REQ_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="PRTY_CODE" msprop:Generator_ColumnVarNameInTable="columnPRTY_CODE" msprop:Generator_ColumnPropNameInRow="PRTY_CODE" msprop:Generator_ColumnPropNameInTable="PRTY_CODEColumn" msprop:Generator_UserColumnName="PRTY_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="PRTY_NAME" msprop:Generator_ColumnVarNameInTable="columnPRTY_NAME" msprop:Generator_ColumnPropNameInRow="PRTY_NAME" msprop:Generator_ColumnPropNameInTable="PRTY_NAMEColumn" msprop:Generator_UserColumnName="PRTY_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ASS_YARN_DESC" msprop:Generator_ColumnVarNameInTable="columnASS_YARN_DESC" msprop:Generator_ColumnPropNameInRow="ASS_YARN_DESC" msprop:Generator_ColumnPropNameInTable="ASS_YARN_DESCColumn" msprop:Generator_UserColumnName="ASS_YARN_DESC" type="xs:string" minOccurs="0" />
+              <xs:element name="LOT_SIZE" msprop:Generator_ColumnVarNameInTable="columnLOT_SIZE" msprop:Generator_ColumnPropNameInRow="LOT_SIZE" msprop:Generator_ColumnPropNameInTable="LOT_SIZEColumn" msprop:Generator_UserColumnName="LOT_SIZE" type="xs:double" minOccurs="0" />
+              <xs:element name="END_USE" msprop:Generator_ColumnVarNameInTable="columnEND_USE" msprop:Generator_ColumnPropNameInRow="END_USE" msprop:Generator_ColumnPropNameInTable="END_USEColumn" msprop:Generator_UserColumnName="END_USE" type="xs:string" minOccurs="0" />
+              <xs:element name="REQ_DATE" msprop:Generator_ColumnVarNameInTable="columnREQ_DATE" msprop:Generator_ColumnPropNameInRow="REQ_DATE" msprop:Generator_ColumnPropNameInTable="REQ_DATEColumn" msprop:Generator_UserColumnName="REQ_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FROMDATE" msprop:Generator_ColumnVarNameInTable="columnFROMDATE" msprop:Generator_ColumnPropNameInRow="FROMDATE" msprop:Generator_ColumnPropNameInTable="FROMDATEColumn" msprop:Generator_UserColumnName="FROMDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TODATE" msprop:Generator_ColumnVarNameInTable="columnTODATE" msprop:Generator_ColumnPropNameInRow="TODATE" msprop:Generator_ColumnPropNameInTable="TODATEColumn" msprop:Generator_UserColumnName="TODATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MACHINE_CODE" msprop:Generator_ColumnVarNameInTable="columnMACHINE_CODE" msprop:Generator_ColumnPropNameInRow="MACHINE_CODE" msprop:Generator_ColumnPropNameInTable="MACHINE_CODEColumn" msprop:Generator_UserColumnName="MACHINE_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="SHADE_CODE" msprop:Generator_ColumnVarNameInTable="columnSHADE_CODE" msprop:Generator_ColumnPropNameInRow="SHADE_CODE" msprop:Generator_ColumnPropNameInTable="SHADE_CODEColumn" msprop:Generator_UserColumnName="SHADE_CODE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,10 @@
+
+Log Entry : 
+12/26/2019 12:26:47
+Error in: http://localhost:54726/Saitex/Module/Production/Pages/Yrn_Production_Adjustment.aspx?ItemCodeId=PO0062&SHADE_FAMILY=21412822&SHADE_CODE=21412822&TextBoxId=ctl00_cphBody_DyedIssueFrom_txtQTY&txtBasicRate=ctl00_cphBody_DyedIssueFrom_txtBasicRate&AmountId=ctl00_cphBody_DyedIssueFrom_txtAmount&TRN_TYPE=IYS12&ChallanNo=45&txtQtyUnit=ctl00_cphBody_DyedIssueFrom_txtnoofunit&txtQtyUom=ctl00_cphBody_DyedIssueFrom_txtUNIT&txtQtyWeight=ctl00_cphBody_DyedIssueFrom_txtunitweight&UOM_OF_UNIT=KGS&MAX_QTY=196.22&LOCATION=GODOWN&STORE=DYEING&PI_NO=YDSWPR00090901&PARTY_CODE=SELF&PO_NUMB=56. Error Message:Input string was not in a correct format.
+__________________________
+
+Log Entry : 
+12/26/2019 15:53:43
+Error in: http://localhost:54726/Saitex/GetUserAuthorisation.aspx. Error Message:Session Expired
+__________________________

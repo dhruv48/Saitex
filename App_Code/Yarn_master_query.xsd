@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Yarn_master_query" targetNamespace="http://tempuri.org/Yarn_master_query.xsd" xmlns:mstns="http://tempuri.org/Yarn_master_query.xsd" xmlns="http://tempuri.org/Yarn_master_query.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Yarn_master_query" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Yarn_master_query" msprop:Generator_DataSetName="Yarn_master_query">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_TablePropName="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="YARN_CODE" msprop:Generator_UserColumnName="YARN_CODE" msprop:Generator_ColumnPropNameInRow="YARN_CODE" msprop:Generator_ColumnVarNameInTable="columnYARN_CODE" msprop:Generator_ColumnPropNameInTable="YARN_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="YARN_CAT" msprop:Generator_UserColumnName="YARN_CAT" msprop:Generator_ColumnPropNameInRow="YARN_CAT" msprop:Generator_ColumnVarNameInTable="columnYARN_CAT" msprop:Generator_ColumnPropNameInTable="YARN_CATColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="YARN_TYPE" msprop:Generator_UserColumnName="YARN_TYPE" msprop:Generator_ColumnPropNameInRow="YARN_TYPE" msprop:Generator_ColumnVarNameInTable="columnYARN_TYPE" msprop:Generator_ColumnPropNameInTable="YARN_TYPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PLY" msprop:Generator_UserColumnName="PLY" msprop:Generator_ColumnPropNameInRow="PLY" msprop:Generator_ColumnVarNameInTable="columnPLY" msprop:Generator_ColumnPropNameInTable="PLYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COLOUR" msprop:Generator_UserColumnName="COLOUR" msprop:Generator_ColumnPropNameInRow="COLOUR" msprop:Generator_ColumnVarNameInTable="columnCOLOUR" msprop:Generator_ColumnPropNameInTable="COLOURColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UOM" msprop:Generator_UserColumnName="UOM" msprop:Generator_ColumnPropNameInRow="UOM" msprop:Generator_ColumnVarNameInTable="columnUOM" msprop:Generator_ColumnPropNameInTable="UOMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="YARN_DESC" msprop:Generator_UserColumnName="YARN_DESC" msprop:Generator_ColumnPropNameInRow="YARN_DESC" msprop:Generator_ColumnVarNameInTable="columnYARN_DESC" msprop:Generator_ColumnPropNameInTable="YARN_DESCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MAX_STOCK" msprop:Generator_UserColumnName="MAX_STOCK" msprop:Generator_ColumnPropNameInRow="MAX_STOCK" msprop:Generator_ColumnVarNameInTable="columnMAX_STOCK" msprop:Generator_ColumnPropNameInTable="MAX_STOCKColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FANCY_EFFECT" msprop:Generator_UserColumnName="FANCY_EFFECT" msprop:Generator_ColumnPropNameInRow="FANCY_EFFECT" msprop:Generator_ColumnVarNameInTable="columnFANCY_EFFECT" msprop:Generator_ColumnPropNameInTable="FANCY_EFFECTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BLENDING_PROCESS" msprop:Generator_UserColumnName="BLENDING_PROCESS" msprop:Generator_ColumnPropNameInRow="BLENDING_PROCESS" msprop:Generator_ColumnVarNameInTable="columnBLENDING_PROCESS" msprop:Generator_ColumnPropNameInTable="BLENDING_PROCESSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_NAME" msprop:Generator_UserColumnName="COMP_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMP_NAME" msprop:Generator_ColumnPropNameInRow="COMP_NAME" msprop:Generator_ColumnPropNameInTable="COMP_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_NAME" msprop:Generator_UserColumnName="BRANCH_NAME" msprop:Generator_ColumnVarNameInTable="columnBRANCH_NAME" msprop:Generator_ColumnPropNameInRow="BRANCH_NAME" msprop:Generator_ColumnPropNameInTable="BRANCH_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_NAME" msprop:Generator_UserColumnName="USER_NAME" msprop:Generator_ColumnVarNameInTable="columnUSER_NAME" msprop:Generator_ColumnPropNameInRow="USER_NAME" msprop:Generator_ColumnPropNameInTable="USER_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="HSN_CODE" msprop:Generator_UserColumnName="HSN_CODE" msprop:Generator_ColumnPropNameInRow="HSN_CODE" msprop:Generator_ColumnVarNameInTable="columnHSN_CODE" msprop:Generator_ColumnPropNameInTable="HSN_CODEColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

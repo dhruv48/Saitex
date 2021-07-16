@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="FiberIndent"
+                  targetNamespace="http://tempuri.org/FiberIndent.xsd"
+                  elementFormDefault="qualified"
+                  attributeFormDefault="qualified"
+                  xmlns="http://tempuri.org/FiberIndent.xsd"
+                  xmlns:mstns="http://tempuri.org/FiberIndent.xsd"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                  xmlns:msprop="urn:schemas-microsoft-com:xml-msprop"
+                  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="FiberIndent" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_TablePropName="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="REQD_DATE" msprop:Generator_UserColumnName="REQD_DATE" msprop:Generator_ColumnVarNameInTable="columnREQD_DATE" msprop:Generator_ColumnPropNameInRow="REQD_DATE" msprop:Generator_ColumnPropNameInTable="REQD_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IND_NUMB" msprop:Generator_UserColumnName="IND_NUMB" msprop:Generator_ColumnVarNameInTable="columnIND_NUMB" msprop:Generator_ColumnPropNameInRow="IND_NUMB" msprop:Generator_ColumnPropNameInTable="IND_NUMBColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CURRENTSTOCK" msprop:Generator_UserColumnName="CURRENTSTOCK" msprop:Generator_ColumnVarNameInTable="columnCURRENTSTOCK" msprop:Generator_ColumnPropNameInRow="CURRENTSTOCK" msprop:Generator_ColumnPropNameInTable="CURRENTSTOCKColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="IVALUE" msprop:Generator_UserColumnName="IVALUE" msprop:Generator_ColumnVarNameInTable="columnIVALUE" msprop:Generator_ColumnPropNameInRow="IVALUE" msprop:Generator_ColumnPropNameInTable="IVALUEColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="MIN_STOCK" msprop:Generator_UserColumnName="MIN_STOCK" msprop:Generator_ColumnVarNameInTable="columnMIN_STOCK" msprop:Generator_ColumnPropNameInRow="MIN_STOCK" msprop:Generator_ColumnPropNameInTable="MIN_STOCKColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="OP_RATE" msprop:Generator_UserColumnName="OP_RATE" msprop:Generator_ColumnVarNameInTable="columnOP_RATE" msprop:Generator_ColumnPropNameInRow="OP_RATE" msprop:Generator_ColumnPropNameInTable="OP_RATEColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="FIBER_DESC" msprop:Generator_UserColumnName="FIBER_DESC" msprop:Generator_ColumnVarNameInTable="columnFIBER_DESC" msprop:Generator_ColumnPropNameInRow="FIBER_DESC" msprop:Generator_ColumnPropNameInTable="FIBER_DESCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VC_UNITNAME" msprop:Generator_UserColumnName="VC_UNITNAME" msprop:Generator_ColumnVarNameInTable="columnVC_UNITNAME" msprop:Generator_ColumnPropNameInRow="VC_UNITNAME" msprop:Generator_ColumnPropNameInTable="VC_UNITNAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UOM_x0020__x0020__x0020__x0020_" msprop:Generator_UserColumnName="UOM    " msprop:Generator_ColumnVarNameInTable="columnUOM____" msprop:Generator_ColumnPropNameInRow="UOM____" msprop:Generator_ColumnPropNameInTable="UOM____Column" type="xs:string" minOccurs="0" />
+              <xs:element name="EXPR1" msprop:Generator_UserColumnName="EXPR1" msprop:Generator_ColumnVarNameInTable="columnEXPR1" msprop:Generator_ColumnPropNameInRow="EXPR1" msprop:Generator_ColumnPropNameInTable="EXPR1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="UOM" msprop:Generator_UserColumnName="UOM" msprop:Generator_ColumnPropNameInRow="UOM" msprop:Generator_ColumnVarNameInTable="columnUOM" msprop:Generator_ColumnPropNameInTable="UOMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IND_DATE" msprop:Generator_UserColumnName="IND_DATE" msprop:Generator_ColumnPropNameInRow="IND_DATE" msprop:Generator_ColumnVarNameInTable="columnIND_DATE" msprop:Generator_ColumnPropNameInTable="IND_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IND_TYPE" msprop:Generator_UserColumnName="IND_TYPE" msprop:Generator_ColumnPropNameInRow="IND_TYPE" msprop:Generator_ColumnVarNameInTable="columnIND_TYPE" msprop:Generator_ColumnPropNameInTable="IND_TYPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CONF_BY" msprop:Generator_UserColumnName="CONF_BY" msprop:Generator_ColumnVarNameInTable="columnCONF_BY" msprop:Generator_ColumnPropNameInRow="CONF_BY" msprop:Generator_ColumnPropNameInTable="CONF_BYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CONF_DATE" msprop:Generator_UserColumnName="CONF_DATE" msprop:Generator_ColumnVarNameInTable="columnCONF_DATE" msprop:Generator_ColumnPropNameInRow="CONF_DATE" msprop:Generator_ColumnPropNameInTable="CONF_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CONF_COMMENT" msprop:Generator_UserColumnName="CONF_COMMENT" msprop:Generator_ColumnVarNameInTable="columnCONF_COMMENT" msprop:Generator_ColumnPropNameInRow="CONF_COMMENT" msprop:Generator_ColumnPropNameInTable="CONF_COMMENTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CONF_DATE" msprop:Generator_UserColumnName="DPT_CONF_DATE" msprop:Generator_ColumnVarNameInTable="columnDPT_CONF_DATE" msprop:Generator_ColumnPropNameInRow="DPT_CONF_DATE" msprop:Generator_ColumnPropNameInTable="DPT_CONF_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RQST_QTY" msprop:Generator_UserColumnName="RQST_QTY" msprop:Generator_ColumnVarNameInTable="columnRQST_QTY" msprop:Generator_ColumnPropNameInRow="RQST_QTY" msprop:Generator_ColumnPropNameInTable="RQST_QTYColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DPT_REMARK" msprop:Generator_UserColumnName="DPT_REMARK" msprop:Generator_ColumnVarNameInTable="columnDPT_REMARK" msprop:Generator_ColumnPropNameInRow="DPT_REMARK" msprop:Generator_ColumnPropNameInTable="DPT_REMARKColumn" type="xs:string" minOccurs="0" />
+              
+              <xs:element name="DEPT_CODE" msprop:Generator_UserColumnName="DEPT_CODE" msprop:Generator_ColumnVarNameInTable="columnDEPT_CODE" msprop:Generator_ColumnPropNameInRow="DEPT_CODE" msprop:Generator_ColumnPropNameInTable="DEPT_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DEPT_NAME" msprop:Generator_UserColumnName="DEPT_NAME" msprop:Generator_ColumnVarNameInTable="columnDEPT_NAME" msprop:Generator_ColumnPropNameInRow="DEPT_NAME" msprop:Generator_ColumnPropNameInTable="DEPT_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PREP_BY" msprop:Generator_UserColumnName="PREP_BY" msprop:Generator_ColumnVarNameInTable="columnPREP_BY" msprop:Generator_ColumnPropNameInRow="PREP_BY" msprop:Generator_ColumnPropNameInTable="PREP_BYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DEL_STATUS" msprop:Generator_UserColumnName="DEL_STATUS" msprop:Generator_ColumnVarNameInTable="columnDEL_STATUS" msprop:Generator_ColumnPropNameInRow="DEL_STATUS" msprop:Generator_ColumnPropNameInTable="DEL_STATUSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FIBER_CODE" msprop:Generator_UserColumnName="FIBER_CODE" msprop:Generator_ColumnVarNameInTable="columnFIBER_CODE" msprop:Generator_ColumnPropNameInRow="FIBER_CODE" msprop:Generator_ColumnPropNameInTable="FIBER_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_ADD" msprop:Generator_UserColumnName="COMP_ADD" msprop:Generator_ColumnVarNameInTable="columnCOMP_ADD" msprop:Generator_ColumnPropNameInRow="COMP_ADD" msprop:Generator_ColumnPropNameInTable="COMP_ADDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_NAME" msprop:Generator_UserColumnName="COMP_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMP_NAME" msprop:Generator_ColumnPropNameInRow="COMP_NAME" msprop:Generator_ColumnPropNameInTable="COMP_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_NAME" msprop:Generator_UserColumnName="BRANCH_NAME" msprop:Generator_ColumnVarNameInTable="columnBRANCH_NAME" msprop:Generator_ColumnPropNameInRow="BRANCH_NAME" msprop:Generator_ColumnPropNameInTable="BRANCH_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_NAME" msprop:Generator_UserColumnName="USER_NAME" msprop:Generator_ColumnVarNameInTable="columnUSER_NAME" msprop:Generator_ColumnPropNameInRow="USER_NAME" msprop:Generator_ColumnPropNameInTable="USER_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DEVELOPER_COMP" msprop:Generator_UserColumnName="DEVELOPER_COMP" msprop:Generator_ColumnPropNameInRow="DEVELOPER_COMP" msprop:Generator_ColumnVarNameInTable="columnDEVELOPER_COMP" msprop:Generator_ColumnPropNameInTable="DEVELOPER_COMPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DEVELOPER_WEB" msprop:Generator_UserColumnName="DEVELOPER_WEB" msprop:Generator_ColumnPropNameInRow="DEVELOPER_WEB" msprop:Generator_ColumnVarNameInTable="columnDEVELOPER_WEB" msprop:Generator_ColumnPropNameInTable="DEVELOPER_WEBColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WORKS_ADDRESS" msprop:Generator_UserColumnName="WORKS_ADDRESS" msprop:Generator_ColumnVarNameInTable="columnWORKS_ADDRESS" msprop:Generator_ColumnPropNameInRow="WORKS_ADDRESS" msprop:Generator_ColumnPropNameInTable="WORKS_ADDRESSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_TIN_NO" msprop:Generator_UserColumnName="BRANCH_TIN_NO" msprop:Generator_ColumnPropNameInRow="BRANCH_TIN_NO" msprop:Generator_ColumnVarNameInTable="columnBRANCH_TIN_NO" msprop:Generator_ColumnPropNameInTable="BRANCH_TIN_NOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_ADD" msprop:Generator_UserColumnName="BRANCH_ADD" msprop:Generator_ColumnPropNameInRow="BRANCH_ADD" msprop:Generator_ColumnVarNameInTable="columnBRANCH_ADD" msprop:Generator_ColumnPropNameInTable="BRANCH_ADDColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FIBER_LAST_IND_DTL" msprop:Generator_UserTableName="FIBER_LAST_IND_DTL" msprop:Generator_RowDeletedName="FIBER_LAST_IND_DTLRowDeleted" msprop:Generator_RowChangedName="FIBER_LAST_IND_DTLRowChanged" msprop:Generator_RowClassName="FIBER_LAST_IND_DTLRow" msprop:Generator_RowChangingName="FIBER_LAST_IND_DTLRowChanging" msprop:Generator_RowEvArgName="FIBER_LAST_IND_DTLRowChangeEvent" msprop:Generator_RowEvHandlerName="FIBER_LAST_IND_DTLRowChangeEventHandler" msprop:Generator_TableClassName="FIBER_LAST_IND_DTLDataTable" msprop:Generator_TableVarName="tableFIBER_LAST_IND_DTL" msprop:Generator_RowDeletingName="FIBER_LAST_IND_DTLRowDeleting" msprop:Generator_TablePropName="FIBER_LAST_IND_DTL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COMP_CODE" msprop:Generator_UserColumnName="COMP_CODE" msprop:Generator_ColumnPropNameInRow="COMP_CODE" msprop:Generator_ColumnVarNameInTable="columnCOMP_CODE" msprop:Generator_ColumnPropNameInTable="COMP_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_CODE" msprop:Generator_UserColumnName="BRANCH_CODE" msprop:Generator_ColumnPropNameInRow="BRANCH_CODE" msprop:Generator_ColumnVarNameInTable="columnBRANCH_CODE" msprop:Generator_ColumnPropNameInTable="BRANCH_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DEPT_CODE" msprop:Generator_UserColumnName="DEPT_CODE" msprop:Generator_ColumnPropNameInRow="DEPT_CODE" msprop:Generator_ColumnVarNameInTable="columnDEPT_CODE" msprop:Generator_ColumnPropNameInTable="DEPT_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IND_NUMB" msprop:Generator_UserColumnName="IND_NUMB" msprop:Generator_ColumnPropNameInRow="IND_NUMB" msprop:Generator_ColumnVarNameInTable="columnIND_NUMB" msprop:Generator_ColumnPropNameInTable="IND_NUMBColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IND_TYPE" msprop:Generator_UserColumnName="IND_TYPE" msprop:Generator_ColumnPropNameInRow="IND_TYPE" msprop:Generator_ColumnVarNameInTable="columnIND_TYPE" msprop:Generator_ColumnPropNameInTable="IND_TYPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IND_DATE" msprop:Generator_UserColumnName="IND_DATE" msprop:Generator_ColumnPropNameInRow="IND_DATE" msprop:Generator_ColumnVarNameInTable="columnIND_DATE" msprop:Generator_ColumnPropNameInTable="IND_DATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FIBER_CODE" msdata:Caption="FIBER_CODE" msprop:Generator_UserColumnName="FIBER_CODE" msprop:Generator_ColumnPropNameInRow="FIBER_CODE" msprop:Generator_ColumnVarNameInTable="columnFIBER_CODE" msprop:Generator_ColumnPropNameInTable="FIBER_CODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="REQD_QTY" msprop:Generator_UserColumnName="REQD_QTY" msprop:Generator_ColumnPropNameInRow="REQD_QTY" msprop:Generator_ColumnVarNameInTable="columnREQD_QTY" msprop:Generator_ColumnPropNameInTable="REQD_QTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PREP_BY" msprop:Generator_UserColumnName="PREP_BY" msprop:Generator_ColumnPropNameInRow="PREP_BY" msprop:Generator_ColumnVarNameInTable="columnPREP_BY" msprop:Generator_ColumnPropNameInTable="PREP_BYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LAST_IND_NUMB" msprop:Generator_UserColumnName="LAST_IND_NUMB" msprop:Generator_ColumnPropNameInRow="LAST_IND_NUMB" msprop:Generator_ColumnVarNameInTable="columnLAST_IND_NUMB" msprop:Generator_ColumnPropNameInTable="LAST_IND_NUMBColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="APPR_QTY" msprop:Generator_UserColumnName="APPR_QTY" msprop:Generator_ColumnPropNameInRow="APPR_QTY" msprop:Generator_ColumnVarNameInTable="columnAPPR_QTY" msprop:Generator_ColumnPropNameInTable="APPR_QTYColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
